@@ -1,0 +1,65 @@
+.header {
+    font-family: Kontora-Thin, sans-serif;
+    color: $text;
+    background-color: none;
+    font-size: 18px;
+    height: 170px;
+    letter-spacing: 0.05em;
+    line-height: 130%;
+
+    &__row {
+        @include row-flex();
+        flex-wrap: nowrap;
+        &__row > div {
+            @include col();
+        }
+    }
+    
+    &__email {
+        @include size-xl(2);
+        @include size-md(3);
+        margin-top: 50px;
+        &_normal {
+            font-family: Kontora, sans-serif;
+        }
+    }
+
+    &__phone {
+        @include size-xl(2);
+        @include size-md(3);
+        margin-left: 5%;
+        margin-top: 50px;
+        &_normal {
+            font-family: Kontora, sans-serif;
+        }
+    }
+
+    &__icon {
+        margin-left: 20%;
+        margin-right: 50px;
+        margin-top: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: $black;
+    }
+    &__logo {
+        @include col();
+        @include size-xl(6);
+        color: $text;
+        display: flex;
+        font-family: Kontora-Bold, sans-serif;
+    }
+    &__img {
+        width: 60px;
+        height: 60px;
+    }
+    &__text {
+        margin-left: 2%;
+        font-family: Kontora-Bold, sans-serif;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    &__logo_top {
+        margin-top: 50px;
+    }
+}
