@@ -8,16 +8,12 @@
     line-height: 130%;
 
     &__row {
-        @include row-flex();
         flex-wrap: nowrap;
         &__row > div {
-            @include col();
         }
     }
     
     &__email {
-        @include size-xl(2);
-        @include size-md(3);
         margin-top: 50px;
         &_normal {
             font-family: Kontora, sans-serif;
@@ -25,8 +21,6 @@
     }
 
     &__phone {
-        @include size-xl(2);
-        @include size-md(3);
         margin-left: 5%;
         margin-top: 50px;
         &_normal {
@@ -43,8 +37,6 @@
         background-color: $black;
     }
     &__logo {
-        @include col();
-        @include size-xl(6);
         color: $text;
         display: flex;
         font-family: Kontora-Bold, sans-serif;

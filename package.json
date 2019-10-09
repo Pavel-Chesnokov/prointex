@@ -65,6 +65,9 @@
         "yargs": "~13.2.4"
     },
     "dependencies": {
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.4.1",
+        "popper.js": "^1.15.0",
         "smart-grid": "^2.1.2"
     }
 }
