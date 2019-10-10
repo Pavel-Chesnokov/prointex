@@ -6,44 +6,22 @@
     height: 170px;
     letter-spacing: 0.05em;
     line-height: 130%;
-
-    &__row {
-        flex-wrap: nowrap;
-        &__row > div {
-        }
-    }
-    
     &__email {
         margin-top: 50px;
-        &_normal {
-            font-family: Kontora, sans-serif;
-        }
     }
-
     &__phone {
         margin-left: 5%;
         margin-top: 50px;
-        &_normal {
-            font-family: Kontora, sans-serif;
-        }
     }
-
-    &__icon {
+    &__logo {
+        position: relative;
+        top: 50px;
+        right: 300px;
+    }
+    &__nav {
         margin-left: 20%;
         margin-right: 50px;
         margin-top: 50px;
-        width: 50px;
-        height: 50px;
-        background-color: $black;
-    }
-    &__logo {
-        color: $text;
-        display: flex;
-        font-family: Kontora-Bold, sans-serif;
-    }
-    &__img {
-        width: 60px;
-        height: 60px;
     }
     &__text {
         margin-left: 2%;
@@ -51,7 +29,26 @@
         font-size: 36px;
         line-height: 43px;
     }
-    &__logo_top {
-        margin-top: 50px;
+}
+.email {
+    font-family: Kontora, sans-serif;
+}
+.phone {
+    font-family: Kontora, sans-serif;
+}
+.logo {
+    color: $text;
+    display: flex;
+    font-family: Kontora-Bold, sans-serif;
+    &__img {
+        width: 70px;
+        height: 60px;
+    }
+}
+.nav {
+    &__icon {
+        width: 60px;
+        height: 60px;
+        background-color: $black;
     }
 }
