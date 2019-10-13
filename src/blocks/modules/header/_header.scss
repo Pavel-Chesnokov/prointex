@@ -1,45 +1,25 @@
 .header {
-    font-family: Kontora-Thin, sans-serif;
-    color: $text;
-    background-color: none;
-    font-size: 18px;
-    height: 170px;
-    letter-spacing: 0.05em;
-    line-height: 130%;
-    &__email {
-        margin-top: 50px;
-    }
-    &__phone {
-        margin-left: 5%;
-        margin-top: 50px;
-    }
+    margin-top: 50px;
+    height: 195px;
     &__logo {
-        position: relative;
+        position: absolute;
         top: 50px;
-        right: 300px;
+        left: 50px;
     }
     &__nav {
-        margin-left: 20%;
-        margin-right: 50px;
-        margin-top: 50px;
+        position: absolute;
+        // margin-left: 20%;
+        top: 50px;
+        right: 50px;
     }
     &__text {
         margin-left: 2%;
-        font-family: Kontora-Bold, sans-serif;
-        font-size: 36px;
         line-height: 43px;
     }
 }
-.email {
-    font-family: Kontora, sans-serif;
-}
-.phone {
-    font-family: Kontora, sans-serif;
-}
+
 .logo {
-    color: $text;
     display: flex;
-    font-family: Kontora-Bold, sans-serif;
     &__img {
         width: 70px;
         height: 60px;
