@@ -8,13 +8,6 @@
         height: 74px;
         margin-top: 45px;
         margin-bottom: 334.6px;
-        font-size: rem(24);
-        background: $orange;
-        border: none;
-        outline: none;
-        font-family: Kontora-Bold, sans-serif;
-        color: $black;
-        text-transform: uppercase;
     }
     &__background {
         position: absolute;
@@ -41,9 +34,13 @@
         color: rgba(33, 33, 33, 0.5);
         font-size: rem(96);
     }
+    &_numbers {
+        color: &black;
+        font-size: rem(96);
+    }
     &_main {
         font-family: Kontora-Thin, sans-serif;
-        font-size: 24px;
+        font-size: rem(24);
         line-height: 160%;
         letter-spacing: 0.05em;
         color: $text;
@@ -55,9 +52,22 @@
         text-transform: uppercase;
     }
     &_mini {
-        font-size: 18px;
+        font-size: rem(24);
     }
     &_bold {
-        font-family: Kontora, sans-serif;
+        font-family: Kontora-bold, sans-serif;
     }
+    &_uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.button-send {
+    font-size: rem(24);
+    background: $orange;
+    border: none;
+    outline: none;
+    font-family: Kontora-Bold, sans-serif;
+    color: $black;
+    text-transform: uppercase;
 }

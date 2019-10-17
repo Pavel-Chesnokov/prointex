@@ -1,0 +1,13 @@
+.request {
+    margin-top: 100px;
+    height: 215px;
+    &__button-send {
+        height: 70px;
+        margin: auto;
+    }
+    &__img {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+    }
+}
