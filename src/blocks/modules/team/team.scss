@@ -1,0 +1,33 @@
+.team {
+    justify-content: space-between;
+    margin-top: 133px;
+    &__worker {
+        margin-top: 74px;
+    }
+    &__img {
+        // max-width: 80%;
+        display: block;
+        padding: 0;
+        box-shadow: 10px 10px 0 0 $orange;
+    }
+    &_img-left {
+        text-align: left;
+    }
+    &_img-center {
+        margin: auto;
+    }
+    &_img-right {
+        text-align: right;
+    }
+    &__background {
+        position: absolute;
+        opacity: 0.6;
+    }
+    &__title {
+        margin-top: 82px;
+    }
+    &__info {
+        margin-top: 70px;
+        text-align: center;
+    }
+}

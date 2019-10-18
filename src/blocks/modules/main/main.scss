@@ -52,10 +52,14 @@
         text-transform: uppercase;
     }
     &_mini {
-        font-size: rem(24);
+        font-size: rem(18);
     }
     &_bold {
         font-family: Kontora-bold, sans-serif;
+    }
+    &_half-bold {
+        font-family: Kontora, sans-serif;
+        font-size: rem(24);
     }
     &_uppercase {
         text-transform: uppercase;
