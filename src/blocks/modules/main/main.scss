@@ -64,14 +64,38 @@
     &_uppercase {
         text-transform: uppercase;
     }
+    &_orange {
+        color: $accent;
+    }
+    &_inversion {
+        color: $text-inversion;
+    }
 }
 
 .button-send {
     font-size: rem(24);
-    background: $orange;
+    background: $accent;
     border: none;
     outline: none;
     font-family: Kontora-Bold, sans-serif;
     color: $black;
     text-transform: uppercase;
+    letter-spacing: 0.085em;
+    &_big {
+        width: 570px;
+        height: 50px;
+    }
+    &_shadow {
+        box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+    }
+    &_lite {
+        border: 1px solid $accent;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.input {
+    border: 1px solid $border-inversion;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: $background-inversion;
 }

@@ -15,8 +15,13 @@ block content
     include ../blocks/modules/about/about.pug
     include ../blocks/modules/team/team.pug
     include ../blocks/modules/review/review.pug
+    include ../blocks/modules/client/client.pug
+    include ../blocks/modules/form/form.pug
+    include ../blocks/modules/contacts/contacts.pug
     include ../blocks/modules/footer/footer.pug
 
 block scripts
     script(src="../js/main.js")
-    script(src="../js/vendor.js")
+    //- script(src="../js/vendor.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzepC77rzIAjEVqeiCpjm__5fP0MeF6-4&callback=initMap")
+    //- async defer

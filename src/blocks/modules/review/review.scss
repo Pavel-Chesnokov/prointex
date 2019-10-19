@@ -1,14 +1,14 @@
 .review {
-    background-color: $black;
-    margin-top: 226px;
-    padding-top: 81px;
-    padding-bottom: 112px;
+    // background-color: $black;
+    margin-top: 238px;
+    padding-top: 67px;
+    padding-bottom: 117px;
     align-items: center;
-    color: $white;
+    color: $text-inversion;
     &__text {
         margin-top: 80px;
         text-align: center;
-        color: $white;
+        color: $text-inversion;
     }
     &__icon_left {
         margin-left: 30px;
@@ -28,5 +28,9 @@
     }
     &__name {
         margin-top: 24px;
+    }
+    &__background {
+        position: absolute;
+        left: 0;
     }
 }
