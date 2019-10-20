@@ -6,6 +6,7 @@ block variables
 
 block content
     include ../blocks/modules/header/header.pug
+    include ../blocks/modules/nav-dot/nav-dot.pug
     include ../blocks/modules/main/main.pug
     include ../blocks/modules/advantages/advantages.pug
     include ../blocks/modules/numbers/numbers.pug
@@ -22,6 +23,6 @@ block content
 
 block scripts
     script(src="../js/main.js")
-    //- script(src="../js/vendor.js")
+    script(src="../js/vendor.js")
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzepC77rzIAjEVqeiCpjm__5fP0MeF6-4&callback=initMap")
     //- async defer
