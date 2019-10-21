@@ -13,25 +13,12 @@
         top: 1400px;
         left: 0;
     }
-    &__slider-icon {
-        position: absolute;
-        right: -56px;
-        bottom: 26px;
-    }
-}
-
-.slider {
-    &__icon {
-        width: 70px;
-        height: 70px;
-        background-color: $accent;
-    }
-    &__advantages {
+    &__slider {
         margin-top: 50px;
     }
-    &__svg {
-        display: block;
-        margin: auto;
-        margin-top: 18px;
+    &__slider-icon {
+        // position: absolute;
+        // right: 29px;
+        // bottom: 40px;
     }
 }
