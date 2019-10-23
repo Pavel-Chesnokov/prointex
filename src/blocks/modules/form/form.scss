@@ -15,14 +15,22 @@
     &__input {
         margin-top: 39px;
         height: 50px;
+        color: $text-inversion;
+        font-size: rem(34);
+        font-family: Kontora-Thin, sans-serif;
     }
+    &__input:focus {
+        border-color: $accent;
+    }
+
     &__input::placeholder {
         font-family: Kontora-Thin, sans-serif;
-        font-size: rem(24);
+        font-size: rem(34);
         line-height: 160%;
         letter-spacing: 0.05em;
         color: $text-inversion;
     }
+
     &__input_big {
         height: 139px;
     }
@@ -42,4 +50,12 @@
 
 .label_whithe {
     color: inherit;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.05rem rgba(255, 193, 7, 1);
+}
+
+.form-control {
+    border-radius: 0;
 }
