@@ -1,6 +1,6 @@
-import 'owl.carousel';
+import "owl.carousel";
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.slider-img').owlCarousel({
         loop: true,
         animateOut: 'fadeOut',
         navContainer: '.nav-container',
@@ -8,9 +8,9 @@ $(document).ready(function(){
         nav: true,
         navText: [ , $('.slider__icon')],
         dots:false,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause: true,
+        // autoplay:true,
+        // autoplayTimeout:5000,
+        // autoplayHoverPause: true,
         responsive:{
             0:{
                 items:1

@@ -2,8 +2,8 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 55.799160, lng: 37.695273},
-    zoom: 15,
-    styles: 
+    zoom: 13,
+    styles:
 [
 {
   "featureType": "administrative",
@@ -96,8 +96,8 @@ position: {lat: 55.799160, lng: 37.695273},
 map: map,
 
 // Пишем название маркера - появится если навести на него курсор и немного подождать
-title: 'Наш маркер: Большой театр',
-icon: 'cog-solid.svg'
+title: 'Колодезный переулок, д. 2а, стр. 1',
+icon: '../../img/contacts/icon.png'
 });
 }
 window.initMap = initMap;

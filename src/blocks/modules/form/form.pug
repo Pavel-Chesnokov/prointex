@@ -11,13 +11,11 @@ form.form#form.row(action="" method="post")
             input.input.form__input.col(placeholder="Телефон*")
             input.input.form__input.col(placeholder="Email")
             .form__input.form
-                input.input.form__checkbox(type="checkbox", name="")
+                include ../../components/checkbox/checkbox.pug
+                //- input.input.form__checkbox(type="checkbox", name="")
                 label.text_main.text_mini.label_whithe(for="") Согласие на обработку персональных данных
         .form__row.col-lg-6
             input.input.form__input.col.form__input_big(placeholder="Комментарий*")
             button.form__input.button-send_lite.col.text_main.text_orange Прикрепить файл
             button.button-send.button-send_big.form__button.button-send_shadow Отправить
-            
-        
-        
 
