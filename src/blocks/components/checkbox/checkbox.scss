@@ -1,68 +1,80 @@
-// @keyframes click-wave {
-//     0% {
-//       height: 23px;
-//       width: 23px;
-//       opacity: 0.35;
-//       position: relative;
-//     }
-//     100% {
-//       height: 100px;
-//       width: 100px;
-//       margin-left: -80px;
-//       margin-top: -80px;
-//       opacity: 0;
-//     }
-//   }
-  
-  .option-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
+// .checkbox {
+//     width: 23px;
+//     height: 23px;
+//     background: #ffffff;
+//     border: solid 5px $accent;
+//     box-shadow: 0 0 20px rgba(255, 193, 7, 1);
+//     appearance: none;
+//     cursor: pointer;
+//     outline: none;
+// }
+// .checkbox:hover {
+//     box-shadow: 0 0 20px rgba(255, 193, 7, 1);
+//     outline: none;
+// }
+// .checkbox:checked {
+//     box-shadow: none;
+// }
+
+.control {
+    display: block;
     position: relative;
-    top: 13.33333px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 23px;
-    width: 23px;
-    transition: all 0.15s ease-out 0s;
-    background: #ffffff;
-    border: solid 2px $accent;
-    color: #fff;
+    padding-left: 44px;
+    margin-bottom: 0;
+    padding-top: 0;
     cursor: pointer;
-    display: inline-block;
-    // margin-right: 0.5rem;
-    outline: none;
-    position: relative;
-    z-index: 1000;
-  }
-  .option-input:hover {
-    box-shadow: 0 0 2px rgba(255, 193, 7, 0.5);
-  }
-  .option-input:checked {
-    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
-  }
-  .option-input:checked::before {
-    // height: 10px;
-    // width: 10px;
+    font-size: 18px;
+}
+.control input {
     position: absolute;
-    content: '\2713';
-    display: inline;
+    z-index: -1;
+    opacity: 0;
+}
+.control_indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background: #ffffff;
+    border: 3px solid $accent;
+    border-radius: 0;
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.6);
+}
+.control:hover input ~ .control_indicator.control input:focus ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #ffffff;
+    box-shadow: none;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator.control input:checked:focus ~ .control_indicator {
+    background: #ffffff;
+}
+.control input:disabled ~ .control_indicator {
+    background: #ffffff;
+    opacity: 6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    content: "";
+    box-sizing: unset;
+    display: none;
+    position: absolute;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    top: 0;
     left: 4px;
-    top: -1px;
-    font-size: 20px;
-    line-height: 20px;
-    color: $accent;
-  }
-  // .option-input:checked::after {
-  //   -webkit-animation: click-wave 0.65s;
-  //   -moz-animation: click-wave 0.65s;
-  //   animation: click-wave 0.65s;
-  //   background: #40e0d0;
-  //   content: '';
-  //   display: block;
-  //   position: relative;
-  //   z-index: 100;
-  // }
+    width: 6px;
+    height: 11px;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}

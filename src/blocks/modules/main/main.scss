@@ -64,7 +64,7 @@
     &_uppercase {
         text-transform: uppercase;
     }
-    &_orange {
+    &_accent {
         color: $accent;
     }
     &_inversion {
@@ -88,15 +88,15 @@
     &_shadow:hover {
         box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
     }
-    &_lite {
-        background: $background-inversion;
-        border: 1px solid $accent;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
 }
 
 .input {
     border: 1px solid $border-inversion;
     // box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     background: $background-inversion;
+    &_accent {
+        background: $background-inversion;
+        border: 1px solid $accent;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
 }

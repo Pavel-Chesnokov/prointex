@@ -8,15 +8,14 @@ form.form#form.row(action="" method="post")
         .w-100
         .form__row.col-lg-6
             input.input.form__input.col.form-control(placeholder="Имя*")
-            input.input.form__input.col.form-control.phone_mask(placeholder="Телефон*" type="tel")
+            input.input.form__input.col.form-control#phone1(placeholder="Телефон*" type="tel")
             input.input.form__input.col#inputEmail4.form-control(placeholder="Email", type="email")
             .form__input.form
                 include ../../components/checkbox/checkbox.pug
-                //- label.text_main.text_mini.label_whithe(for="") Согласие на обработку персональных данных
-                //- input.input.form__checkbox(type="checkbox", name="")
         .form__row.col-lg-6
-            textarea(type="").input.form__input.col.form__input_big.form-control(placeholder="Комментарий*")
-            button.form__input.button-send_lite.col.text_main.text_orange#exampleFormControlFile1.form-control-file(type='file') Прикрепить файл
+            textarea(type="text").form__textarea.input.form__input.col.form__input_big.form-control(placeholder="Комментарий*")
+            include ../../components/input-file/input-file.pug
+            //- input.form__input.input_accent.col.text_main.text_accent#file(type = "file") 
             //- input.form__input.button-send_lite.col.text_main.text_orange#exampleFormControlFile1.form-control-file(type='file') 
             button.button-send.button-send_big.form__button.button-send_shadow Отправить
 

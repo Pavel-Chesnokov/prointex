@@ -16,8 +16,7 @@
         margin-top: 39px;
         height: 50px;
         color: $text-inversion;
-        font-size: rem(34);
-        font-family: Kontora-Thin, sans-serif;
+        
     }
     &__input:focus {
         border-color: $accent;
@@ -25,10 +24,13 @@
 
     &__input::placeholder {
         font-family: Kontora-Thin, sans-serif;
-        font-size: rem(34);
-        line-height: 160%;
+        font-size: rem(18);
+        line-height: 38px;
         letter-spacing: 0.05em;
         color: $text-inversion;
+    }
+    &__row {
+        margin-top: -4px;
     }
 
     &__input_big {
@@ -40,6 +42,9 @@
     &__checkbox {
         margin-right: 21px;
         margin-bottom: 7px;
+    }
+    &__textarea {
+        height: 140px !important;
     }
 }
 
