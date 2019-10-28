@@ -1,6 +1,6 @@
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
     redrawDotNav();
-    $(window).bind("scroll", function(e) {
+    $(window).bind("scroll", function() {
         var $element = $("#main");
         redrawDotNav();
         if ($(window).scrollTop() > $element.offset().top + $element.height()) {
@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
     //             .hide();
     //     }
     // );
-        $("#nav-dot").hover(
+    $("#nav-dot").hover(
         function() {
             $(".js-sl_lt").show();
         },
@@ -95,8 +95,8 @@ function redrawDotNav() {
     var section8Top =
         $("#contacts").offset().top -
         ($(document).height() - $("#contacts").offset().top) / 2;
-        $("#nav-dot a").removeClass("actv_b");
-        $(".js-sl_lt").removeClass("nav-dot__title_activ");
+    $("#nav-dot a").removeClass("actv_b");
+    $(".js-sl_lt").removeClass("nav-dot__title_activ");
     if (
         $(document).scrollTop() >= section1Top &&
         $(document).scrollTop() < section2Top
