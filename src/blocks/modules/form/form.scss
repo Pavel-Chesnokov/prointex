@@ -29,6 +29,12 @@
         letter-spacing: 0.05em;
         color: $text-inversion;
     }
+    &__input:invalid:not(:placeholder-shown){
+        border-color:#f00;
+    }
+    &__input:valid:not(:placeholder-shown){
+        border-color: $accent;
+    }
     &__row {
         margin-top: -4px;
     }
@@ -64,4 +70,18 @@
 
 .form-control {
     border-radius: 0;
+}
+
+
+.form__error {
+	color: red;
+	text-align: left;
+	font-size: 14px;
+	display: block;
+	margin-top: 3px;
+	display: none;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
 }

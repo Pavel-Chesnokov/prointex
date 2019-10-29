@@ -7,13 +7,15 @@ form.form#form.row(action="" method="post")
         a.link_accent.text_main.col(href="#") Скачать опросный лист
         .w-100
         .form__row.col-lg-6
-            input.input.form__input.col.form-control(placeholder="Имя*")
-            input.input.form__input.col.form-control#phone1(placeholder="Телефон*" type="tel")
-            input.input.form__input.col#inputEmail4.form-control(placeholder="Email", type="email")
+            input.input.form__input.col.form-control.only_letters(placeholder="Имя*" required)
+            input.input.form__input.col.form-control.only_number#phone1(placeholder="Телефон*" type="tel" minlength="11" maxlength="11" required)
+            span.text_main.form__error Это поле должно содержать 11-ти значный номер телефона
+            input.input.input__email.form__input.col#inputEmail4.form-control(placeholder="Email", type="email" required)
+            span.text_main.form__error Это поле должно содержать E-Mail в формате example@site.com
             .form__input.form
                 include ../../components/checkbox/checkbox.pug
         .form__row.col-lg-6
-            textarea(type="text").form__textarea.input.form__input.col.form__input_big.form-control(placeholder="Комментарий*")
+            textarea(type="text").input__comment.form__textarea.input.form__input.col.form__input_big.form-control(placeholder="Комментарий*")
             include ../../components/input-file/input-file.pug
             //- input.form__input.input_accent.col.text_main.text_accent#file(type = "file") 
             //- input.form__input.button-send_lite.col.text_main.text_orange#exampleFormControlFile1.form-control-file(type='file') 

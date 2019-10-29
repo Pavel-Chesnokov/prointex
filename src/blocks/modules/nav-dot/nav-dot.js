@@ -63,14 +63,15 @@ $(document).ready(function($) {
     //             .hide();
     //     }
     // );
-    $("#nav-dot").hover(
-        function() {
-            $(".js-sl_lt").show();
-        },
-        function() {
-            $(".js-sl_lt").hide();
-        }
-    );
+// скрывать заголовки точек
+    // $("#nav-dot").hover(
+    //     function() {
+    //         $(".js-sl_lt").show();
+    //     },
+    //     function() {
+    //         $(".js-sl_lt").hide();
+    //     }
+    // );
 });
 function redrawDotNav() {
     var section1Top = 0;

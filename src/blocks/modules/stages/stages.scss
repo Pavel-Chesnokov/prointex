@@ -1,15 +1,54 @@
 .stages {
     padding-top: 80px;
     &__icon {
-        margin-top: 87px;
+        margin-top: 107px;
     }
     &__content {
         margin-top: 81px;
+        height: 650px;
+        overflow: a;
+        
+        
+        
+        // background-clip: text;
+        // fill-color: transparent;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        
+        // background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 100%);
+        
+    }
+    // &__content_scroll {
+    //     width: 100%;
+    //     height: 100%;
+    //     overflow: auto;
+
+        // opacity: 0.2;
+        // padding: 0 25px 0 0;
+        
+    // }
+    &__scroll {
+        overflow: auto;
+        height: 650px;
+    }
+    &__gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1200px;
+        width: 96%;
+        z-index: 1000;
+        background: linear-gradient(to top, #ffffff 0%, transparent 100%);
+        overflow: auto;
     }
     &__content > h3 {
         margin-bottom: 11px;
     }
     &__content > p {
         margin-bottom: 41px;
+    }
+    &__item {
+        height: 220px;
+        margin-top: 10px;
     }
 }
