@@ -1,4 +1,4 @@
-.slider {
+.slider-img {
     &__icon {
         width: 70px;
         height: 70px;
@@ -6,26 +6,25 @@
     }
     &__svg {
         display: block;
+        position: absolute;
+        right: 25px;
         margin: auto;
         padding-top: 18px;
     }
-
-}
-
-.nav-container {
-    position: absolute;
-    z-index: 1;
-    right: 45px;
-    bottom: 30px;
-    width: 70px;
-    height: 70px;
-}
-
-.owl-next {
-    border: none;
-    padding: 0;
-}
-.owl-prev {
-    display: none;
-    padding: 0;
+    &__nav-container {
+        position: absolute;
+        z-index: 1;
+        right: 45px;
+        bottom: 55px;
+        width: 70px;
+        height: 70px;
+    }
+    &__nav-container > .owl-next {
+        border: none;
+        padding: 0;
+    }
+    &__nav-container > .owl-prev {
+        display: none;
+        padding: 0;
+    }
 }

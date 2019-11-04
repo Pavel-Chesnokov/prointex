@@ -39,10 +39,10 @@
         align-items: center;
     }
 }
-.owl-dots {
+.slider-review .owl-dots {
     margin-top: 61px !important;
 }
-.owl-dot {
+.slider-review .owl-dot {
     margin-left: 20px;
     margin-right: 20px;
     width: 28px;
@@ -50,7 +50,7 @@
     border-radius: 50%;
 }
 
-.owl-dot > span {
+.slider-review .owl-dot > span {
     background: $accent !important;
     width: 14px !important;
     height: 14px !important;
@@ -58,10 +58,10 @@
 
 }
 
-.owl-dot:active {
+.slider-review .owl-dot:active {
     background: $background !important;
 }
 
-.owl-dot.active {
+.slider-review .owl-dot.active {
     background: $background !important;
 }

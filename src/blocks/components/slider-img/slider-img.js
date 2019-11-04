@@ -3,10 +3,10 @@ $(document).ready(function(){
     $('.slider-img').owlCarousel({
         loop: true,
         animateOut: 'fadeOut',
-        navContainer: '.nav-container',
+        navContainer: '.slider-img__nav-container',
         margin:0,
         nav: true,
-        navText: [ , $('.slider__icon')],
+        navText: [ , $('.slider-img__icon')],
         dots:false,
         // autoplay:true,
         // autoplayTimeout:5000,

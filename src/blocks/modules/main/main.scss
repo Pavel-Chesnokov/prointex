@@ -26,6 +26,9 @@
     }
     &_line::after {
         content: url(../../../img/advantages/line.jpg);
+        // display: inline-block;
+        position: absolute;
+        bottom: 12px;
     }
     &_sub {
         font-size: rem(36);

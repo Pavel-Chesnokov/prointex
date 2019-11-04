@@ -2,15 +2,17 @@
     padding-top: 80px;
     &__icon {
         margin-top: 107px;
-        text-align: center;
     }
     &__content {
-        margin-top: 88px;
-    }
-    &__row-2 {
-        margin-top: 316px;
+        margin-top: 81px;
+        height: 650px;
+        overflow: auto;
     }
 
+    &__scroll {
+        overflow: auto;
+        height: 650px;
+    }
     &__gradient {
         position: absolute;
         top: 0;
@@ -28,7 +30,7 @@
         margin-bottom: 41px;
     }
     &__item {
-        height: 440px;
+        height: 220px;
         margin-top: 10px;
     }
 
