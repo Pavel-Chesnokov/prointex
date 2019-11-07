@@ -1,6 +1,5 @@
 import "./import/bootstrap";
-// import "inputmask";
 import "./import/modules";
 import "./import/components";
+import "fotorama/fotorama";
 import "./import/jquery.spincrement";
-// import "jquery.maskedinput";
