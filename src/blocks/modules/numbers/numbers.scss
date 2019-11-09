@@ -1,9 +1,27 @@
 .numbers {
+    color: $accent;
+    height: 350px;
     margin-top: 79px;
+    &__item {
+        margin-top: 35px;
+        & > span {
+            display: block;
+            margin-right: -13px;
+        }
+    }
     &__item {
         text-align: end;
     }
     &_text {
         margin-top: -17px;
     }
+    &__background {
+        position: absolute;
+        height: 350px;
+        left: 0;
+        width: 100%;
+        background-color: $background-inversion;
+        background-image: url(../../../img/numbers/line.png);
+        background-repeat: no-repeat;
+}
 }

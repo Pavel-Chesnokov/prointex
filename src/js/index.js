@@ -1,5 +1,7 @@
+// import "popper.js/dist/popper";
 import "./import/bootstrap";
 import "./import/modules";
 import "./import/components";
-import "fotorama/fotorama";
 import "./import/jquery.spincrement";
+import "owl.carousel2.thumbs/dist/owl.carousel2.thumbs";
+import "@staaky/fresco/dist/js/fresco";

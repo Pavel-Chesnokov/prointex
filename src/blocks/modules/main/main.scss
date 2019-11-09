@@ -57,8 +57,12 @@
     &_mini {
         font-size: rem(18);
     }
+    &_text-accent {
+        color: $accent;
+    }
     &_bold {
         font-family: Kontora-bold, sans-serif;
+        font-size: rem(24);
     }
     &_half-bold {
         font-family: Kontora, sans-serif;
@@ -84,6 +88,7 @@
     color: $text;
     text-transform: uppercase;
     letter-spacing: 0.085em;
+    height: 70px;
     &_big {
         width: 570px;
         height: 50px;

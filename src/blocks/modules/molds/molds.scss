@@ -1,0 +1,24 @@
+.molds {
+    margin-top: 80px;
+    &__slider-mini {
+        margin-top: 80px;
+    }
+    &__info {
+        margin-top: 80px;
+    }
+    &__btn-view > img {
+        position: absolute;
+        top: 26px;
+        right: 22px;
+    }
+    &__name, &__feature {
+        margin-top: 29px;
+    }
+    &__button-send {
+        margin-top: 35px;
+    }
+    &__list-item {
+        border-bottom: solid $border-secondary 1px;
+    }
+}
+
