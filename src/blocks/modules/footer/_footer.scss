@@ -1,3 +1,22 @@
+
 .footer {
-    margin-top: 82px;
+    margin-top: 80px;
+    height: 140px;
+    &__background {
+        position: absolute;
+        left: 0;
+        // top: 0;
+        background: $background-inversion;
+        width: 100%;
+        height: 140px;
+    }
+    &__link {
+        margin-top: 27px;
+    }
+    &__made-in {
+        text-align: right;
+    }
+    &__copyright {
+        min-width: 412px;
+    }
 }

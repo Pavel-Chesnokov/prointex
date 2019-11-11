@@ -1,29 +1,44 @@
 .header {
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 195px;
     padding-top: 50px;
+    flex-wrap: nowrap;
+    &_move {
+        background-color: $background-inversion;
+        color: $text-inversion;
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
     &__logo {
-        position: absolute;
-        // top: 50px;
         left: 50px;
     }
     &__nav {
-        // position: fixed;
-        // margin-left: 20%;
         top: 50px;
         right: 50px;
     }
-    &__text {
+    &__text-logo {
         margin-left: 2%;
-        line-height: 43px;
     }
-    &__email {
-        // position: fixed;
+    &_text {
+        line-height: 70px !important;
     }
     &__phone {
-        // position: fixed;
+        // margin-left: 5%;
+    }
+    &__email {
+        // padding-left: 5%;
+    }
+    &__menu {
+
     }
 }
-
 .logo {
     display: flex;
     &__img {
@@ -31,10 +46,3 @@
         height: 60px;
     }
 }
-// .nav {
-//     &__icon {
-//         width: 60px;
-//         height: 60px;
-//         background-color: $black;
-//     }
-// }

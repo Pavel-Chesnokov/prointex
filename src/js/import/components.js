@@ -3,4 +3,6 @@ import "%components%/slider-mini/slider-mini";
 import "%components%/slider-hover/slider-hover";
 import "%components%/menu/menu";
 import "%components%/input-file/input-file";
+import "%components%/map/map";
+
 // import "%components%/checkbox/checkbox";

@@ -9,10 +9,6 @@
         background-size: cover;
         background-clip: content-box;
         background-repeat: no-repeat;
-        
-    }
-    &__smale-wrapper {
-        // margin-top: 30px;
     }
       &_big {
         // margin-top: 30px;
@@ -22,7 +18,7 @@
         background-clip: content-box;
         background-repeat: no-repeat;
     }
-    &_big, &_smale:hover {
+    &__info, &__see-all:hover {
         cursor: pointer;
     }
 
@@ -35,7 +31,7 @@
         margin-top: 20px;
         margin-left: 29px;
     }
-    &__arr-right{
+    &__arr-right {
         display: block;
         position: absolute;
         right: 38px;
@@ -48,38 +44,33 @@
         margin-top: 10px;
     }
     &__info {
-        background: $accent;
+        // background: $accent;
+        background: linear-gradient(0deg, rgba(255,193,7,1) 0%, rgba(255,193,7,0) 100%);
         position: absolute;
         top: 30px;
-        left: 43px;
-        width: 71%;
-        height: 80%;
+        left: 50%;
+        margin-left: -35%;
+        width: 70%;
+        height: 78%;
         opacity: 0;
         transition: opacity .25s ease-in-out;
         & > p {
             position: absolute;
-            left: 0;
             bottom: 0;
+            left: 0;
             padding-left: 11px;
         }
         &:hover {
-            opacity: 0.8;
+            opacity: 1;
         }
     }
+    &__info-big {
+        left: 50%;
+        width: 84%;
+        height: 90%;
+        margin-left: -42%;
+    }
 
-}
-
-.mt-15 {
-    margin-top: 15px;
-}
-.mb-15 {
-    margin-bottom: 15px;
-}
-.p-0 {
-    padding: 0;
-}
-.m-0 {
-    margin: 0;
 }
 
 

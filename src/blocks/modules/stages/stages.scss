@@ -5,10 +5,10 @@
         text-align: center;
     }
     &__content {
-        margin-top: 88px;
+        margin-top: 83px;
     }
     &__row-2 {
-        margin-top: 316px;
+        margin-top: 311px;
     }
 
     &__gradient {
@@ -28,8 +28,10 @@
         margin-bottom: 41px;
     }
     &__item {
-        height: 440px;
         margin-top: 10px;
+        &:not(:last-child) {
+            height: 446px;
+        }
     }
 
 }
