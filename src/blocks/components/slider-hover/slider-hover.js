@@ -6,8 +6,8 @@ $(document).ready(function() {
         nav: true,
         dots: false,
         navText: [
-            "<img src='../../../img/slider-hover/left.svg'>",
-            "<img src='../../../img/slider-hover/right.svg'>"
+            "<img src='./img/slider-hover/left.svg'>",
+            "<img src='./img/slider-hover/right.svg'>"
         ],
         responsive: {
             0: {

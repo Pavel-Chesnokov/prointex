@@ -15,8 +15,8 @@ $(document).ready(function() {
         loop: true,
         responsiveRefreshRate: 200,
         navText: [
-            "<img src='../../../img/slider-hover/left.svg'>",
-            "<img src='../../../img/slider-hover/right.svg'>"
+            "<img src='./img/slider-hover/left.svg'>",
+            "<img src='./img/slider-hover/right.svg'>"
         ],
     }).on('changed.owl.carousel', syncPosition);
 

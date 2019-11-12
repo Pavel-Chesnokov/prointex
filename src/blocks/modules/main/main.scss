@@ -2,12 +2,12 @@
     margin-top: 100px;
     // height: 916px;
     &__title {
-        padding-top: 69px;
+        padding-top: 114px;
     }
     &__button-send {
-        width: 311px;
+        width: 370px;
         height: 74px;
-        margin-top: 45px;
+        margin-top: 32px;
         margin-bottom: 334.6px;
     }
     &__background {
@@ -21,12 +21,12 @@
     &_title {
         font-family: Kontora-Bold, sans-serif;
         text-transform: uppercase;
-        letter-spacing: 0.085em;
+        letter-spacing: 0.11em;
         line-height: 1.6;
         font-size: rem(46);
     }
     &_line::after {
-        content: url(../../../img/advantages/line.jpg);
+        content: url(./img/advantages/line.webp);
         // display: inline-block;
         position: absolute;
         bottom: 12px;
@@ -70,7 +70,7 @@
         // font-size: rem(24);
     }
     &_fs-m {
-        font-size: 24px;
+        font-size: rem(24);
     }
     &_uppercase {
         text-transform: uppercase;

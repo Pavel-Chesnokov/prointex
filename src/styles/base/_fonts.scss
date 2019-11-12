@@ -1,23 +1,23 @@
 @font-face {
     font-family: Kontora;
-    src: url("/fonts/Kontora.woff2") format("woff2"),
-        url("/fonts/Kontora.otf") format("opentype");
+    src: url("../fonts/Kontora.woff2") format("woff2"),
+        url("../fonts/Kontora.otf") format("opentype");
     font-weight: 2;
     font-style: normal;
 }
 
 @font-face {
     font-family: Kontora-Thin;
-    src: url("/fonts/Kontora-Thin.woff2") format("woff2"),
-        url("/fonts/Kontora-Thin.otf") format("opentype");
+    src: url("../fonts/Kontora-Thin.woff2") format("woff2"),
+        url("../fonts/Kontora-Thin.otf") format("opentype");
     font-weight: 1;
     font-style: normal;
 }
 
 @font-face {
     font-family: Kontora-Bold;
-    src: url("/fonts/Kontora-Bold.woff2") format("woff2"),
-        url("/fonts/Kontora-Bold.otf") format("opentype");
+    src: url("../fonts/Kontora-Bold.woff2") format("woff2"),
+        url("../fonts/Kontora-Bold.otf") format("opentype");
     font-weight: 3;
     font-style: normal;
 }
