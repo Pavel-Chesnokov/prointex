@@ -97,7 +97,7 @@ map: map,
 
 // Пишем название маркера - появится если навести на него курсор и немного подождать
 title: 'Колодезный переулок, д. 2а, стр. 1',
-icon: '../../img/contacts/icon.png'
+icon: './img/contacts/icon.png'
 });
 }
 window.initMap = initMap;

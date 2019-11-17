@@ -1,8 +1,7 @@
 .main {
-    margin-top: 100px;
+    padding-top: 249px;
     // height: 916px;
     &__title {
-        padding-top: 114px;
     }
     &__button-send {
         width: 370px;
@@ -26,7 +25,7 @@
         font-size: rem(46);
     }
     &_line::after {
-        content: url(./img/advantages/line.webp);
+        content: url(../img/advantages/line.webp);
         // display: inline-block;
         position: absolute;
         bottom: 12px;
@@ -39,7 +38,6 @@
         font-size: rem(96);
     }
     &_numbers {
-        color: &black;
         font-size: rem(96);
     }
     &_main {

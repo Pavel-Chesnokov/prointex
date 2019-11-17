@@ -2,6 +2,7 @@ import "%modules%/header/header";
 import "%modules%/nav-dot/nav-dot";
 import "%modules%/molds/molds";
 import "%modules%/numbers/numbers";
+import "%modules%/request/request";
 import "%modules%/stages/stages";
 import "%modules%/make/make";
 import "%modules%/review/review";

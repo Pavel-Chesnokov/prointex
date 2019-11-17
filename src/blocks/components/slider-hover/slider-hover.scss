@@ -43,8 +43,8 @@
     // transform: translateX(-240px);
     transform: translateX(-20px);
     transition-property: transform, opacity;
-    transition-duration: 0.5s, 0.5s;
-    transition-timing-function: ease-in;
+    transition-duration: 1s, 0.2s;
+    transition-timing-function: ease;
     opacity: 0.5 !important;
     &:hover {
         opacity: 1 !important;
@@ -54,8 +54,8 @@
     // transform: translateX(240px);
     transform: translateX(20px);
     transition-property: transform, opacity;
-    transition-duration: 0.5s, 0.5s;
-    transition-timing-function: ease-in;
+    transition-duration: 1s, 0.2s;
+    transition-timing-function: ease;
     opacity: 0.5 !important;
     &:hover {
         opacity: 1 !important;

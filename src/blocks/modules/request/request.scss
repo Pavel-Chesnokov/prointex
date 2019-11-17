@@ -21,3 +21,76 @@
         left: 0;
     }
 }
+
+
+
+.modalDialog {
+    color: $text-inversion;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+    // padding: 50px;
+}
+
+.modalDialog p{
+    color: $text-inversion;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+    }
+.modalDialog  {
+}
+
+.close {
+    z-index: 1000;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-decoration: none;
+}
+.close:hover { 
+    background: $accent;
+}
+
+.icon_close {
+    position: relative;
+    background: $accent;
+    width: 30px;
+    height: 30px;
+}
+.icon_close > span {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    width: 5px;
+    height: 20px;
+    background: $background-inversion;
+
+}
+
+.icon_close .line1 {
+    transform: rotate(45deg);
+}
+.icon_close .line2 {
+    transform: rotate(-45deg);
+
+}
+
+.request a {
+    display: block;
+    margin: auto;
+    text-align: center;
+}

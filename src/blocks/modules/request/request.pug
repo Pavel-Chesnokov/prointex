@@ -1,6 +1,25 @@
 section.request#request.row
     .request__background
-    button.button-send.request__button-send.button-send_shadow.col-lg-4 Оставить заявку
-
-
-
+    //- a.col.button-send__modal(href="#openModal") Открыть модальное окно
+    a(href="#openModal").col-lg-4
+        button.col.button-send.button-send__modal.request__button-send.button-send_shadow Оставить заявку
+form.form_modal#openModal.modalDialog.row(action="" method="post")
+        a.close-modal.close(href="#close" title="Закрыть")
+            .icon_close 
+                span.line1
+                span.line2
+        h2.text_title.text_line.col Оставьте заявку
+        p.text_main.col и мы свяжемся с вами в ближайшее время. <br> Заполните опросный лист или оставьте контакты
+        a.text_link.link_accent.text_main(href="#").col Скачать опросный лист
+        .form__row.col-lg-6
+            input.input.form__input.form-control.only_letters(placeholder="Имя*" required)
+            input.input.form__input.form-control.only_number#phone1(placeholder="Телефон*" type="tel" minlength="11" maxlength="11" required)
+            span.text_main.form__error Это поле должно содержать 11-ти значный номер телефона
+            input.input.input__email.form__input#inputEmail4.form-control(placeholder="Email", type="email" required)
+            span.text_main.form__error Это поле должно содержать E-Mail в формате example@site.com
+            .form__input.form
+                include ../../components/checkbox/checkbox.pug
+        .form__row.col-lg-6
+            textarea(type="text").input__comment.form__textarea.input.form__input.form__input_big.form-control(placeholder="Комментарий*")
+            include ../../components/input-file/input-file.pug
+            button.button-send.button-send_big.form__button.button-send_shadow Отправить

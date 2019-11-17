@@ -1,8 +1,9 @@
 $(document).ready(function(){
     $(window).on("scroll", function(){
         var w_top = $(window).scrollTop();
+        var w_height = $(window).height();
         var e_top = $(".numbers").offset().top;
-        if (w_top >= 2200){
+        if (w_top >= e_top - w_height ){
             $(".js-count-1").spincrement({
                 thousandSeparation: '.',
                 from: 0,

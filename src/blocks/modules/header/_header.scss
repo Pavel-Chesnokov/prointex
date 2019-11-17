@@ -30,6 +30,9 @@
         line-height: 70px !important;
         text-transform: uppercase;
     }
+    &__link:hover {
+        text-decoration: none;
+    }
     &__phone {
     }
     &__email {
