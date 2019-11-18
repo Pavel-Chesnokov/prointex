@@ -21,25 +21,26 @@
         left: 0;
     }
 }
-
+.overflow-hidden {
+    overflow: hidden;
+}
 
 
 .modalDialog {
-    color: $text-inversion;
-    margin-top: 0;
+    display: none;
     position: fixed;
+    z-index: 99999;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.9);
-    z-index: 99999;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    display: none;
+    margin-top: 0;
+    padding-left: 30%;
+    padding-right: 30%;
+    background: $background-inversion;
+    color: $text-inversion;
     pointer-events: none;
-    // padding: 50px;
+    overflow: scroll;
 }
 
 .modalDialog p{
@@ -50,20 +51,14 @@
     display: block;
     pointer-events: auto;
     }
-.modalDialog  {
-}
 
 .close {
-    z-index: 1000;
     position: absolute;
+    z-index: 1000;
     top: 15px;
     right: 20px;
     text-decoration: none;
 }
-.close:hover { 
-    background: $accent;
-}
-
 .icon_close {
     position: relative;
     background: $accent;
@@ -78,17 +73,13 @@
     width: 5px;
     height: 20px;
     background: $background-inversion;
-
 }
-
 .icon_close .line1 {
     transform: rotate(45deg);
 }
 .icon_close .line2 {
     transform: rotate(-45deg);
-
 }
-
 .request a {
     display: block;
     margin: auto;

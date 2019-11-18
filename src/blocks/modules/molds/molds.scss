@@ -1,10 +1,7 @@
 .molds {
-    margin-top: 110px;
-    &__slider-mini {
-        padding-top: 110px;
-    }
-    &__info {
-        padding-top: 110px;
+    padding-top: 110px;
+    &__slider-mini, &__info {
+        padding-top: 84px;
     }
     &__btn-view > img {
         position: absolute;

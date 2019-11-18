@@ -10,10 +10,13 @@
     height: 100px;
     padding-top: 15px;
     padding-bottom: 15px;
+    & p {
+        margin-left: 16px;
+    }
     &_move {
         // background-color: $background-inversion;
         // color: $text-inversion;
-        background: rgba($background, 0.8);
+        background: rgba($background, 1);
         box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
     }
     &__logo {
@@ -28,7 +31,6 @@
     }
     &_text {
         line-height: 70px !important;
-        text-transform: uppercase;
     }
     &__link:hover {
         text-decoration: none;
@@ -36,11 +38,24 @@
     &__phone {
     }
     &__email {
-        text-align: end;
         & p {
-            margin-right: 36px;
         }
         }
+    &__icon {
+        width: 50px;
+        height: 50px;
+        background: $accent;
+        border-radius: 50%;
+        margin-top: 10px;
+        &-phone {
+            padding-left: 13px;
+            padding-top: 13px;
+        }
+        &-email {
+            padding-left: 11px;
+            padding-top: 15px;
+        }
+    }
     }
 
 .logo {
