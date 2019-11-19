@@ -4,6 +4,7 @@ import "%modules%/molds/molds";
 import "%modules%/numbers/numbers";
 import "%modules%/request/request";
 import "%modules%/stages/stages";
+import "%modules%/molds/molds";
 import "%modules%/make/make";
 import "%modules%/review/review";
 import "%modules%/contacts/contacts";
