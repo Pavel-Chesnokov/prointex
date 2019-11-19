@@ -1,11 +1,11 @@
 .menu__button {
     position: absolute;
-    right: 40px;
+    right: 15px;
     z-index: 10000;
-    width: 70px;
-    height: 70px;
-    padding-top: 19px;
-    padding-left: 14px;
+    width: 50px;
+    height: 50px;
+    padding-top: 11px;
+    padding-left: 11px;
     overflow: hidden;
     cursor: pointer;
     background: $accent;
@@ -18,10 +18,10 @@
 /*-------------- the close button ---------*/
 
 .menu__close .bar:nth-child(1) {
-    transform: translateY(14px) rotate(45deg) ;
+    transform: translateY(11.5px) rotate(45deg) ;
     // transform-origin: 0%;
     // width: 52px
-    width: 40px;
+    width: 30px;
 }
 
 .menu__close .bar:nth-child(3) {
@@ -35,9 +35,9 @@
 }
 .menu__close .bar:nth-child(4) {
     // transform-origin: 0%;
-    transform: translateY(-14px) rotate(-45deg) ;
+    transform: translateY(-11.5px) rotate(-45deg) ;
     // width: 52px;
-    width: 40px;
+    width: 30px;
 }
 
 /*---------------- menu -----------*/
@@ -96,15 +96,15 @@
 }
 
 .hamburger {
-    width: 40px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     position: relative;
 }
 
 .hamburger .bar {
     padding: 0;
-    width: 40px;
-    height: 6px;
+    width: 28px;
+    height: 5px;
     background-color: #000000;
     display: block;
     transition: all 0.4s ease-in-out;
@@ -117,7 +117,7 @@
 
 .bar2,
 .bar3 {
-    top: 14.5px;
+    top: 11.5px;
 }
 
 .bar3 {

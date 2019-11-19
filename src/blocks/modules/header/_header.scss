@@ -7,7 +7,7 @@
     left: 0;
     margin: 0;
     padding: 0;
-    height: 100px;
+    height: 80px;
     padding-top: 15px;
     padding-bottom: 15px;
     & p {
@@ -27,10 +27,10 @@
         right: 50px;
     }
     &__text-logo {
-        margin-left: 4%;
+        margin-left: 5%;
     }
     &_text {
-        line-height: 70px !important;
+        line-height: 50px !important;
     }
     &__link:hover {
         text-decoration: none;
@@ -46,7 +46,6 @@
         height: 50px;
         background: $accent;
         border-radius: 50%;
-        margin-top: 10px;
         &-phone {
             padding-left: 13px;
             padding-top: 13px;
@@ -62,6 +61,6 @@
     display: flex;
     &__img {
         width: 70px;
-        height: 60px;
+        height: 50px;
     }
 }

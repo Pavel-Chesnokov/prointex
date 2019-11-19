@@ -17,5 +17,21 @@
     &__list-item {
         border-bottom: solid $border-secondary 1px;
     }
+    &__view > ul {
+        display: block;
+        position: absolute;
+        // padding-left: 5%;
+    }
+    &__view li {
+        display: block-inline;
+        height: 50px;
+        line-height: 50px;
+        background-color: $background;
+        padding-left: 4%;
+        width: 570px;
+    }
+    &__btn-view {
+        width: 100%;
+    }
 }
 

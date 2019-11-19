@@ -3,9 +3,14 @@ section#molds.molds.row
     .w-100
     .molds__slider-mini#molds__slider-mini.col-lg-6
         include ../../components/slider-mini/slider-mini.pug
-    .molds__info.col-lg-6.row.m-0
-        button.molds__btn-view.button-send.button-send_shadow.col Выберите тип
-            img(src='./img/molds/ChevronRightSmall.png' alt='')
+    .molds__info.col-lg-6.row
+        .molds__view.col.p-0
+            ul.text_main
+                li Пресс-форма 1
+                li Пресс-форма 2
+                li Пресс-форма 3
+            button.molds__btn-view.button-send.button-send_shadow Выберите тип
+                img(src='./img/molds/ChevronRightSmall.png' alt='')
         h3.molds__name.text_title.text_bold.text_fs-m Пресс-форма с вывинчиванием резьбовых знаков
         p.molds__description.text_main Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor quis consectetur nulla aliquam sapien adipiscing molestie. Quam nulla lorem in ligula vivamus habitant massa. Massa at eget gravida turpis semper. Lectus. molestie.
         h4.molds__feature.text_title.text_bold.text_fs-m Характеристики
@@ -14,5 +19,22 @@ section#molds.molds.row
             li.molds__list-item Количество отливок за цикл
             li.molds__list-item Способ съема отливки
             li.molds__list-item Максимальное количество циклов
-        a(href="#openModal").col.p-0
-            button.molds__button-send.button-send.button-send_shadow.col Оставить заявку
+        button.button-send__modal.molds__button-send.button-send.button-send_shadow.col Оставить заявку
+
+//- .tabs
+//-   input#tab1(type='radio' name='tabs' checked='')
+//-   label(for='tab1' title='Вкладка 1')  1
+//-   input#tab2(type='radio' name='tabs')
+//-   label(for='tab2' title='Вкладка 2')  2
+//-   input#tab3(type='radio' name='tabs')
+//-   label(for='tab3' title='Вкладка 3')  3
+//-   input#tab4(type='radio' name='tabs')
+//-   label(for='tab4' title='Вкладка 4')  4
+//-   section#content-tab1
+//-     p
+//-   section#content-tab2
+//-     p
+//-   section#content-tab3
+//-     p
+//-   section#content-tab4
+//-     p
