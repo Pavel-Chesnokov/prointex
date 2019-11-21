@@ -54,8 +54,14 @@ $("select").each(function() {
         $styledSelect.text($(this).text()).removeClass("active");
         $this.val($(this).attr("rel"));
         $list.hide();
+        // $("#sync2").find(".owl-item").eq(0).addClass("current");
         $('.groups-data > div').removeClass('active1');
+        $('#sync1 .item .item-img').removeClass('img-active');
+        $('#sync2 .slider-mini__img').removeClass('img-active');
         $('.data-' + $(this).attr("rel")).addClass('active1');
+        $('.img-' + $(this).attr("rel")).addClass('img-active');
+
+
     });
 
     $(document).click(function() {

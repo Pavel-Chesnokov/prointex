@@ -1,7 +1,11 @@
 #sync1 {
     .item {
         height: 570px;
-      & > img {
+    &-img {
+        height: 100%;
+        width: auto;
+    }
+      & img {
         object-fit: cover;
         height: 100%;
         width: auto;
@@ -76,4 +80,17 @@
         right: 10px;
     }
 
+}
+
+
+#sync1 .item-img {
+    display: none;
+}
+
+#sync2 .slider-mini__img {
+    display: none;
+}
+
+.img-active {
+    display: block !important;
 }
