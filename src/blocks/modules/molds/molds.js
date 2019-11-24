@@ -55,18 +55,93 @@ $("select").each(function() {
         $this.val($(this).attr("rel"));
         $list.hide();
         // $("#sync2").find(".owl-item").eq(0).addClass("current");
-        $('.groups-data > div').removeClass('active1');
-        $('#sync1 .item .item-img').removeClass('img-active');
-        $('#sync2 .slider-mini__img').removeClass('img-active');
-        $('.data-' + $(this).attr("rel")).addClass('active1');
-        $('.img-' + $(this).attr("rel")).addClass('img-active');
-
-
+        $(".groups-data > div").removeClass("active1");
+        $("#sync1 .item .item-img").removeClass("img-active");
+        $("#sync2 .slider-mini__img").removeClass("img-active");
+        $(".data-" + $(this).attr("rel")).addClass("active1");
+        $(".img-" + $(this).attr("rel")).addClass("img-active");
+        $("#sync1 .owl-stage").attr(
+            "style",
+            "transform: translate3d(-1140px, 0px, 0px); transition: all 0s ease 0s; width: 4560px;"
+        );
+        $("#sync2 .owl-stage").attr(
+            "style",
+            "transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 760px;"
+        );
+        $("#sync2 .owl-stage .owl-item").removeClass("current");
+        $("#sync2 .owl-stage > :first-child").addClass("current");
     });
 
     $(document).click(function() {
         $styledSelect.removeClass("active");
         $list.hide();
     });
+    //работа полноэкранного режима слайдера
+    $(".foto-1 > .mold-1").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./img/slider-img/IMG_2865.webp",
+                "./img/slider-img/IMG_2756.webp",
+                "./img/slider-img/IMG_2777.webp"
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $(".foto-2 > .mold-1").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./img/slider-img/IMG_2756.webp",
+                "./img/slider-img/IMG_2865.webp",
+                "./img/slider-img/IMG_2777.webp"
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $(".foto-3 > .mold-1").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./img/slider-img/IMG_2777.webp",
+                "./img/slider-img/IMG_2756.webp",
+                "./img/slider-img/IMG_2865.webp",
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
 
+    $(".foto-1 > .mold-2").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./img/slider-img/IMG_2816.webp",
+                "./img/slider-img/IMG_2889.webp",
+                "./img/slider-img/IMG_2840.webp"
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $(".foto-2 > .mold-2").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./img/slider-img/IMG_2889.webp",
+                "./img/slider-img/IMG_2816.webp",
+                "./img/slider-img/IMG_2840.webp"
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $(".foto-3 > .mold-2").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./img/slider-img/IMG_2840.webp",
+                "./img/slider-img/IMG_2816.webp",
+                "./img/slider-img/IMG_2889.webp"
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
 });

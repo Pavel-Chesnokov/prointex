@@ -3,12 +3,15 @@
         height: 570px;
     &-img {
         height: 100%;
-        width: auto;
+        width: 100%;
     }
       & img {
         object-fit: cover;
         height: 100%;
-        width: auto;
+        width: 100%;
+      }
+      &:hover {
+          cursor: pointer;
       }
     }
 

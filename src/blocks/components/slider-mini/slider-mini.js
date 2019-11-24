@@ -26,7 +26,7 @@ $(document).ready(function() {
         })
         .owlCarousel({
             items: slidesPerPage,
-            dots: true,
+            dots: false,
             nav: false,
             smartSpeed: 200,
             slideSpeed: 500,
