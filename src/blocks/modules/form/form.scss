@@ -1,4 +1,5 @@
 .form {
+    max-height: 810px;
     color: $text-inversion;
     // margin-top: 60px;
     &__background {
@@ -47,6 +48,7 @@
     }
     &__button {
         margin-top: 39px;
+        margin-bottom: 90px;
     }
     &__checkbox {
         margin-right: 21px;

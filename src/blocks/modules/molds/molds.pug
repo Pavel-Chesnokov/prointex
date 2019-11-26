@@ -3,31 +3,33 @@ section#molds.molds.row
     .w-100
     .molds__slider-mini#molds__slider-mini.col-lg-6
         include ../../components/slider-mini/slider-mini.pug
-    .molds__info.col-lg-6.row.m-0
-        select#molds-view.col-lg
+    .molds__info.col-lg-6.m-0.row
+        select#molds-view.col
             option(value="form1") Пресс-форма 1
             option(value="form2") Пресс-форма 2
         //- button.molds__btn-view.button-send.button-send_shadow.col Выберите тип
             img(src='./img/molds/ChevronRightSmall.png' alt='')
-        .groups-data
-            .mold1.data-form1.active1
+        .groups-data.row
+            .mold1.data-form1.active1.col
                 h3.molds__name.text_title.text_bold.text_fs-m Пресс-форма с вывинчиванием резьбовых знаков
                 p.molds__description.text_main Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor quis consectetur nulla aliquam sapien adipiscing molestie. Quam nulla lorem in ligula vivamus habitant massa. Massa at eget gravida turpis semper. Lectus. molestie.
-                h4.molds__feature.text_title.text_bold.text_fs-m Характеристики
-                ul.molds__list.text_main
-                    li.molds__list-item Габариты
-                    li.molds__list-item Количество отливок за цикл
-                    li.molds__list-item Способ съема отливки
-                    li.molds__list-item Максимальное количество циклов
-            .mold2.data-form2
+                .molds__feature
+                    h4.molds__feature.text_title.text_bold.text_fs-m Характеристики
+                    ul.molds__list.text_main
+                        li.molds__list-item Габариты
+                        li.molds__list-item Количество отливок за цикл
+                        li.molds__list-item Способ съема отливки
+                        li.molds__list-item Максимальное количество циклов
+            .mold2.data-form2.col
                 h3.molds__name.text_title.text_bold.text_fs-m Горячеканальная
                 p.molds__description.text_main Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor quis consectetur nulla aliquam sapien adipiscing molestie. Quam nulla lorem in ligula vivamus habitant massa. Massa at eget gravida turpis semper. Lectus. molestie.
-                h4.molds__feature.text_title.text_bold.text_fs-m Характеристики
-                ul.molds__list.text_main
-                    li.molds__list-item Габариты
-                    li.molds__list-item Количество отливок за цикл
-                    li.molds__list-item Способ съема отливки
-                    li.molds__list-item Максимальное количество циклов
+                .molds__feature
+                    h4.molds__feature-title.text_title.text_bold.text_fs-m Характеристики
+                    ul.molds__list.text_main
+                        li.molds__list-item Габариты
+                        li.molds__list-item Количество отливок за цикл
+                        li.molds__list-item Способ съема отливки
+                        li.molds__list-item Максимальное количество циклов
         button.button-send__modal.molds__button-send.button-send.button-send_shadow.col Оставить заявку
 
 //- .tabs

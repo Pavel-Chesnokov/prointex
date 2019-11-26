@@ -1,11 +1,10 @@
 
-$background: #e74c3c;
 $select-color: $background-inversion;
 $select-width: 100%;
 $select-height: 70px; 
 $select-background: $accent;
 .molds {
-    padding-top: 110px;
+    padding-top: 100px;
     &__slider-mini, &__info {
         padding-top: 84px;
     }
@@ -14,11 +13,14 @@ $select-background: $accent;
         top: 26px;
         right: 22px;
     }
-    &__name, &__feature {
-        margin-top: 29px;
+    &__info {
+      align-content: space-between;
+    }
+    &__feature {
+      margin-top: 29px;
     }
     &__button-send {
-        margin-top: 35px;
+        margin-bottom: 10px;
     }
     &__list-item {
         border-bottom: solid $border-secondary 1px;
@@ -55,7 +57,7 @@ $select-background: $accent;
       content: url(../img/molds/ChevronRightSmall.png);
       position: absolute;
       top: 16px;
-      right: 10px;
+      right: 20px;
     }
     &:hover {
         box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
@@ -96,12 +98,9 @@ $select-background: $accent;
       }
     }
   }
-  
-  
   .groups-data > div {
     display: none;
   }
-  
   .groups-data > div.active1 {
     display: block;
   }

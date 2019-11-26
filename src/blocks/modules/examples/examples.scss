@@ -28,11 +28,16 @@
     &__see-all {
         background: $accent;
         background-clip: content-box;
+        &:hover {
+            transform: scale(1.02);
+            transition: transform ease-in 0.2s;
+        }
     }
     &__see-all-title {
         position: absolute;
         margin-top: 20px;
         margin-left: 29px;
+
     }
     &__arr-right {
         display: block;

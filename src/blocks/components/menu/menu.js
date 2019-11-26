@@ -61,10 +61,7 @@ $(function() {
         return false;
     });
     $(".menu__contacts").click(function() {
-        $("html, body").animate(
-            { scrollTop: $("#contacts").offset().top },
-            1000
-        );
+        $("html, body").animate({ scrollTop: $("#contacts").offset().top }, 1000);
         return false;
     });
 });
