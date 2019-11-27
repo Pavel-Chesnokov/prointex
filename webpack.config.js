@@ -1,11 +1,6 @@
 const path = require("path");
 const webpack = require('webpack');
 
-
-// function _path(p) {
-//     return path.join(__dirname, p);
-//   }
-  
 module.exports = {
     entry: {
         main: "./src/js/index.js",
@@ -36,7 +31,7 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader",
+                    loader: "babel-loader?define=>false",
                     query: {
                         presets: [
                             ["@babel/preset-env", { modules: false }]
@@ -50,8 +45,7 @@ module.exports = {
     resolve: {
         alias: {
             "%modules%": path.resolve(__dirname, "src/blocks/modules"),
-            "%components%": path.resolve(__dirname, "src/blocks/components"),
-            // 'jquery.inputmask': _path('node_modules/jquery.inputmask/dist/inputmask/jquery.inputmask')
+            "%components%": path.resolve(__dirname, "src/blocks/components")
         }
     },
     plugins: [
@@ -59,7 +53,8 @@ module.exports = {
           $: 'jquery',
           jQuery: 'jquery',
           'window.jQuery': 'jquery',
-          Fresco: '@staaky/fresco'
+          Fresco: '@staaky/fresco',
+          ScrollMagic: 'scrollmagic'
         }),
       ]
 };
