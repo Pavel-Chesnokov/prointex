@@ -6,9 +6,6 @@ import "./import/jquery.spincrement";
 import "owl.carousel2.thumbs/dist/owl.carousel2.thumbs";
 import "@staaky/fresco";
 import "./import/jquery-ui";
-import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
-// import 'imports?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
-
-
-// import "scrollmagic/scrollmagic/uncompressed/plugins/animation.velocity";
-// import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap";
+import "gsap/all";
+import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';

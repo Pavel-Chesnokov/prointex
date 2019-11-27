@@ -1,9 +1,9 @@
 const path = require("path");
-const webpack = require('webpack');
+const webpack = require("webpack");
 
 module.exports = {
     entry: {
-        main: "./src/js/index.js",
+        main: "./src/js/index.js"
     },
 
     output: {
@@ -31,15 +31,13 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader?define=>false",
+                    loader: "babel-loader",
                     query: {
-                        presets: [
-                            ["@babel/preset-env", { modules: false }]
-                        ]
+                        presets: [["@babel/preset-env", { modules: false }]]
                     }
                 }
             }
-        ],
+        ]
     },
 
     resolve: {
@@ -50,11 +48,16 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-          $: 'jquery',
-          jQuery: 'jquery',
-          'window.jQuery': 'jquery',
-          Fresco: '@staaky/fresco',
-          ScrollMagic: 'scrollmagic'
-        }),
-      ]
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery",
+            Fresco: "@staaky/fresco",
+            ScrollMagic: "scrollmagic",
+            TweenMax: 'gsap/all',
+            Power2: 'gsap/all',
+            TimelineMax: 'gsap/all',
+            setTween: 'gsap/all'
+
+        })
+    ]
 };
