@@ -1,11 +1,12 @@
 // import "popper.js/dist/popper";
-import "./import/bootstrap";
 import "./import/modules";
 import "./import/components";
+import "./import/bootstrap";
 import "./import/jquery.spincrement";
 import "owl.carousel2.thumbs/dist/owl.carousel2.thumbs";
 import "@staaky/fresco";
 import "./import/jquery-ui";
-import "gsap/all";
-import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+// import "gsap";
+import "scrollmagic";
 import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';

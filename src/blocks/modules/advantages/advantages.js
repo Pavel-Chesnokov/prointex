@@ -1,37 +1,78 @@
-import { TweenMax } from "gsap";
-
 $(document).ready(function() {
     var controller = new ScrollMagic.Controller();
-    // var scen1 = new ScrollMagic.Scene({
-    //     triggerElement: "#trigger1",
-    //     triggerHook: 0.9, // положение тригера относительно окна проссмотра 0.5 в середине 1 в конце
-    //     // duration: "100%", // расстояние от start до end
-    //     offset: 0, //положение тригера относительно тригер элемента
-    //     reverse: true
-    //         })
+    $("#advantages").each(function() {
+  
+        var stagger = TweenMax.staggerFrom($(this).find(".advantages__item"), 1, {
+          y: 200,
+          autoAlpha: 0,
+          delay: 0,
+          ease: Power2.easeOut
+        },
+        0.3);
+      
+          var scene2 = new ScrollMagic.Scene({
+                  triggerElement: this,
+                  offset: 200,
+                  reverse: true,
+                  duration: 1200,
+                  triggerHook: 0.7
+              })
+              .setTween(stagger)
+              .addTo(controller)
+          .addIndicators()
+              ;
+      });
+    })
+    // $("#advantages").each(function() {
+      //     var contentTweenTL = new TimelineMax({
+    //       repeat:0,
+    //     });
+    //     var contentTween = contentTweenTL.from($(this).find(".advantages__item").eq(0), .6, {
+    //       y: 100,
+    //       autoAlpha: 0,
+    //       delay: 0,
+    //       ease: Power2.easeOut
+    //     }, .1)
+    //     .from($(this).find(".advantages__item").eq(1), .6, {
+    //       y: 200,
+    //       autoAlpha: 0,
+    //       delay: 0,
+    //       ease: Power2.easeOut
+    //     }, .1)
+    //     .from($(this).find(".advantages__item").eq(2), .6, {
+    //         y: 100,
+    //         autoAlpha: 0,
+    //         delay: 0,
+    //         ease: Power2.easeOut
+    //       }, .1)
+    //       .from($(this).find(".advantages__item").eq(3), .6, {
+    //         y: 200,
+    //         autoAlpha: 0,
+    //         delay: 0,
+    //         ease: Power2.easeOut
+    //       }, .1)
+    //       .from($(this).find(".advantages__item").eq(4), .6, {
+    //         y: 100,
+    //         autoAlpha: 0,
+    //         delay: 0,
+    //         ease: Power2.easeOut
+    //       }, .1)
+    //       .from($(this).find(".advantages__item").eq(5), .6, {
+    //         y: 200,
+    //         autoAlpha: 0,
+    //         delay: 0,
+    //         ease: Power2.easeOut
+    //       }, .1);
+    //       var scene3 = new ScrollMagic.Scene({
+    //             triggerElement: '#advantages',
+    //             offset: 100,
+    //             reverse: true,
+    //             duration: 1000,
+    //             triggerHook: 0.9
 
-    // .setClassToggle(".reveal1", "visible") // add class to reveal
-    // .addIndicators() // add indicators (requires plugin)
-    // .addTo(controller);
- 
-        var stagger = TweenMax.staggerFrom(
-            $(".reveal1"),
-            1,
-            {
-                y: 40,
-                autoAlpha: 0,
-                delay: 0,
-                ease: Power2.easeOut
-            },
-            0.3
-        );
-        var scene2 = new ScrollMagic.Scene({
-            triggerElement: '#advantages',
-            offset: -100,
-            reverse: true
-        })
-            .setTween(stagger)
-            .addTo(controller)
-            .addIndicators();
-
-});
+    //           })
+    //           .setTween(contentTween)
+    //           .addTo(controller)
+    //       .addIndicators()
+    //           ;
+    //   });

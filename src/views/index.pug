@@ -24,6 +24,8 @@ block content
     include ../blocks/modules/footer/footer.pug
 
 block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js")
     script(src="./js/vendor.js")
     script(src="./js/main.js")
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzepC77rzIAjEVqeiCpjm__5fP0MeF6-4&callback=initMap" async defer)
