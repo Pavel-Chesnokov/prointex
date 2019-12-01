@@ -8,18 +8,21 @@
         height: 28px;
         margin: 0 auto;
         padding: 7px;
-        background: $accent;
+        // background: $accent;
         border-radius: 50%;
     }
     &__icon-dot-black {
+        opacity: 0;
         width: 14px;
         height: 14px;
         background: $background-inversion;
         border-radius: 50%;
     }
+
     &__icon-line-black {
         width: 6px;
-        height: 190px;
+        opacity: 0;
+        // height: 190px;
         margin: 5px auto;
         background: $background-inversion;
     }
