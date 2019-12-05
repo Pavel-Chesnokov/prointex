@@ -1,4 +1,5 @@
 import "%modules%/header/header";
+import "%modules%/main/main";
 import "%modules%/nav-dot/nav-dot";
 import "%modules%/molds/molds";
 import "%modules%/numbers/numbers";

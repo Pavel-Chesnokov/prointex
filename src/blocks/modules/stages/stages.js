@@ -65,7 +65,7 @@ $(document).ready(function() {
         })
             .setTween(stagger)
             .addTo(controller)
-            .addIndicators();
+            // .addIndicators();
 
         var scene2 = new ScrollMagic.Scene({
             triggerElement: this,
@@ -76,7 +76,7 @@ $(document).ready(function() {
         })
             .setTween(stagger2)
             .addTo(controller)
-            .addIndicators();
+            // .addIndicators();
 
         var scene3 = new ScrollMagic.Scene({
             triggerElement: ".stages__1",
@@ -86,7 +86,7 @@ $(document).ready(function() {
         })
             .setTween(stagger3)
             .addTo(controller)
-            .addIndicators();
+            // .addIndicators();
         var scene4 = new ScrollMagic.Scene({
             triggerElement: ".stages__2",
             reverse: true,
@@ -95,7 +95,7 @@ $(document).ready(function() {
         })
             .setTween(stagger4)
             .addTo(controller)
-            .addIndicators();
+            // .addIndicators();
         var scene5 = new ScrollMagic.Scene({
             triggerElement: ".stages__3",
             reverse: true,
@@ -104,7 +104,7 @@ $(document).ready(function() {
         })
             .setTween(stagger5)
             .addTo(controller)
-            .addIndicators();
+            // .addIndicators();
         var scene6 = new ScrollMagic.Scene({
             triggerElement: ".stages__4",
             reverse: true,
@@ -113,7 +113,7 @@ $(document).ready(function() {
         })
             .setTween(stagger6)
             .addTo(controller)
-            .addIndicators();
+            // .addIndicators();
         var scene7 = new ScrollMagic.Scene({
             triggerElement: ".stages__5",
             reverse: true,
@@ -122,7 +122,7 @@ $(document).ready(function() {
         })
             .setTween(stagger7)
             .addTo(controller)
-            .addIndicators();
+            // .addIndicators();
         var scene8 = new ScrollMagic.Scene({
             triggerElement: ".stages__6",
             reverse: true,
@@ -131,7 +131,7 @@ $(document).ready(function() {
         })
             .setTween(stagger8)
             .addTo(controller)
-            .addIndicators();
+            // .addIndicators();
 
         var scene9 = new ScrollMagic.Scene({
                 triggerElement: ".stages__1",
@@ -141,7 +141,7 @@ $(document).ready(function() {
             })
                 .setTween(stagger9)
                 .addTo(controller)
-                .addIndicators();
+                // .addIndicators();
 
         var scene10 = new ScrollMagic.Scene({
                 triggerElement: ".stages__1",
@@ -152,6 +152,6 @@ $(document).ready(function() {
             })
         .setTween(stagger10)
         .addTo(controller)
-        .addIndicators();
+        // .addIndicators();
 });
 });

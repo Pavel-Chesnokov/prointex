@@ -9,47 +9,40 @@ $(document).ready(function($) {
             $("#nav-dot").hide();
         }
     });
-    $(".n_1").click(function() {
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-        return false;
-    });
-    $(".n_2").click(function() {
-        $("html, body").animate(
-            { scrollTop: $("#advantages").offset().top },
-            1000
-        );
-        return false;
-    });
-    $(".n_3").click(function() {
-        $("html, body").animate(
-            { scrollTop: $("#examples").offset().top },
-            1000
-        );
-        return false;
-    });
-    $(".n_4").click(function() {
-        $("html, body").animate({ scrollTop: $("#stages").offset().top }, 1000);
-        return false;
-    });
-    $(".n_5").click(function() {
-        $("html, body").animate({ scrollTop: $("#about").offset().top }, 1000);
-        return false;
-    });
-    $(".n_6").click(function() {
-        $("html, body").animate({ scrollTop: $("#review").offset().top }, 1000);
-        return false;
-    });
-    $(".n_7").click(function() {
-        $("html, body").animate({ scrollTop: $("#form").offset().top }, 1000);
-        return false;
-    });
-    $(".n_8").click(function() {
-        $("html, body").animate(
-            { scrollTop: $("#contacts").offset().top },
-            1000
-        );
-        return false;
-    });
+    // $(".li_1").click(function() {
+    //     $("html, body").animate(
+    //         { scrollTop: $("#advantages").offset().top },
+    //         1000
+    //     );
+    //     return false;
+    // });
+    // $(".li_2").click(function() {
+    //     $("html, body").animate({ scrollTop: $("#molds").offset().top }, 1000);
+    //     return false;
+    // });
+    // $(".li_3").click(function() {
+    //     $("html, body").animate(
+    //         { scrollTop: $("#numbers").offset().top },
+    //         1000
+    //     );
+    //     return false;
+    // });
+    // $(".li_4").click(function() {
+    //     $("html, body").animate({ scrollTop: $("#make").offset().top }, 1000);
+    //     return false;
+    // });
+    // $(".li_5").click(function() {
+    //     $("html, body").animate({ scrollTop: $("#about").offset().top }, 1000);
+    //     return false;
+    // });
+    // $(".li_6").click(function() {
+    //     $("html, body").animate({ scrollTop: $("#form").offset().top }, 1000);
+    //     return false;
+    // });
+    // $(".li_7").click(function() {
+    //     $("html, body").animate({ scrollTop: $("#contacts").offset().top },1000);
+    //     return false;
+    // });
 
     // $("#nav-dot a").hover(
     //     function() {
@@ -63,7 +56,7 @@ $(document).ready(function($) {
     //             .hide();
     //     }
     // );
-// скрывать заголовки точек
+    // скрывать заголовки точек
     // $("#nav-dot").hover(
     //     function() {
     //         $(".js-sl_lt").show();
@@ -76,8 +69,8 @@ $(document).ready(function($) {
 function redrawDotNav() {
     var section1Top = 0;
     var section2Top =
-        $("#advantages").offset().top -
-        ($("#examples").offset().top - $("#advantages").offset().top) / 2;
+        $("#main").offset().top -
+        ($("#advantages").offset().top - $("#main").offset().top) / 2;
     var section3Top =
         $("#examples").offset().top -
         ($("#stages").offset().top - $("#examples").offset().top) / 2;

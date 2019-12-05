@@ -123,3 +123,23 @@
 .button_hover {
    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
 }
+
+.main__arrow-up {
+    position: fixed;
+    right: 30px;
+    bottom: 45px;
+    z-index: 100000;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $accent;
+    &::before {
+        content: url(../img/footer/arrowUp.png);
+        display: block;
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    &:hover {
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+    }
+}

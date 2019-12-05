@@ -19,22 +19,22 @@
     &__copyright {
         width: 412px;
     }
-    &__arrow-up {
-        position: absolute;
-        right: 30px;
-        bottom: 45px;
-        z-index: 1;
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-color: $accent;
-        &::before {
-            content: url(../img/footer/arrowUp.png);
-            display: block;
-            margin-left: 12px;
-            margin-top: 12px;
-        }
-    }
+    // &__arrow-up {
+    //     position: absolute;
+    //     right: 30px;
+    //     bottom: 45px;
+    //     z-index: 1;
+    //     display: block;
+    //     width: 50px;
+    //     height: 50px;
+    //     background-color: $accent;
+    //     &::before {
+    //         content: url(../img/footer/arrowUp.png);
+    //         display: block;
+    //         margin-left: 12px;
+    //         margin-top: 12px;
+    //     }
+    // }
 }
 
 .arrow-test {

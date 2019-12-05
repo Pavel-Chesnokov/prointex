@@ -19,7 +19,7 @@ $(document).ready(function() {
               })
               .setTween(stagger)
               .addTo(controller)
-          .addIndicators()
+          // .addIndicators()
               ;
       });
     })
