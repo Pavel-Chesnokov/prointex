@@ -7,7 +7,7 @@ $(document).ready(function() {
             $(this).find(".stages__row-1 .stages__item"),
             1,
             {
-                x: -200,
+                x: -400,
                 autoAlpha: 0,
                 delay: 0,
                 ease: Power2.easeOut
@@ -18,7 +18,7 @@ $(document).ready(function() {
             $(this).find(".stages__row-2 .stages__item"),
             1,
             {
-                x: 200,
+                x: 400,
                 autoAlpha: 0,
                 delay: 0,
                 ease: Power2.easeOut

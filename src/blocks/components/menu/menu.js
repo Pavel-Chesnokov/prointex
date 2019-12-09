@@ -1,4 +1,6 @@
+
 $(function() {
+    var controller = new ScrollMagic.Controller();
     $(document).mouseup(function(e) {
         // событие клика по веб-документу
         var div = $(".menu"); // тут указываем ID элемента
@@ -22,15 +24,15 @@ $(function() {
         }
     });
 //анимация плавного пролистывания страниц
-    $(".menu__main").click(function() {
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-        return false;
-    });
+
     $(".menu__advantages").click(function() {
         $("html, body").animate(
             { scrollTop: $("#advantages").offset().top },
             1000
         );
+        window.scrollOn = false;
+
+        // window.scroll = $(window).scrollTop();
         return false;
     });
     $(".menu__examples").click(function() {
@@ -38,30 +40,50 @@ $(function() {
             { scrollTop: $("#examples").offset().top },
             1000
         );
+        window.scrollOn = false;
+
+        // window.scroll = $(window).scrollTop();
         return false;
     });
     $(".menu__stages").click(function() {
         $("html, body").animate({ scrollTop: $("#stages").offset().top }, 1000);
+        // window.scroll = $(window).scrollTop();
         return false;
     });
     $(".menu__about").click(function() {
         $("html, body").animate({ scrollTop: $("#about").offset().top }, 1000);
+        window.scrollOn = false;
+
+        // window.scroll = $(window).scrollTop();
+        // console.log(window.scroll);
         return false;
     });
     $(".menu__molds").click(function() {
         $("html, body").animate({ scrollTop: $("#molds").offset().top }, 1000);
+        window.scrollOn = false;
+
+        // window.scroll = $(window).scrollTop();
         return false;
     });
     $(".menu__form").click(function() {
         $("html, body").animate({ scrollTop: $("#form").offset().top }, 1000);
+        window.scrollOn = false;
+
+        // window.scroll = $(window).scrollTop();
         return false;
     });
     $(".menu__make").click(function() {
         $("html, body").animate({ scrollTop: $("#make").offset().top }, 1000);
+        window.scrollOn = false;
+
+        // window.scroll = $(window).scrollTop();
         return false;
     });
     $(".menu__contacts").click(function() {
         $("html, body").animate({ scrollTop: $("#contacts").offset().top }, 1000);
+        window.scrollOn = false;
+
+        // window.scroll = $(window).scrollTop();
         return false;
     });
 });

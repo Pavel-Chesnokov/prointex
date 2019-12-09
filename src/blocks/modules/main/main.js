@@ -1,200 +1,191 @@
+import "jquery-mousewheel";
 $(document).ready(function() {
-    var controller = new ScrollMagic.Controller();
+    window.counter1 = 0;
+    var counter2 = 0;
+    var counter3 = 0;
+    var counter4 = 0;
+    var counter5 = 0;
+    var counter6 = 0;
+    var counter7 = 0;
+    var counter8 = 0;
+    var counter9 = 0;
+    var counter10 = 0;
+    window.scrollOn = true;
+    $(window).on("mousewheel", function(event) {
+        console.log(
+            event.deltaY,
+            scroll,
+            $("#contacts").offset().top,
+            $("#form").offset().top,
+            counter10,
+            counter3
+        );
+        var scroll = $(this).scrollTop();
+        if (
+            event.deltaY == -1 &&
+            window.counter1 == 0 &&
+            scroll == $("#main").offset().top
+            // scrollOn
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#advantages").offset().top },
+                1000
+            );
+            window.counter1 = 1;
+            counter2 = 0;
+            return false;
+        }
+        if (
+            event.deltaY == 1 &&
+            counter2 == 0 &&
+            scroll < $("#advantages").offset().top
+            // scrollOn
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#main").offset().top },
+                1000
+            );
+            counter2 = 1;
+            window.counter1 = 0;
+            return false;
+        }
+        if (
+            event.deltaY == -1 &&
+            counter3 == 0 &&
+            scrollOn &&
+            scroll >
+                $("#molds").offset().top - $("#advantages").height() / 2
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#molds").offset().top },
+                1000
+            );
+            counter3 = 1;
+            return false;
+        }
+        //  else if(scroll < $("#molds").offset().top - $("#advantages").height() / 2){
+        //     counter3 = 0;
+        // }
+        if (
+            event.deltaY == -1 &&
+            counter4 == 0 &&
+            scrollOn &&
 
-    var start1 = new ScrollMagic.Scene({
-        triggerHook: 0,
-        offset: 20
-    })
-        .addIndicators()
-        .addTo(controller)
-        .on("start", function(event) {
-            var x1 = event.scrollDirection;
-            if (x1 == "FORWARD")  {
-                $("html, body").animate(
-                    { scrollTop: $("#advantages").offset().top },
-                    1000
-                );
-            }
-        });
-        var start2 = new ScrollMagic.Scene({
-            triggerHook: 0,
-            offset: $("#advantages").offset().top - 10
+            scroll > $("#examples").offset().top
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#numbers").offset().top },
+                1000
+            );
+            counter4 = 1;
+            return false;
+        }
+        // else if(scroll < $("#examples").offset().top){
+        //     counter4 = 0;
+        // }
+        if (
+            event.deltaY == -1 &&
+            counter5 == 0 &&
+            scrollOn &&
 
-        })
-            .addIndicators()
-            .addTo(controller)
-            .on("start", function(event) {
-                var x1 = event.scrollDirection;
-                if (x1 == "REVERSE") {
-                    $("html, body").animate(
-                        { scrollTop: $("#main").offset().top },
-                        1000
-                    );
-                }
-            });
-            var start3 = new ScrollMagic.Scene({
-                triggerElement: "#molds",
-                triggerHook: 1,
-                offset: 250
-            })
-                .addIndicators()
-                .addTo(controller)
-                .on("start", function(event) {
-                    var x1 = event.scrollDirection;
-                    if (x1 == "FORWARD") {
-                        $("html, body").animate(
-                            { scrollTop: $("#molds").offset().top },
-                            1000
-                        );
-                    } 
-                });
-                var start4 = new ScrollMagic.Scene({
-                    triggerElement: ".numbers",
-                    triggerHook: 1,
-                    offset: 20
-                })
-                    .addIndicators()
-                    .addTo(controller)
-                    .on("start", function(event) {
-                        var x1 = event.scrollDirection;
-                        if (x1 == "FORWARD") {
-                            $("html, body").animate(
-                                { scrollTop: $("#numbers").offset().top },
-                                1000
-                            );
-                        }
-                    });
-                    
-                var start5 = new ScrollMagic.Scene({
-                    triggerElement: "#make",
-                    triggerHook: 1,
-                    offset: 250
-                })
-                    .addIndicators()
-                    .addTo(controller)
-                    .on("start", function(event) {
-                        var x1 = event.scrollDirection;
-                        if (x1 == "FORWARD") {
-                            $("html, body").animate(
-                                { scrollTop: $("#make").offset().top },
-                                1000
-                            );
-                        }
-                    });
-                var start6 = new ScrollMagic.Scene({
-                    triggerElement: "#about",
-                    triggerHook: 1,
-                    offset: 20
-                })
-                    .addIndicators()
-                    .addTo(controller)
-                    .on("start", function(event) {
-                        var x1 = event.scrollDirection;
-                        if (x1 == "FORWARD") {
-                            $("html, body").animate(
-                                { scrollTop: $("#about").offset().top },
-                                1000
-                            );
-                        }
-                    });
-                var start7 = new ScrollMagic.Scene({
-                    triggerElement: "#team",
-                    triggerHook: 1,
-                    offset: 20
-                })
-                    .addIndicators()
-                    .addTo(controller)
-                    .on("start", function(event) {
-                        var x1 = event.scrollDirection;
-                        if (x1 == "FORWARD") {
-                            $("html, body").animate(
-                                { scrollTop: $("#team").offset().top },
-                                1000
-                            );
-                        }
-                    });
-                var start8 = new ScrollMagic.Scene({
-                    triggerElement: "#review",
-                    triggerHook: 1,
-                    offset: 20
-                })
-                    .addIndicators()
-                    .addTo(controller)
-                    .on("start", function(event) {
-                        var x1 = event.scrollDirection;
-                        if (x1 == "FORWARD") {
-                            $("html, body").animate(
-                                { scrollTop: $("#review").offset().top },
-                                1000
-                            );
-                        }
-                    });
-                var start9 = new ScrollMagic.Scene({
-                    triggerElement: "#form",
-                    triggerHook: 1,
-                    offset: 100
-                })
-                    .addIndicators()
-                    .addTo(controller)
-                    .on("start", function(event) {
-                        var x1 = event.scrollDirection;
-                        if (x1 == "FORWARD") {
-                            $("html, body").animate(
-                                { scrollTop: $("#form ").offset().top },
-                                1000
-                            );
-                        }
-                    });
-                var start10 = new ScrollMagic.Scene({
-                    triggerElement: "#contacts",
-                    triggerHook: 1,
-                    offset: 200
-        
-                })
-                    .addIndicators()
-                    .addTo(controller)
-                    .on("start", function(event) {
-                        var x1 = event.scrollDirection;
-                        if (x1 == "FORWARD") {
-                            $("html, body").animate(
-                                { scrollTop: $("#contacts").offset().top + 100 },
-                                1000
-                            );
-                        }
-                    });
-                    $(".li_1").click(function() {
-                        $("html, body").animate(
-                            { scrollTop: $("#advantages").offset().top },
-                            1000
-                        );
-                        return false;
-                    });
-                    $(".li_2").click(function() {
-                        $("html, body").animate({ scrollTop: $("#molds").offset().top }, 1000);
-                        return false;
-                    });
-                    $(".li_3").click(function() {
-                        $("html, body").animate(
-                            { scrollTop: $("#numbers").offset().top },
-                            1000
-                        );
-                        return false;
-                    });
-                    $(".li_4").click(function() {
-                        $("html, body").animate({ scrollTop: $("#make").offset().top }, 1000);
-                        return false;
-                    });
-                    $(".li_5").click(function() {
-                        $("html, body").animate({ scrollTop: $("#about").offset().top }, 1000);
-                        return false;
-                    });
-                    $(".li_6").click(function() {
-                        $("html, body").animate({ scrollTop: $("#form").offset().top }, 1000);
-                        return false;
-                    });
-                    $(".li_7").click(function() {
-                        controller.enabled(false);
-                        $("html, body").animate({ scrollTop: $("#contacts").offset().top },1000);
-                        return false;
-                    });
+            scroll >
+                $("#request").offset().top - $("#stages").height() / 4
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#make").offset().top },
+                1000
+            );
+            counter5 = 1;
+            return false;
+        }
+        // else if(scroll < $("#request").offset().top - $("#stages").height() / 4){
+        //     counter5 = 0;
+        // }
+        if (
+            event.deltaY == -1 &&
+            counter6 == 0 &&
+            scrollOn &&
+
+            scroll >
+                $("#make-scroll").offset().top - $("#make-scroll").height() / 2
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#about").offset().top },
+                1000
+            );
+            counter6 = 1;
+            return false;
+        }
+        // else if(scroll < $("#make-scroll").offset().top - $("#make-scroll").height() / 2){
+        //     counter6 = 0;
+        // }
+        if (
+            event.deltaY == -1 &&
+            counter7 == 0 &&
+            scrollOn &&
+
+            scroll > $("#about").offset().top
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#team").offset().top },
+                1000
+            );
+            counter7 = 1;
+            return false;
+        }
+        // else if(scroll < $("#about").offset().top){
+        //     counter7 = 0;
+        // }
+        if (
+            event.deltaY == -1 &&
+            counter8 == 0 &&
+            scrollOn &&
+
+            scroll > $("#team").offset().top
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#review").offset().top },
+                1000
+            );
+            counter8 = 1;
+            return false;
+        }
+        // else if(scroll < $("#team").offset().top){
+        //     counter8 = 0;
+        // }
+        if (
+            event.deltaY == -1 &&
+            counter9 == 0 &&
+            scrollOn &&
+
+            scroll > $("#review").offset().top
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#form").offset().top },
+                1000
+            );
+            counter9 = 1;
+            return false;
+        }
+        // else if(scroll < $("#review").offset().top){
+        //     counter9 = 0;
+        // }
+        if (
+            event.deltaY == -1 &&
+            counter10 == 0 &&
+            scrollOn &&
+
+            scroll > $("#form").offset().top
+        ) {
+            $("html, body").animate(
+                { scrollTop: $("#contacts").offset().top },
+                1000
+            );
+            counter10 = 1;
+            return false;
+        }
+        // else if(scroll < $("#form").offset().top){
+        //     counter10 = 0;
+        // }
+    });
 });
