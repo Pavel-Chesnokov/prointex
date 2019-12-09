@@ -1,14 +1,42 @@
 $(document).ready(function($) {
-    redrawDotNav();
-    $(window).bind("scroll", function() {
-        var $element = $("#main");
+    var $element = $("#main");
+    $(window).on('scroll', function(){
+        var width = $(window).width();
         redrawDotNav();
-        if ($(window).scrollTop() > $element.offset().top + $element.height()) {
+        if ($(window).scrollTop() > $element.offset().top + $element.height() &&
+        width > 1750
+        ){
             $("#nav-dot").show();
-        } else {
+        }
+        else {
             $("#nav-dot").hide();
         }
-    });
+    })
+    $(window).on('resize', function(){
+        var width = $(window).width();
+        if ($(window).scrollTop() > $element.offset().top + $element.height() &&
+        width > 1750
+        ){
+            $("#nav-dot").show();
+        }
+        else {
+            $("#nav-dot").hide();
+        }
+    })
+    // redrawDotNav();
+    // $(window).on("scroll", function() {
+    //     var $element = $("#main");
+    //     redrawDotNav();
+    //     if (
+    //         $(window).scrollTop() > $element.offset().top + $element.height() && 
+    //         width > 1750
+    //     ) {
+    //         $("#nav-dot").show();
+    //     } else {
+    //         $("#nav-dot").hide();
+    //     }
+
+    // });
     $(".li_1").click(function() {
         $("html, body").animate(
             { scrollTop: $("#advantages").offset().top },

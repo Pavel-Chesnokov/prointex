@@ -1,11 +1,10 @@
 .team {
-    justify-content: space-between;
     margin-top: 133px;
     &__worker {
         margin-top: 74px;
     }
     &__img {
-        // max-width: 80%;
+        max-width: 100%;
         display: block;
         padding: 0;
         box-shadow: 10px 10px 0 0 $accent;

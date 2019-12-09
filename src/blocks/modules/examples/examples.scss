@@ -1,25 +1,32 @@
 .examples {
     padding-top: 100px;
+    @media screen and (max-width: 1200px){
+    }
     &__title {
         margin-bottom: 40px;
     }
     &_smale {
-        // margin-top: 30px;
         background-image: url(../img/examples/IMG_2909.webp);
         background-size: cover;
         background-clip: content-box;
         background-repeat: no-repeat;
+        height: 270px;
+        @media screen and (max-width: 1200px){
+            
+        }
     }
-      &_big {
-        // margin-top: 30px;
+    &_big {
+        margin-top: 30px;
         height: 570px;
         background-image: url(../img/examples/IMG_2876.webp);
         background-size: cover;
         background-clip: content-box;
         background-repeat: no-repeat;
-        // &:hover .examples__info-big{
-        //     opacity: 1;
-        // }
+        @media screen and (max-width: 1200px){
+        }
+    }
+    &__smale-wrapper {
+        margin-top: 30px !important;
     }
     &_big, &_smale, &__see-all:hover {
         cursor: pointer;
@@ -52,14 +59,14 @@
         margin-top: 10px;
     }
     &__info-1, &__info-2, &__info-3, &__info-4 {
-        background: $accent;
+        background-color: $accent;
+        // background-clip: content-box;
+        margin: 0 15px;
         position: absolute;
         z-index: 1;
         left: 0;
         bottom: 0;
-        width: 95%;
         height: 33%;
-        margin-left: 15px;
         line-height: 1.3;
         display: none;
         & > p {
@@ -67,8 +74,13 @@
             margin: 0;
             // transition: opacity .25s ease-in-out;
         }
+        @media screen and (max-width: 1200px){
+        }
     }
     &__info_smale {
-        width: 90%;
+    }
+    &__info-big {
+        @media screen and (max-width: 1200px){
+        }
     }
 }

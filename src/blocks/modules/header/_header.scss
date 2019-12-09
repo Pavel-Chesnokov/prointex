@@ -1,6 +1,5 @@
 .header {
     position: fixed;
-    flex-wrap: nowrap;
     z-index: 1030;
     top: 0;
     right: 0;
@@ -10,6 +9,7 @@
     height: 80px;
     padding-top: 15px;
     padding-bottom: 15px;
+    flex-wrap: nowrap;
     & p {
         margin-left: 16px;
     }
@@ -36,10 +36,24 @@
         text-decoration: none;
     }
     &__phone {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-left: 5%;
+        @media screen and (max-width: 1400px)  {
+            margin-left: 3%;
+        }
+        
     }
     &__email {
-        & p {
-        }
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-left: 30%;
+            @media screen and (max-width: 1400px)  {
+                margin-left: 5%;
+            }
+
         }
     &__icon {
         width: 50px;
@@ -64,3 +78,4 @@
         height: 50px;
     }
 }
+
