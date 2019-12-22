@@ -1,14 +1,12 @@
 section#molds.molds.row
     h2.text_title.text_line.col-lg-5 Типы <br> пресс-форм
     .w-100
+    select#molds-view.col
+        option(value="form1") Пресс-форма 1
+        option(value="form2") Пресс-форма 2
     .molds__slider-mini#molds__slider-mini.col-lg-6
         include ../../components/slider-mini/slider-mini.pug
     .molds__info.col-lg-6.m-0.row
-        select#molds-view.col
-            option(value="form1") Пресс-форма 1
-            option(value="form2") Пресс-форма 2
-        //- button.molds__btn-view.button-send.button-send_shadow.col Выберите тип
-            img(src='./img/molds/ChevronRightSmall.png' alt='')
         .groups-data.row
             .mold1.data-form1.active1.col
                 h3.molds__name.text_title.text_bold.text_fs-m Пресс-форма с вывинчиванием резьбовых знаков

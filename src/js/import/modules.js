@@ -8,6 +8,8 @@ import "%modules%/stages/stages";
 import "%modules%/examples/examples";
 import "%modules%/advantages/advantages";
 import "%modules%/molds/molds";
+import "%modules%/team/team";
+import "%modules%/client/client";
 import "%modules%/make/make";
 import "%modules%/review/review";
 import "%modules%/contacts/contacts";

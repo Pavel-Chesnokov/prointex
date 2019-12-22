@@ -1,6 +1,22 @@
 .slider-hover {
     width: 670px;
     height: 570px;
+    
+    @media screen and (max-width: 1200px){
+        width: 1110px;
+        height: 300px;
+
+    }
+    @media screen and (max-width: 992px){
+        width: 900px;
+        height: 300px;
+
+    }
+    @media screen and (max-width: 400px){
+        // width: 100%;
+        height: 290px;
+        width: 290px;
+    }
     &__img {
         object-fit: cover;
         height: 100%;
@@ -94,6 +110,13 @@
         transition-property: opacity;
         transition-duration: 0.4s;
         transition-timing-function: ease-in;
+    }
+}
+
+.slider-hover .owl-item {
+    @media screen and (max-width: 1200px){
+        width: 300px !important;
+        // height: 300px;
     }
 }
 

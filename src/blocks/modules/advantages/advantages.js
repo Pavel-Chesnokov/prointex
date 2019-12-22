@@ -1,3 +1,4 @@
+import "owl.carousel";
 $(document).ready(function() {
     var controller = new ScrollMagic.Controller();
     $("#advantages").each(function() {
@@ -22,57 +23,25 @@ $(document).ready(function() {
           // .addIndicators()
               ;
       });
-    })
-    // $("#advantages").each(function() {
-      //     var contentTweenTL = new TimelineMax({
-    //       repeat:0,
-    //     });
-    //     var contentTween = contentTweenTL.from($(this).find(".advantages__item").eq(0), .6, {
-    //       y: 100,
-    //       autoAlpha: 0,
-    //       delay: 0,
-    //       ease: Power2.easeOut
-    //     }, .1)
-    //     .from($(this).find(".advantages__item").eq(1), .6, {
-    //       y: 200,
-    //       autoAlpha: 0,
-    //       delay: 0,
-    //       ease: Power2.easeOut
-    //     }, .1)
-    //     .from($(this).find(".advantages__item").eq(2), .6, {
-    //         y: 100,
-    //         autoAlpha: 0,
-    //         delay: 0,
-    //         ease: Power2.easeOut
-    //       }, .1)
-    //       .from($(this).find(".advantages__item").eq(3), .6, {
-    //         y: 200,
-    //         autoAlpha: 0,
-    //         delay: 0,
-    //         ease: Power2.easeOut
-    //       }, .1)
-    //       .from($(this).find(".advantages__item").eq(4), .6, {
-    //         y: 100,
-    //         autoAlpha: 0,
-    //         delay: 0,
-    //         ease: Power2.easeOut
-    //       }, .1)
-    //       .from($(this).find(".advantages__item").eq(5), .6, {
-    //         y: 200,
-    //         autoAlpha: 0,
-    //         delay: 0,
-    //         ease: Power2.easeOut
-    //       }, .1);
-    //       var scene3 = new ScrollMagic.Scene({
-    //             triggerElement: '#advantages',
-    //             offset: 100,
-    //             reverse: true,
-    //             duration: 1000,
-    //             triggerHook: 0.9
+    $(".advantages__slider").owlCarousel({
+        loop: false,
+        center: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ['<svg width="58" height="24" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6.75 0.25L0 7L6.75 13.75L8.34082 12.1592L4.30664 8.125H18V5.875H4.30664L8.34082 1.84082L6.75 0.25Z" fill="#212121"/> </svg>',
+        '<svg width="58" height="24" viewBox="0 0 18 14" fill="none" ro xmlns="http://www.w3.org/2000/svg"> <path d="M11.25 0.25L18 7L11.25 13.75L9.65918 12.1592L13.6934 8.125H0V5.875H13.6934L9.65918 1.84082L11.25 0.25Z" fill="#212121"/> </svg>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+});
 
-    //           })
-    //           .setTween(contentTween)
-    //           .addTo(controller)
-    //       .addIndicators()
-    //           ;
-    //   });

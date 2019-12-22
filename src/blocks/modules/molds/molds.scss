@@ -6,7 +6,7 @@ $select-background: $accent;
 .molds {
     padding-top: 100px;
     &__slider-mini, &__info {
-        padding-top: 84px;
+        padding-top: 30px;
     }
     &__btn-view > img {
         position: absolute;
@@ -28,6 +28,9 @@ $select-background: $accent;
     &__btn-view {
         width: 100%;
     }
+    &__button-send {
+      margin-top: 30px;
+    }
 }
 
 .select-hidden {
@@ -41,6 +44,11 @@ $select-background: $accent;
     position: relative;
     width: $select-width;
     height: $select-height;
+    background-clip: content-box;
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+
   }
   .select-styled {
     position: absolute; 

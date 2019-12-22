@@ -8,6 +8,9 @@
     overflow: hidden;
     cursor: pointer;
     background: $accent;
+    @media screen and (max-width: 420px)  {
+        right: 15px;
+    }
 }
 
 // .menu__button:hover {
@@ -48,7 +51,7 @@
     top: 0;
     padding-top: 100px;
     padding-left: 15px;
-    width: 300px;
+    width: 320px;
     height: 1080px;
     overflow: hidden;
     padding-left: 0;

@@ -3,6 +3,9 @@
     height: 720px;
     align-items: center;
     color: $text-inversion;
+    @media screen and (max-width: 992px)  {
+        display: none;
+    }
     &__title {
         // margin-top: 20px;
     }
@@ -16,6 +19,7 @@
     }
     &__icon_right {
         padding-right: 39px;
+
     }
     &__nav {
         margin-top: 60px;

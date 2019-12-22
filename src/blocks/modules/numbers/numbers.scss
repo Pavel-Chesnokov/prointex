@@ -1,4 +1,7 @@
 .numbers {
+    @media screen and (max-width: 992px){
+        display: none;
+    }
     color: $accent;
     height: 350px;
     padding-top: 79px;

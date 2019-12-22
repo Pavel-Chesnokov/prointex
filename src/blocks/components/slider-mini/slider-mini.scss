@@ -1,6 +1,10 @@
 #sync1 {
     .item {
         height: 570px;
+        @media screen and (max-width: 570px)  {
+            height: 100%;
+            width: 100%;
+        }
     &-img {
         height: 100%;
         width: 100%;
@@ -33,7 +37,9 @@
         .slider-mini__img {
             height: 190px;
             object-fit: cover;
-
+            @media screen and (max-width: 570px)  {
+                height: 100px;
+            }
         }
     }
 }

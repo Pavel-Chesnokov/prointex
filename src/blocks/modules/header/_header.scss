@@ -21,6 +21,10 @@
     }
     &__logo {
         margin-left: 30px;
+        @media screen and (max-width: 420px)  {
+            margin-left: 15px;
+
+        }
     }
     &__nav {
         top: 50px;
@@ -28,6 +32,9 @@
     }
     &__text-logo {
         margin-left: 5%;
+        @media screen and (max-width: 420px)  {
+            font-size: rem(25);
+        }
     }
     &_text {
         line-height: 50px !important;
@@ -43,6 +50,17 @@
         @media screen and (max-width: 1400px)  {
             margin-left: 3%;
         }
+        @media screen and (max-width: 990px)  {
+            margin-left: 7%;
+        }
+        p {
+            @media screen and (max-width: 710px)  {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 490px)  {
+            display: none;
+        }
         
     }
     &__email {
@@ -52,6 +70,9 @@
         margin-left: 30%;
             @media screen and (max-width: 1400px)  {
                 margin-left: 5%;
+            }
+            @media screen and (max-width: 990px)  {
+                display: none;
             }
 
         }

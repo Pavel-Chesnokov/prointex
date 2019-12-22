@@ -33,5 +33,11 @@
         height: 220px;
         margin-top: 10px;
     }
+    &__slider {
+        display: none !important;
+        // @media screen and (max-width: 991px){
+        //     max-height: 1000px;
+        // }
+    }
 
 }

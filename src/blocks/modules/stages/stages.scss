@@ -2,6 +2,9 @@
     padding-top: 100px;
     &__icon {
         margin-top: 107px;
+        @media screen and (max-width: 992px){
+            display: none;
+        }
     }
     &__icon-dot-accent {
         width: 28px;
@@ -28,6 +31,9 @@
     }
     &__content {
         margin-top: 83px;
+        @media screen and (max-width: 992px){
+            display: none;
+        }
     }
     &__row-2 {
         margin-top: 311px;

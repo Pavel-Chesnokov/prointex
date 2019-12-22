@@ -2,11 +2,17 @@
     padding-top: 105px;
     &__photo {
         margin-top: 61px;
+        @media screen and (max-width: 991px)  {
+            display: none;
+        }
     }
     &__content {
         margin-top: 61px;
     }
     &__sign {
         text-align: end;
+        @media screen and (max-width: 991px)  {
+            display: none;
+        }
     }
 }

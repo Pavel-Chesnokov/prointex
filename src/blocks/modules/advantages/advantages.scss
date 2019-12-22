@@ -1,18 +1,20 @@
 
 .advantages {
-    margin-top: 68px;
+    margin-top: 400px;
     padding-top: 100px;
     &__item {
-        // display: none;
-        // margin-bottom: -28px;
-        // padding-top: 70px;
         margin-top: 60px;
-
+        @media screen and (max-width: 992px)  {
+            display: none;
+        }
     }
     &__number {
         margin-top: 34px;
-        // display: none;
+        @media screen and (max-width: 992px)  {
+            display: none;
+        }
     }
+
     &__background {
         position: absolute;
         left: 0;
@@ -21,10 +23,19 @@
         height: 800px;
         width: 100%;
         margin-top: 285px;
+        @media screen and (max-width: 991px)  {
+            background-image: none;
+        }
     }
     &__slider-img {
         margin-top: 87px;
 
+    }
+    &__slider {
+        // height: 400px;
+        @media screen and (min-width: 992px) {
+            display: none !important;
+        }
     }
 }
 
