@@ -10,3 +10,22 @@ section.contacts#contacts.row
             p.text-main.text_half-bold.text_fs-m Пн-Пт: 9:00 - 23:00 <br> Сб-Вс: 11:00 - 18:00
     .contacts__map.col-lg-7
          include ../../components/map/map.pug
+    .accordion.col
+        .tab.text_main
+            input#tab1(type='checkbox', name='tab-group')
+            label.tab-title.text_title.text_bold.text_fs-m(for='tab1') Как до нас добраться?
+            section.tab-content
+                ul.text_bold От метро «Сокольники»: 
+                    li.text_main Автобусы 716 
+                    li.text_main Троллейбус Т32 Т41 
+                    li.text_main Трамваи 7 13
+                ul.text_bold.mt-15  От метро «Преображенская площадь» 
+                    li.text_main Автобусы 716 332 265 
+                    li.text_main Троллейбус т41 т32 т14 
+                    li.text_main Трамваи 7 13
+                p.mt-15 До остановки - 
+                    span.text_bold «Трамвайное депо имени Русакова»
+                p.my-15 Далее по Колодезному переулку прямо, через переход под путепроводом, до проходной 
+                    span.text_bold «Новейшие технологии и связи»
+
+

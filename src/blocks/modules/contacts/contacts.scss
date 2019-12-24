@@ -8,7 +8,6 @@
         padding-top: 68px;
         padding-left: 19%;
         padding-right: 19%;
-
     }
     &__map {
         margin-top: 18px;
@@ -20,4 +19,41 @@
 #map {
     width: 100%;
     height: 100%;
+}
+
+.tab input,
+.tab-content {
+    display: none;
+}
+.tab {
+    display: block;
+    // border: 1px solid $accent; /* Параметры рамки */
+    color: #000;
+    margin-bottom: 10px; /* Расстояние между пунктами */
+}
+.tab-title {
+    padding: 10px; /* Поля вокруг текста */
+    display: block; /* Блочный элемент */
+    text-transform: uppercase; /* Все буквы заглавные */
+    font-weight: bold; /* Жирное начертание */
+    cursor: pointer; /* Вид курсора */
+}
+.tab-title::after {
+    content: url(../img/molds/ChevronRightSmall.png); /* Выводим плюс */
+    float: right; /* Размещаем по правому краю */
+}
+.tab-content {
+    padding: 10px 20px; /* Поля вокруг текста */
+}
+.tab :checked + .tab-title {
+    background-color: $accent; /* Цвет фона */
+    color: #000; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+.tab :checked + .tab-title::after {
+    transform: rotate(180deg);
+    // content: "−"; /* Выводим минус */
+}
+.tab :checked ~ .tab-content {
+    display: block; /* Показываем содержимое */
 }
