@@ -27,7 +27,7 @@
 }
 .tab {
     display: block;
-    // border: 1px solid $accent; /* Параметры рамки */
+    border: 1px dashed $accent; /* Параметры рамки */
     color: #000;
     margin-bottom: 10px; /* Расстояние между пунктами */
 }
@@ -37,6 +37,7 @@
     text-transform: uppercase; /* Все буквы заглавные */
     font-weight: bold; /* Жирное начертание */
     cursor: pointer; /* Вид курсора */
+    // border-bottom: solid 1px $accent;
 }
 .tab-title::after {
     content: url(../img/molds/ChevronRightSmall.png); /* Выводим плюс */
@@ -48,7 +49,7 @@
 .tab :checked + .tab-title {
     background-color: $accent; /* Цвет фона */
     color: #000; /* Цвет текста */
-    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+    // box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
 }
 .tab :checked + .tab-title::after {
     transform: rotate(180deg);
