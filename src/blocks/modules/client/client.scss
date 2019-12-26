@@ -3,8 +3,12 @@
     // text-align: center;
     // justify-content: space-between;
     // height: 210px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    display: block;
+    height: 210px;
+    padding: 40px 0;
+    
+    // padding-top: 15px;
+    // padding-bottom: 15px;
     &__title {
         display: none;
         @media screen and (max-width: 991px)  {

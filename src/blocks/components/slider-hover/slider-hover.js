@@ -31,18 +31,44 @@ $(document).ready(function() {
             }
         }
     });
+    $(window).resize(function rezine() {
     if ($(window).width() > "1200") {
-        $(".slider-hover").hover(
+        $(".slider-hover__mill").hover(
             function() {
-                $(".slider-hover__text").show(
+                $(".slider-hover__mill-text").show(
                     "blind",
                     { direction: "down" },
                     300
                 );
             },
             function() {
-                $(".slider-hover__text").hide("fade", 300);
+                $(".slider-hover__mill-text").hide("fade", 300);
+            }
+        );
+        $(".slider-hover__elec").hover(
+            function() {
+                $(".slider-hover__elec-text").show(
+                    "blind",
+                    { direction: "down" },
+                    300
+                );
+            },
+            function() {
+                $(".slider-hover__elec-text").hide("fade", 300);
+            }
+        );
+        $(".slider-hover__manual").hover(
+            function() {
+                $(".slider-hover__manual-text").show(
+                    "blind",
+                    { direction: "down" },
+                    300
+                );
+            },
+            function() {
+                $(".slider-hover__manual-text").hide("fade", 300);
             }
         );
     }
+});
 });

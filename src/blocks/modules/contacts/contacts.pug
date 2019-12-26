@@ -13,19 +13,34 @@ section.contacts#contacts.row
     .accordion.col
         .tab.text_main
             input#tab1(type='checkbox', name='tab-group')
-            label.tab-title.text_title.text_bold.text_fs-m(for='tab1') Как до нас добраться?
-            section.tab-content
-                ul.text_bold От метро «Сокольники»: 
-                    li.text_main Автобусы 716 
-                    li.text_main Троллейбус Т32 Т41 
-                    li.text_main Трамваи 7 13
-                ul.text_bold.mt-15  От метро «Преображенская площадь» 
-                    li.text_main Автобусы 716 332 265 
-                    li.text_main Троллейбус т41 т32 т14 
-                    li.text_main Трамваи 7 13
-                p.mt-15 До остановки - 
-                    span.text_bold «Трамвайное депо имени Русакова»
-                p.my-15 Далее по Колодезному переулку прямо, через переход под путепроводом, до проходной 
-                    span.text_bold «Новейшие технологии и связи»
-
+            label.tab-title.text_title.text_bold.text_fs-m(for='tab1') Как добраться?
+            section.tab-content.row
+                .contacts__text.col-lg-5
+                    ul.text_bold 10 мин от метро «Сокольники»:
+                        li.text_main Автобусы 
+                            span.bus 716
+                        li.text_main Троллейбус 
+                            span.bus Т32
+                            span.bus Т41
+                        li.text_main Трамваи 
+                            span.bus 7
+                            span.bus 13
+                    ul.text_bold.mt-15  10 мин от метро <br> «Преображенская площадь»
+                        li.text_main Автобусы 
+                            span.bus 716
+                            span.bus 332
+                            span.bus 265
+                        li.text_main Троллейбус 
+                            span.bus т41
+                            span.bus т32
+                            span.bus т14
+                        li.text_main Трамваи 
+                            span.bus 7
+                            span.bus 13
+                    p.mt-15 До остановки - <br>
+                        span.text_bold.bus.m-0 «Трамвайное депо имени Русакова»
+                    p.my-15 8 минут пешком по Колодезному переулку, через переход под путепроводом, до проходной - <br>
+                        span.text_bold.bus.m-0 «Новейшие технологии и связи»
+                .contacts__frame.col-lg-7
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1577335293009!6m8!1m7!1slP1_7oZzSsX_8mbdhanmaQ!2m2!1d55.79869977677306!2d37.69629840762851!3f266.60617503695147!4f-7.265917931323642!5f0.7820865974627469" width="100%" height="570px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
