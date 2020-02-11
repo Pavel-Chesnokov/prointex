@@ -1,6 +1,7 @@
 "use strict";
 
 import gulp from "gulp";
+import browserSync from "browser-sync";
 
 const requireDir = require("require-dir"),
     paths = {
@@ -13,6 +14,33 @@ const requireDir = require("require-dir"),
             watch: [
                 "./src/blocks/**/*.pug",
                 "./src/views/**/*.pug"
+            ]
+        },
+        php: {
+            src: [
+                "./src/php/**/*.php"
+            ],
+            dist: "./dist/php",
+            watch: [
+                "./src/php/**/*.php"
+            ]
+        },
+        vendor: {
+            src: [
+                "./vendor/**/*.php"
+            ],
+            dist: "./dist/php/vendor",
+            watch: [
+                "./vendor/**/*.php"
+            ]
+        },
+        apache: {
+            src: [
+                "./src/.htaccess"
+            ],
+            dist: "./dist/",
+            watch: [
+                "./src/.htaccess"
             ]
         },
         styles: {
@@ -75,10 +103,10 @@ requireDir("./gulp-tasks/");
 export { paths };
 
 export const development = gulp.series("clean", "smart-grid",
-    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons"]),
+    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "php", "apache","vendor"]),
     gulp.parallel("serve"));
 
 export const prod = gulp.series("clean",
-    gulp.series(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "gzip"]));
+    gulp.series(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "gzip", "php", "apache","vendor"]));
 
 export default development;

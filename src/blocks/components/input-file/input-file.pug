@@ -1,4 +1,7 @@
 .input-file.col.text_main.text_accent.form__input.input_accent
-	input#file.inputfile(type='file', name='file', data-multiple-caption='{count} files selected', multiple='')
-	label(for='file').text_accent.text_mini
+	input.inputfile#userfile(type='file', name='userfile[]', data-multiple-caption='{count} files selected', multiple='', accept="image/*")
+	label(for='userfile').text_accent.text_mini
 		span Прикрепить файл
+
+
+		//- name="userfile[]" multiple id="userfile" class="w100" accept="image/*"

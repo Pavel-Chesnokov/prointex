@@ -1,0 +1,9 @@
+.alert-message-send__message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $accent !important;
+}

@@ -15,3 +15,4 @@ import "%modules%/review/review";
 import "%modules%/contacts/contacts";
 import "%modules%/footer/footer";
 import "%modules%/form/form";
+import "%modules%/form/mail";

@@ -3,8 +3,8 @@ section.request#request.row
     //- a.col.button-send__modal(href="#openModal") Открыть модальное окно
     button.button-send.button-send__modal.request__button-send.button-send_shadow Оставить заявку
 
-.popup-fade
-    form.modalDialog(action="" method="post")
+.popup-fade.popup-fade-button-send
+    form.modalDialog.form(action="php/send2.php" method="post")
         .modal-guts.row
             a.close-modal.close(title="Закрыть")
                 .icon_close
@@ -15,14 +15,14 @@ section.request#request.row
             p.text_main.col-lg-12 и мы свяжемся с вами в ближайшее время. <br> Заполните опросный лист или оставьте контакты
             a.text_link.link_accent.text_main(href="#").col-lg-12 Скачать опросный лист
             .form__row.col
-                input.input.form__input.form-control.only_letters(placeholder="Имя*" required)
-                input.input.form__input.form-control.only_number#phone1(placeholder="Телефон*" type="tel" minlength="11" maxlength="11" required)
+                input.input.form__input.form-control.only_letters(placeholder="Имя*" required name="name")
+                input.input.form__input.form-control.only_number#phone1(name="phone" placeholder="Телефон*" type="tel" minlength="11" maxlength="11" required)
                 span.text_main.form__error Это поле должно содержать 11-ти значный номер телефона
-                input.input.input__email.form__input#inputEmail4.form-control(placeholder="Email", type="email" required)
+                input.input.input__email.form__input#inputEmail4.form-control(name="email" placeholder="Email", type="email" required)
                 span.text_main.form__error Это поле должно содержать E-Mail в формате example@site.com
                 .form__input.form
                     include ../../components/checkbox/checkbox.pug
             .form__row.col
-                textarea(type="text").input__comment.form__textarea.input.form__input.form__input_big.form-control(placeholder="Комментарий*")
+                textarea(name="message" type="text" placeholder="Комментарий*").input__comment.form__textarea.input.form__input.form__input_big.form-control
                 include ../../components/input-file/input-file.pug
-                button.button-send.button-send_big.form__button.button-send_shadow Отправить
+                button.button-send.button-send_big.form__button.button-send_shadow(type="submit" name="submit") Отправить
