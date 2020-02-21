@@ -31,7 +31,7 @@ $(document).ready(function() {
             }
         }
     });
-    $(window).resize(function rezine() {
+    $(window).on('load resize', function() {
     if ($(window).width() > "1200") {
         $(".slider-hover__mill").hover(
             function() {

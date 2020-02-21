@@ -18,17 +18,28 @@ try {
     $mail->CharSet = "UTF-8";
 
     // Настройки вашей почты
+    // $mail->isSMTP();
+    // $mail->CharSet = "utf-8";
+    // $mail->Host = 'smtp.beget.ru';
+    // $mail->SMTPAuth = true;
+    // $mail->Username = 'chesnokov@brelok.site'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+    // $mail->Password = 'Rt@rtqEyA6&J'; // Ваш пароль
+    // $mail->SMTPSecure = 'ssl';
+    // $mail->Port = 465;
+    // $mail->setFrom('chesnokov@brelok.site'); // Ваш Email
+    // $mail->addAddress('chesnokov@brelok.site'); // Email получателя
+    // $mail->addAddress('p.chesnokov@gmail.com'); // Еще один email, если нужно.
+
     $mail->isSMTP();
     $mail->CharSet = "utf-8";
-    $mail->Host = 'smtp.beget.ru';
+    $mail->Host = 'smtp.mail.ru';
     $mail->SMTPAuth = true;
-    $mail->Username = 'chesnokov@brelok.site'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-    $mail->Password = 'Rt@rtqEyA6&J'; // Ваш пароль
+    $mail->Username = 'pavel.chestnyy@mail.ru'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+    $mail->Password = 'leutxiorijikg2'; // Ваш пароль
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('chesnokov@brelok.site'); // Ваш Email
-    $mail->addAddress('chesnokov@brelok.site'); // Email получателя
-    // $mail->addAddress('p.chesnokov@gmail.com'); // Еще один email, если нужно.
+    $mail->setFrom('pavel.chestnyy@mail.ru'); // Ваш Email
+    $mail->addAddress('pavel.chestnyy@mail.ru'); // Email получателя
 
     // Прикрипление файлов к письму
 if (!empty($_FILES['userfile']['name'][0])) {

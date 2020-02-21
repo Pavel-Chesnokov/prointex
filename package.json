@@ -6,6 +6,7 @@
     "license": "MIT",
     "scripts": {
         "dev": "gulp",
+        "dev views": "gulp views --development",
         "build": "gulp prod --production",
         "build views": "gulp views --production",
         "build styles": "gulp styles --production",

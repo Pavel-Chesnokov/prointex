@@ -1,15 +1,19 @@
 header.header#header.row
         a.header__link.menu__main(href="#main")
             .logo.header__logo
-                img.logo__img(src="./img/header/logo.png", alt="логотип")
+                img.logo__img(src!="<?php bloginfo('template_url');?>/img/header/logo.png", alt="логотип")
                 span.header_text.text_logo.header__text-logo Проинтех
         .header__email
             .header__icon
-                img.header__icon-email(src="./img/header/email.png", alt="")
-            p.text_main.header_text prointex@bk.ru
+                a(href="mailto:prointex@bk.ru") 
+                    img.header__icon-email(src!="<?php bloginfo('template_url');?>/img/header/email.png", alt="")
+            p.text_main.header_text 
+                a(href="mailto:prointex@bk.ru") prointex@bk.ru
         .header__phone
             .header__icon
-                img.header__icon-phone(src="./img/header/phone.png", alt="")
-            p.text_main.header_text +7 499 268-26-50
+                a(href="tel:+74992682650")
+                    img.header__icon-phone(src!="<?php bloginfo('template_url');?>/img/header/phone.png", alt="")
+            p.text_main.header_text 
+                a(href="tel:+74992682650") +7 499 268-26-50
         .header__menu
             include ../../components/menu/menu.pug

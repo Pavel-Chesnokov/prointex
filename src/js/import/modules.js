@@ -6,6 +6,7 @@ import "%modules%/numbers/numbers";
 import "%modules%/request/request";
 import "%modules%/stages/stages";
 import "%modules%/examples/examples";
+import "%modules%/examples/fresco";
 import "%modules%/advantages/advantages";
 import "%modules%/molds/molds";
 import "%modules%/team/team";

@@ -14,7 +14,7 @@
         margin-bottom: 40px;
     }
     &_smale {
-        background-image: url(../img/examples/IMG_2909.webp);
+        // background-image: url(../img/examples/IMG_2909.webp);
         background-size: cover;
         background-clip: content-box;
         background-repeat: no-repeat;
@@ -29,7 +29,7 @@
     &_big {
         margin-top: 30px;
         height: 570px;
-        background-image: url(../img/examples/IMG_2876.webp);
+        background-image: url(../img/examples/form1/IMG_7965.webp);
         background-size: cover;
         background-clip: content-box;
         background-repeat: no-repeat;
@@ -102,4 +102,14 @@
         @media screen and (max-width: 1200px){
         }
     }
+}
+
+#examples-2 {
+    background-image: url(../img/examples/form2/IMG_8068.webp);
+}
+#examples-3 {
+    background-image: url(../img/examples/form3/IMG_6902.webp);
+}
+#examples-4 {
+    background-image: url(../img/examples/form4/IMG_3822.webp);
 }

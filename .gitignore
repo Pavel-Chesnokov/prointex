@@ -15,3 +15,16 @@ dist
 yarn-error.log
 package-lock.json
 vendor
+wordpress/*
+!wp-content/
+!wp-config.php
+wordpress/wp-content/*
+wordpress/wp-content/plugins/
+!wordpress/wp-content/themes/
+wordpress/wp-content/themes/twentynineteen
+wordpress/wp-content/themes/twentyseventeen
+wordpress/wp-content/themes/twentytwenty
+wordpress/wp-content/themes/prointex
+*.log
+*.sql
+*.sqlite

@@ -24,6 +24,7 @@ block content
     include ../blocks/modules/footer/footer.pug
     include ../blocks/components/alert-message-send/alert-message-send.pug
 block scripts
+    <?php wp_footer(); ?>
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js")
     script(src="./js/vendor.js")

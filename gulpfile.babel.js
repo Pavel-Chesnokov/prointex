@@ -10,7 +10,7 @@ const requireDir = require("require-dir"),
                 "./src/views/index.pug",
                 "./src/views/pages/*.pug"
             ],
-            dist: "./dist/",
+            dist: "./wordpress/wp-content/themes/prointex/",
             watch: [
                 "./src/blocks/**/*.pug",
                 "./src/views/**/*.pug"
@@ -20,7 +20,7 @@ const requireDir = require("require-dir"),
             src: [
                 "./src/php/**/*.php"
             ],
-            dist: "./dist/php",
+            dist: "./wordpress/wp-content/themes/prointex",
             watch: [
                 "./src/php/**/*.php"
             ]
@@ -29,7 +29,7 @@ const requireDir = require("require-dir"),
             src: [
                 "./vendor/**/*.php"
             ],
-            dist: "./dist/php/vendor",
+            dist: "./wordpress/wp-content/themes/prointex/php/vendor",
             watch: [
                 "./vendor/**/*.php"
             ]
@@ -38,14 +38,14 @@ const requireDir = require("require-dir"),
             src: [
                 "./src/.htaccess"
             ],
-            dist: "./dist/",
+            dist: "./wordpress/wp-content/themes/prointex/",
             watch: [
                 "./src/.htaccess"
             ]
         },
         styles: {
-            src: "./src/styles/main.{scss,sass}",
-            dist: "./dist/styles/",
+            src: "./src/styles/style.{scss,sass}",
+            dist: "./wordpress/wp-content/themes/prointex/",
             watch: [
                 "./src/blocks/**/*.{scss,sass}",
                 "./src/styles/**/*.{scss,sass}"
@@ -53,7 +53,7 @@ const requireDir = require("require-dir"),
         },
         scripts: {
             src: "./src/js/index.js",
-            dist: "./dist/js/",
+            dist: "./wordpress/wp-content/themes/prointex/js/",
             watch: [
                 "./src/blocks/**/*.js",
                 "./src/js/**/*.js"
@@ -64,7 +64,7 @@ const requireDir = require("require-dir"),
                 "./src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}",
                 "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
             ],
-            dist: "./dist/img/",
+            dist: "./wordpress/wp-content/themes/prointex/img/",
             watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg}"
         },
         webp: {
@@ -72,7 +72,7 @@ const requireDir = require("require-dir"),
                 "./src/img/**/*.{jpg,jpeg,png,tiff}",
                 "!./src/img/favicon/*.{jpg,jpeg,png,gif}"
             ],
-            dist: "./dist/img/",
+            dist: "./wordpress/wp-content/themes/prointex/img/",
             watch: [
                 "./src/img/**/*.{jpg,jpeg,png,tiff}",
                 "!./src/img/favicon.{jpg,jpeg,png,gif}"
@@ -80,21 +80,21 @@ const requireDir = require("require-dir"),
         },
         sprites: {
             src: "./src/img/svg/*.svg",
-            dist: "./dist/img/sprites/",
+            dist: "./wordpress/wp-content/themes/prointex/img/sprites/",
             watch: "./src/img/svg/*.svg"
         },
         fonts: {
             src: "./src/fonts/**/*.{woff,woff2}",
-            dist: "./dist/fonts/",
+            dist: "./wordpress/wp-content/themes/prointex/fonts/",
             watch: "./src/fonts/**/*.{woff,woff2}"
         },
         favicons: {
             src: "./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}",
-            dist: "./dist/img/favicons/",
+            dist: "./wordpress/wp-content/themes/prointex/img/favicons/",
         },
         gzip: {
             src: "./src/.htaccess",
-            dist: "./dist/"
+            dist: "./wordpress/wp-content/themes/prointex/"
         }
     };
 
