@@ -1,11 +1,11 @@
 // Отправка данных на сервер
+"use strict";
 $(".form").trigger("reset");
 $(function() {
-    "use strict";
     $(".form").on("submit", function(e) {
         e.preventDefault();
         $.ajax({
-            url: "php/send2.php",
+            url: "http://prointex/wp-content/themes/prointex/send.php",
             type: "POST",
             contentType: false,
             processData: false,
@@ -13,7 +13,7 @@ $(function() {
             success: function(msg) {
                 if (msg == "ok") {
                     $(".form").trigger("reset"); // очистка формы
-                    $('.close').parents(".popup-fade");
+                    $(".close").parents(".popup-fade");
                     $(".popup-fade").removeClass("popup-fade-show");
                     $(".popup-fade-secces").addClass("popup-fade-show");
                     // alert("Сообщение отправлено");

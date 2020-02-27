@@ -4,7 +4,7 @@ section.request#request.row
     button.button-send.button-send__modal.request__button-send.button-send_shadow Оставить заявку
 
 .popup-fade.popup-fade-button-send
-    form.modalDialog.form(action="php/send2.php" method="post")
+    form.modalDialog.form(action!="<?php bloginfo('template_url');?>/send.php" method="post")
         .modal-guts.row
             a.close-modal.close(title="Закрыть")
                 .icon_close
