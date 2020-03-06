@@ -15,8 +15,8 @@ $(document).ready(function() {
         loop: true,
         responsiveRefreshRate: 200,
         navText: [
-            "<img src='./img/slider-hover/left.svg' style='margin-bottom:2px'>",
-            "<img src='./img/slider-hover/right.svg' style='margin-bottom:2px; margin-left:4px'>"
+            "<img src='./wp-content/themes/prointex/img/slider-hover/left.svg' style='margin-bottom:2px'>",
+            "<img src='./wp-content/themes/prointex/img/slider-hover/right.svg' style='margin-bottom:2px; margin-left:4px'>"
         ],
     }).on('changed.owl.carousel', syncPosition);
 

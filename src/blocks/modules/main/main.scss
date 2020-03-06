@@ -42,7 +42,7 @@
         }
     }
     &_line::after {
-        content: url(../img/advantages/line.png);
+        content: url(./img/advantages/line.png);
         position: absolute;
         bottom: 12px;
     }
@@ -169,7 +169,7 @@
     height: 50px;
     background-color: $accent;
     &::before {
-        content: url(../img/footer/arrowUp.png);
+        content: url(./img/footer/arrowUp.png);
         display: block;
         margin-left: 12px;
         margin-top: 12px;

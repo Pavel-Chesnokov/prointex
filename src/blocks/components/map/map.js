@@ -464,7 +464,7 @@ map: map,
 
 // Пишем название маркера - появится если навести на него курсор и немного подождать
 title: 'Колодезный переулок, д. 2а, стр. 1',
-icon: '../img/contacts/icon.png'
+icon: './wp-content/themes/prointex/img/contacts/icon.png'
 });
 
 // var marker2 = new google.maps.Marker({

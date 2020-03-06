@@ -1,7 +1,7 @@
 section.examples#examples.row
     h2.examples__title.text_title.text_sub.col-xl-6 Галерея работ
     .w-100
-    //- добавление дополнительной строки
+    //- добавить больше примеров работ на страницу
     //- .col-lg-6.examples__smale-wrapper.row.p-0.m-0.text_main.text_mini
     //-     .col-lg-6.examples_smale.mb-15#examples-2
     //-         .examples__info-2.examples__info_smale
@@ -36,4 +36,4 @@ section.examples#examples.row
         .col-6.mt-15.examples__see-all
                 h4.examples__see-all-title.text_title.text_bold.text_fs-m Посмотрите другие <br>  проекты
                 span.examples__arr-right
-                    img(src="./img/examples/ArrowRight.webp", alt="")
+                    img(src!="<?php bloginfo('template_url');?>/img/examples/ArrowRight.png", alt="")
