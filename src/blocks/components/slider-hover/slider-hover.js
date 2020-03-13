@@ -19,7 +19,7 @@ $(document).ready(function() {
                 items: 1,
                 nav: true
             },
-            990: {
+            950: {
                 items: 2,
                 center: true,
                 loop: false

@@ -1,8 +1,7 @@
 .request {
     margin-top: 100px;
-    height: 215px;
+    max-height: 215px;
     justify-content: center;
-    align-content: center;
     &__background {
         z-index: -1;
         position: absolute;
@@ -17,6 +16,7 @@
         }
     }
     &__button-send {
+        margin-top: 72.5px;
         width: 370px;
         height: 70px;
         @media screen and (max-width: 400px){
@@ -112,3 +112,6 @@
     transform: rotate(-45deg);
 }
 
+.close-modal {
+    
+}

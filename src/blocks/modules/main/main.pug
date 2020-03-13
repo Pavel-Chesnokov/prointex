@@ -1,11 +1,16 @@
 section.main#main.row
-    h1.text_title.main__title.col-xl-9 <?php the_field('header');?>
+    .col-xl-7
+        h1.text_title.main__title <?php the_field('header');?>
+        button.button-send__modal.main__button-send.button-send.button-send_shadow Оставить заявку
+    .col-xl-1
+    .main__img-wrapper.col-xl-4
+        .main__img
+            .main__background
+                 picture
+                     source(type="image/webp" srcset!="<?php bloginfo('template_url');?>/img/main/main.webp")
+                     source(type="image/jpeg" srcset!="<?php bloginfo('template_url');?>/img/main/main.jpg")
+                     img(src!="<?php bloginfo('template_url');?>/img/main/main.jpg", alt="alt")
     //- Изготовление пресс-форм <br> для литья пластмасс <br> под давлением
-    button.button-send__modal.main__button-send.button-send.button-send_shadow Оставить заявку
-    .main__background
-        picture
-            source(type="image/webp" srcset!="<?php bloginfo('template_url');?>/img/main/main.webp")
-            source(type="image/jpeg" srcset!="<?php bloginfo('template_url');?>/img/main/main.jpg")
-            img(src!="<?php bloginfo('template_url');?>/img/main/main.jpg", alt="alt")
+
     a.menu__main(href = '#main')
-        span.main__arrow-up        
+        span.main__arrow-up

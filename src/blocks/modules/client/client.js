@@ -14,7 +14,12 @@ $(document).ready(function() {
             320: {
                 items: 2
             },
-            990: {
+            600: {
+                loop: true,
+                center: false,
+                items: 3
+            },
+            900: {
                 loop: true,
                 center: false,
                 items: 4

@@ -1,5 +1,8 @@
 .team {
     padding-top: 133px;
+    @media screen and (max-width: 400px){
+        padding-top: 30px;
+    }
     &__worker {
         // margin-top: 74px;
         // @media screen and (max-width: 991px)  {
@@ -47,7 +50,7 @@
     }
     &__slider .owl-stage .owl-item {
         @media screen and (max-width: 991px)  {
-            width: 300px !important;
+            max-width: 300px !important;
             height: 500px;
         }
     }

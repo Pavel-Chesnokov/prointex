@@ -14,7 +14,7 @@ section.request#request.row
             .w-100
             p.text_main.col-lg-12 и мы свяжемся с вами в ближайшее время. <br> Заполните опросный лист или оставьте контакты
             a.text_link.link_accent.text_main(href="#").col-lg-12 Скачать опросный лист
-            .form__row.col
+            .form__row.col-md
                 input.input.form__input.form-control.only_letters(placeholder="Имя*" required name="name")
                 input.input.form__input.form-control.only_number#phone1(name="phone" placeholder="Телефон*" type="tel" minlength="11" maxlength="11" required)
                 span.text_main.form__error Это поле должно содержать 11-ти значный номер телефона
@@ -22,7 +22,7 @@ section.request#request.row
                 span.text_main.form__error Это поле должно содержать E-Mail в формате example@site.com
                 .form__input.form
                     include ../../components/checkbox/checkbox.pug
-            .form__row.col
+            .form__row.col-md
                 textarea(name="message" type="text" placeholder="Комментарий*").input__comment.form__textarea.input.form__input.form__input_big.form-control
                 include ../../components/input-file/input-file.pug
                 button.button-send.button-send_big.form__button.button-send_shadow(type="submit" name="submit") Отправить

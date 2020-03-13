@@ -53,7 +53,7 @@
     // border-bottom: solid 1px $accent;
 }
 .tab-title::after {
-    content: url(../img/molds/ChevronRightSmall.png); /* Выводим плюс */
+    content: url(./img/molds/ChevronRightSmall.png); /* Выводим плюс */
     float: right; /* Размещаем по правому краю */
 }
 

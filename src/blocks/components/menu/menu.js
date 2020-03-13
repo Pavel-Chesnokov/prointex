@@ -31,8 +31,8 @@ $(function() {
             1000
         );
         window.scrollOn = false;
-
-        // window.scroll = $(window).scrollTop();
+        $(".menu__nav").removeClass("nav_is_visible");
+        $("#menu__button").removeClass("menu__close");
         return false;
     });
     $(".menu__examples").click(function() {
@@ -41,49 +41,47 @@ $(function() {
             1000
         );
         window.scrollOn = false;
-
-        // window.scroll = $(window).scrollTop();
+        $(".menu__nav").removeClass("nav_is_visible");
+        $("#menu__button").removeClass("menu__close");
         return false;
     });
     $(".menu__stages").click(function() {
         $("html, body").animate({ scrollTop: $("#stages").offset().top }, 1000);
-        // window.scroll = $(window).scrollTop();
+        $(".menu__nav").removeClass("nav_is_visible");
+        $("#menu__button").removeClass("menu__close");
         return false;
     });
     $(".menu__about").click(function() {
         $("html, body").animate({ scrollTop: $("#about").offset().top }, 1000);
         window.scrollOn = false;
-
-        // window.scroll = $(window).scrollTop();
-        // console.log(window.scroll);
+        $(".menu__nav").removeClass("nav_is_visible");
+        $("#menu__button").removeClass("menu__close");
         return false;
     });
     $(".menu__molds").click(function() {
         $("html, body").animate({ scrollTop: $("#molds").offset().top }, 1000);
         window.scrollOn = false;
-
-        // window.scroll = $(window).scrollTop();
         return false;
     });
     $(".menu__form").click(function() {
         $("html, body").animate({ scrollTop: $("#form").offset().top }, 1000);
         window.scrollOn = false;
-
-        // window.scroll = $(window).scrollTop();
+        $(".menu__nav").removeClass("nav_is_visible");
+        $("#menu__button").removeClass("menu__close");
         return false;
     });
     $(".menu__make").click(function() {
         $("html, body").animate({ scrollTop: $("#make").offset().top }, 1000);
         window.scrollOn = false;
-
-        // window.scroll = $(window).scrollTop();
+        $(".menu__nav").removeClass("nav_is_visible");
+        $("#menu__button").removeClass("menu__close");
         return false;
     });
     $(".menu__contacts").click(function() {
         $("html, body").animate({ scrollTop: $("#contacts").offset().top }, 1000);
         window.scrollOn = false;
-
-        // window.scroll = $(window).scrollTop();
+        $(".menu__nav").removeClass("nav_is_visible");
+        $("#menu__button").removeClass("menu__close");
         return false;
     });
 });
