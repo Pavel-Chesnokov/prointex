@@ -48,9 +48,18 @@
     max-width: 100%;
     box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
     opacity: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    @media screen and (max-width: 420px)  {
+        height: 100%;
+        overflow-x: hidden;
+    }
+    @media screen and (max-width: 768px){
+        overflow-y: scroll;
+    }
     @media screen and (max-width: 1300px){
-        overflow: scroll;
-        width: 800px;        
+        // overflow: scroll;
+        width: 800px;
     }
 }
 //обертка для скрола
@@ -89,6 +98,10 @@
     top: 40px;
     right: 40px;
     // text-decoration: none;
+    @media screen and (max-width: 420px)  {
+        top: 15px;
+        right: 15px;
+    }
 }
 .icon_close {
     position: relative;

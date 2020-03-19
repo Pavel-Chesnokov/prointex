@@ -5,7 +5,8 @@ $(function() {
     $(".form").on("submit", function(e) {
         e.preventDefault();
         $.ajax({
-            url: "http://prointex/wp-content/themes/prointex/send.php",
+            url: "https://brelok.site/wp-content/themes/prointex/send.php",
+            //  url: "//localhost:4000/wordpress/wp-content/themes/prointex/send.php",
             type: "POST",
             contentType: false,
             processData: false,

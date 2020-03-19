@@ -26,5 +26,8 @@
         background-color: $background-inversion;
         background-image: url(./img/numbers/line.webp);
         background-repeat: no-repeat;
+        @media screen and (max-width: 1520px){
+            background-image: none;
+        }
 }
 }

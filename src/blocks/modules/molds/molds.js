@@ -81,9 +81,9 @@ $("select").each(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./img/slider-img/IMG_2865.webp",
-                "./img/slider-img/IMG_2756.webp",
-                "./img/slider-img/IMG_2777.webp"
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
             ],
             { ui: "inside", loop: true }
         );
@@ -92,9 +92,9 @@ $("select").each(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./img/slider-img/IMG_2756.webp",
-                "./img/slider-img/IMG_2865.webp",
-                "./img/slider-img/IMG_2777.webp"
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
             ],
             { ui: "inside", loop: true }
         );
@@ -103,9 +103,9 @@ $("select").each(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./img/slider-img/IMG_2777.webp",
-                "./img/slider-img/IMG_2756.webp",
-                "./img/slider-img/IMG_2865.webp",
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
+                "./wp-content/themes/prointex/img/molds/example/1.jpg",
             ],
             { ui: "inside", loop: true }
         );
@@ -115,9 +115,9 @@ $("select").each(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./img/slider-img/IMG_2816.webp",
-                "./img/slider-img/IMG_2889.webp",
-                "./img/slider-img/IMG_2840.webp"
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
             ],
             { ui: "inside", loop: true }
         );
@@ -126,9 +126,9 @@ $("select").each(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./img/slider-img/IMG_2889.webp",
-                "./img/slider-img/IMG_2816.webp",
-                "./img/slider-img/IMG_2840.webp"
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
             ],
             { ui: "inside", loop: true }
         );
@@ -137,9 +137,9 @@ $("select").each(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./img/slider-img/IMG_2840.webp",
-                "./img/slider-img/IMG_2816.webp",
-                "./img/slider-img/IMG_2889.webp"
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
+                "./wp-content/themes/prointex/img/molds/example/2.jpg",
             ],
             { ui: "inside", loop: true }
         );

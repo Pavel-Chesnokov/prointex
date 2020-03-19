@@ -7,13 +7,11 @@ header.header#header.row
             .header__icon
                 a(href="mailto:prointex@bk.ru") 
                     img.header__icon-email(src!="<?php bloginfo('template_url');?>/img/header/email.png", alt="")
-            p.text_main.header_text 
-                a(href="mailto:prointex@bk.ru") prointex@bk.ru
+            a.text_main.header__text(href="mailto:prointex@bk.ru") prointex@bk.ru
         .header__phone
             .header__icon
                 a(href="tel:+74992682650")
                     img.header__icon-phone(src!="<?php bloginfo('template_url');?>/img/header/phone.png", alt="")
-            p.text_main.header_text 
-                a(href="tel:+74992682650") +7 499 268-26-50
+            a.text_main.header__text(href="tel:+74992682650") +7 499 268-26-50
         .header__menu
             include ../../components/menu/menu.pug

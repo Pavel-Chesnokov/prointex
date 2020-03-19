@@ -10,8 +10,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
     flex-wrap: nowrap;
-    & p {
-        margin-left: 16px;
+    @media screen and (max-width: 990px)  {
+        height: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     &_move {
         // background-color: $background-inversion;
@@ -21,9 +23,9 @@
     }
     &__logo {
         margin-left: 30px;
-        @media screen and (max-width: 420px)  {
-            margin-left: 15px;
-            width: 56px;
+        @media screen and (max-width: 990px)  {
+            height: 40px;
+            width: 40px;
         }
     }
     &__nav {
@@ -32,14 +34,25 @@
     }
     &__text-logo {
         margin-left: 5%;
-        @media screen and (max-width: 420px)  {
-            font-size: rem(25);
-            margin-left: 15%;
+        @media screen and (max-width: 990px)  {
+            font-size: rem(15);
+            margin-left: 35px;
+            display: inline;
+            line-height: 40px !important;
         }
     }
-    &_text {
+    &__text {
         line-height: 50px !important;
+        margin-left: 30px;
+        @media screen and (max-width: 990px)  {
+            font-size: rem(15);
+            line-height: 40px !important;
+            margin-left: 15px;
     }
+        @media screen and (max-width: 560px)  {
+            display: none;
+    }
+}
     &__link:hover {
         text-decoration: none;
     }
@@ -52,28 +65,29 @@
             margin-left: 3%;
         }
         @media screen and (max-width: 990px)  {
-            margin-left: 7%;
+            // margin-left: 7%;
+            margin-left: 20px;
         }
-        p {
-            @media screen and (max-width: 710px)  {
-                display: none;
-            }
-        }
+        // p {
+        //     @media screen and (max-width: 710px)  {
+        //         display: none;
+        //     }
         @media screen and (max-width: 490px)  {
-            display: none;
+            // display: none;
         }
-        
     }
     &__email {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
         margin-left: 30%;
+
             @media screen and (max-width: 1400px)  {
                 margin-left: 5%;
             }
             @media screen and (max-width: 990px)  {
-                display: none;
+                // display: none;
+                margin-left: 100px;
             }
 
         }
@@ -82,13 +96,28 @@
         height: 50px;
         background: $accent;
         border-radius: 50%;
+        @media screen and (max-width: 990px)  {
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+        }
         &-phone {
             padding-left: 13px;
             padding-top: 13px;
+            @media screen and (max-width: 990px)  {
+                transform: scale(0.7);
+                padding-left: 3px;
+                padding-top: 3px;
+            }
         }
         &-email {
             padding-left: 11px;
             padding-top: 15px;
+            @media screen and (max-width: 990px)  {
+                transform: scale(0.7);
+                padding-left: 1px;
+                padding-top: 1px;
+            }
         }
     }
     }
@@ -98,6 +127,13 @@
     &__img {
         width: 50px;
         height: 50px;
+        @media screen and (max-width: 990px)  {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            left: 15px;
+        }
     }
 }
 

@@ -155,7 +155,11 @@ $(document).ready(function() {
         // .addIndicators();
 });
 
+checkWidth();
 $(window).resize(function() {
+    checkWidth();
+})
+function stagesInit(){
     $(".stages__slider").owlCarousel({
         loop: false,
         center: true,
@@ -176,14 +180,16 @@ $(window).resize(function() {
             }
         }
     });
+}
 
-    if ($(window).width() > "992") {
+function checkWidth (){
+   if ($(window).width() > "992") {
         $(".stages__slider").trigger('destroy.owl.carousel');
         // $('.stages__slider').removeClass('team__slider owl-carousel owl-theme')
         $('.stages__slider').attr('display: none');
     }
-})
-
-
-
+    else {
+        stagesInit();
+    }
+}
 });

@@ -13,21 +13,25 @@ $(document).ready(function() {
         responsive: {
             0: {
                 items: 1,
-                nav: true
+                nav: true,
+                margin: 0,
+
             },
-            640: {
-                items: 1,
-                nav: true
+            400: {
+                items: 3,
+                nav: true,
+                // center: false
             },
-            950: {
-                items: 2,
+            991: {
+                items: 4,
                 center: true,
                 loop: false
             },
             1200: {
                 items: 1,
                 center: false,
-                loop: true
+                loop: true,
+                margin: 0,
             }
         }
     });

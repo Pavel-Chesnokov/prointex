@@ -4,7 +4,7 @@ form#form.form.row(action!="<?php bloginfo('template_url');?>/send.php" method="
         .w-100
         p.form__comment.text_main.col-lg-7 и мы свяжемся с вами в ближайшее время. <br> Заполните опросный лист или оставьте контакты
         .w-100
-        a.text_link.link_accent.text_main.col(href="#") Скачать опросный лист
+        a.text_link.link_accent.text_main.col(href!="<?php bloginfo('template_url');?>/files/Пример технического задания.docx" download="") Скачать опросный лист
         .w-100
         .form__row.col-lg-6
             input.input.form__input.col.form-control.only_letters(placeholder="Имя*" name="name" required)

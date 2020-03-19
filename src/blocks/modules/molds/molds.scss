@@ -66,7 +66,12 @@ $select-background: $accent;
       position: absolute;
       top: 16px;
       right: 20px;
-    }
+     @media screen and (max-width: 420px)  {
+      transform: scale(0.5);
+      top: 25px;
+      right: 15px;
+  }
+}
     &:hover {
         box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
     }
@@ -75,6 +80,10 @@ $select-background: $accent;
         box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
       &:after {
         transform: rotate(180deg);
+        @media screen and (max-width: 420px)  {
+          transform: rotate(180deg) scale(0.5);
+          top: 20px;
+      }
       }
     }
   }
@@ -85,6 +94,7 @@ $select-background: $accent;
     top: 100%;
     right: 0;
     left: 0;
+    text-align: center;
     z-index: 999;
     margin: 0;
     padding: 0;

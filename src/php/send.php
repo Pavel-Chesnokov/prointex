@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require './php/vendor/autoload.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -17,29 +17,16 @@ try {
     $mail->isSMTP();
     $mail->CharSet = "UTF-8";
 
-    // Настройки вашей почты
-    // $mail->isSMTP();
-    // $mail->CharSet = "utf-8";
-    // $mail->Host = 'smtp.beget.ru';
-    // $mail->SMTPAuth = true;
-    // $mail->Username = 'chesnokov@brelok.site'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-    // $mail->Password = 'Rt@rtqEyA6&J'; // Ваш пароль
-    // $mail->SMTPSecure = 'ssl';
-    // $mail->Port = 465;
-    // $mail->setFrom('chesnokov@brelok.site'); // Ваш Email
-    // $mail->addAddress('chesnokov@brelok.site'); // Email получателя
-    // $mail->addAddress('p.chesnokov@gmail.com'); // Еще один email, если нужно.
-
     $mail->isSMTP();
     $mail->CharSet = "utf-8";
-    $mail->Host = 'smtp.mail.ru';
+    $mail->Host = 'smtp.beget.ru';
     $mail->SMTPAuth = true;
-    $mail->Username = 'pavel.chestnyy@mail.ru'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-    $mail->Password = 'leutxiorijikg2'; // Ваш пароль
+    $mail->Username = 'chesnokov@brelok.site'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+    $mail->Password = 'Leutxior7'; // Ваш пароль
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('pavel.chestnyy@mail.ru'); // Ваш Email
-    $mail->addAddress('pavel.chestnyy@mail.ru'); // Email получателя
+    $mail->setFrom('chesnokov@brelok.site'); // Ваш Email
+    $mail->addAddress('chesnokov@brelok.site'); // Email получателя
 
     // Прикрипление файлов к письму
 if (!empty($_FILES['userfile']['name'][0])) {
@@ -70,7 +57,7 @@ if (!empty($_FILES['userfile2']['name'][0])) {
         // Само письмо
         // -----------------------
         $mail->isHTML(true);
-        $mail->Subject = 'Заголовок письма';
+        $mail->Subject = 'Заявка с сайта';
         $mail->Body    =  "<b> Имя: </b> $name <br/><b>Телефон:</b> $phone <br/></b><b>Почта:</b> $email <br/><b>Текст письма:</b> $message";
 
 

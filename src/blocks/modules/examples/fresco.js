@@ -9,7 +9,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form1/IMG_8479.jpg",
                 "./wp-content/themes/prointex/img/examples/form1/IMG_8487.jpg", 
             ],
-            { ui: "inside", loop: true }
+            { ui: "inside", loop: true},
         );
     });
     $("#examples-2").on("click", function(event) {
