@@ -7,28 +7,28 @@ $(document).ready(function(){
             $(".js-count-1").spincrement({
                 thousandSeparation: '.',
                 from: 0,
-                to: 10,
+                to: 25,
                 easing: 'linear',
                 duration: 4000,
             });
             $(".js-count-2").spincrement({
                 thousandSeparation: '.',
                 from: 0,
-                to: 100,
+                to: 60,
                 easing: 'linear',
                 duration: 4000,
             });
             $(".js-count-3").spincrement({
                 thousandSeparation: '.',
                 from: 0,
-                to: 50,
+                to: 300,
                 easing: 'linear',
                 duration: 4000,
             });
             $(".js-count-4").spincrement({
                 thousandSeparation: '.',
                 from: 0,
-                to: 7,
+                to: 30,
                 easing: 'linear',
                 duration: 4000,
             });
