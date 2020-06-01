@@ -5,8 +5,8 @@ $(function() {
     $(".form").on("submit", function(e) {
         e.preventDefault();
         $.ajax({
-            url: "https://brelok.site/wp-content/themes/prointex/send.php",
-            //  url: "//localhost:4000/wordpress/wp-content/themes/prointex/send.php",
+            url: "https://prointechnology.ru/wp-content/themes/prointex/send.php",
+            // url: "//localhost:4000/wordpress/wp-content/themes/prointex/send.php", работает на локальном сервере
             type: "POST",
             contentType: false,
             processData: false,

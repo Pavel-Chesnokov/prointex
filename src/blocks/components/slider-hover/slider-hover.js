@@ -37,7 +37,7 @@ $(document).ready(function() {
             }
         }
     });
-    $(window).on('load resize', function() {
+    $(window).on('resize', function() {
     if ($(window).width() > "1200") {
         $(".slider-hover__mill").hover(
             function() {
@@ -76,5 +76,5 @@ $(document).ready(function() {
             }
         );
     }
-});
+}).resize();
 });
