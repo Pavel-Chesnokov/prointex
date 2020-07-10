@@ -12,14 +12,14 @@ $(document).ready(function() {
     var counter10 = 0;
     window.scrollOn = true;
     $(window).on("mousewheel", function(event) {
-        console.log(
-            event.deltaY,
-            scroll,
-            $("#contacts").offset().top,
-            $("#form").offset().top,
-            counter10,
-            counter3
-        );
+        // console.log(
+        //     event.deltaY,
+        //     scroll,
+        //     $("#contacts").offset().top,
+        //     $("#form").offset().top,
+        //     counter10,
+        //     counter3
+        // );
         var scroll = $(this).scrollTop();
         if (
             event.deltaY == -1 &&

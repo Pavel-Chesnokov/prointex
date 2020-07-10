@@ -23,3 +23,9 @@ $(".input__comment").alphanum({
     allowNewline: false
 })
 });
+
+//капча
+
+function onSubmit(token) {
+    $(".form").submit();
+   }

@@ -14,11 +14,11 @@ const argv = yargs.argv,
 
 gulp.task("webp", () => {
     return gulp.src(paths.webp.src)
-        .pipe(webp(gulpif(production, imageminWebp({
-            lossless: true,
-            quality: 100,
-            alphaQuality: 100
-        }))))
+        // .pipe(webp(gulpif(production, imageminWebp({
+        //     lossless: true,
+        //     quality: 100,
+        //     alphaQuality: 100
+        // }))))
         .pipe(gulp.dest(paths.webp.dist))
         .pipe(debug({
             "title": "Images"

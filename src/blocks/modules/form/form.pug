@@ -21,5 +21,6 @@ form#form.form.row(action!="<?php bloginfo('template_url');?>/send.php" method="
                 input.inputfile#userfile2(type='file', name='userfile2[]', data-multiple-caption='{count} files selected', multiple='', accept="image/*")
                 label(for='userfile2').text_accent.text_mini
                     span Прикрепить файл
-            button.button-send.button-send_big.form__button.button-send_shadow.col Отправить
+            button.button-send.button-send_big.form__button.button-send_shadow.col.g-recaptcha(data-sitekey='6Leoa68ZAAAAAFhrhHXVIqwkRq9HMQ_acuTY9ZbG' data-callback='onSubmit' data-action='submit') Отправить заявку
+
 

@@ -24,6 +24,10 @@ $(function() {
         }
     });
 //анимация плавного пролистывания страниц
+    $(".header__logo").click(function() {
+        $("html, body").animate({ scrollTop: $("#main").offset().top }, 1000);
+        return false;
+    });
 
     $(".menu__advantages").click(function() {
         $("html, body").animate(
