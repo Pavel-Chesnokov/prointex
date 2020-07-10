@@ -17,4 +17,5 @@ import "%modules%/make/make";
 import "%modules%/contacts/contacts";
 import "%modules%/footer/footer";
 import "%modules%/form/form";
-//import "%modules%/form/mail";
+// import "%modules%/form/capcha;
+import "%modules%/form/mail";

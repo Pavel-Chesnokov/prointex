@@ -26,6 +26,3 @@ $(".input__comment").alphanum({
 
 //капча
 
-function onSubmit(token) {
-    $(".form").submit();
-   }

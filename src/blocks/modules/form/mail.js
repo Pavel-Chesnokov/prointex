@@ -6,7 +6,7 @@ $(function() {
         e.preventDefault();
         $.ajax({
             url: "https://prointechnology.ru/wp-content/themes/prointex/send.php",
-            // url: "//localhost:4000/wordpress/wp-content/themes/prointex/send.php", работает на локальном сервере
+            //url: "//localhost:4000/wordpress/wp-content/themes/prointex/send.php", //работает на локальном сервере
             type: "POST",
             contentType: false,
             processData: false,

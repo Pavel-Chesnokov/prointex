@@ -18,7 +18,6 @@ $(document).ready(function() {
             [
                 "./wp-content/themes/prointex/img/examples/form2/IMG_8068.jpg",
                 "./wp-content/themes/prointex/img/examples/form2/IMG_8065.jpg",
-                "./wp-content/themes/prointex/img/examples/form2/IMG_8066.jpg"
             ],
             { ui: "inside", loop: true }
         );

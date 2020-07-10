@@ -14,6 +14,7 @@ function theme_name_scripts() {
 	wp_enqueue_script( 'main-name', get_template_directory_uri() . '/js/main.js', array(), 'null', true );
 	wp_enqueue_script( 'map-name', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAzepC77rzIAjEVqeiCpjm__5fP0MeF6-4&callback=initMap', array(), 'null', true );
 
+
 }
 
 
