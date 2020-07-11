@@ -102,3 +102,11 @@
 input:invalid:not(:placeholder-shown) + .form__error {
 	display: block;
 }
+
+
+
+.alert{
+    display: none;
+    margin: 15px 0 0;
+    color: #808080;
+}
