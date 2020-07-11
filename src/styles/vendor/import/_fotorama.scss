@@ -129,7 +129,7 @@
     display: inline-block;
     vertical-align: middle;
     *display: inline;
-    *zoom: 1;
+    *transform: scale(1);
 }
 .fotorama__nav__frame,
 .fotorama__thumb-border {

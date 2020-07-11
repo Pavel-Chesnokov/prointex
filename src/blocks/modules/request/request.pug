@@ -4,7 +4,7 @@ section.request#request.row
     button.button-send.button-send__modal.request__button-send.button-send_shadow Оставить заявку
 
 .popup-fade.popup-fade-button-send
-    form.modalDialog.form(action!="<?php bloginfo('template_url');?>/send.php" method="post")
+    form.modalDialog.form#form_modal(type="submit" method="post")
         .modal-guts.row
             a.close-modal.close(title="Закрыть")
                 .icon_close
@@ -24,5 +24,10 @@ section.request#request.row
                     include ../../components/checkbox/checkbox.pug
             .form__row.col-md
                 textarea(name="message" type="text" placeholder="Комментарий*").input__comment.form__textarea.input.form__input.form__input_big.form-control
-                include ../../components/input-file/input-file.pug
+                .input-file.col.text_main.text_accent.form__input.input_accent
+                    input.inputfile#userfile_modal(type='file', name='userfile_modal[]', data-multiple-caption='{count} files selected', multiple='', accept="image/*")
+                    label(for='userfile_modal').text_accent.text_mini
+                        span#span_modal Прикрепить файл
+                .alert#alert_modal
+                input#recaptchaResponse_modal(type='hidden', name='recaptcha_response')
                 button.button-send.button-send_big.form__button.button-send_shadow.col Отправить заявку

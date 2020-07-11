@@ -247,7 +247,7 @@
 .fr-ui-inside .fr-info-background {
   filter: alpha(opacity=80);
   opacity: 0.8;
-  zoom: 1;
+  transform: scale(1);
 }
 /* ui:outside has a slightly lighter info background to break up from black page backgrounds */
 .fr-ui-outside .fr-info-background {
@@ -321,7 +321,7 @@
   background: #0d0d0d;
   filter: alpha(opacity=80);
   opacity: 0.8;
-  zoom: 1; /* oldIE */
+  transform: scale(1); /* oldIE */
 }
 .fr-position-text {
   color: #b3b3b3;
@@ -433,7 +433,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  zoom: 1;
+  transform: scale(1);
 }
 .fr-side-previous {
   left: 0;
@@ -470,7 +470,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  zoom: 1;
+  transform: scale(1);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -566,7 +566,7 @@
   width: 100%;
   height: 100%;
   float: left;
-  zoom: 1;
+  transform: scale(1);
 }
 
 .fr-thumbnails-slider-slide {
@@ -594,7 +594,7 @@
 
 .fr-thumbnail-frame {
   position: absolute;
-  zoom: 1;
+  transform: scale(1);
   overflow: hidden;
 }
 
@@ -604,14 +604,14 @@
   height: 100%;
   left: 50%;
   top: 50%;
-  zoom: 1;
+  transform: scale(1);
   cursor: pointer;
   margin: 0 10px;
 }
 .fr-ltIE9 .fr-thumbnail * {
   overflow: hidden; /* IE6(7) */
   z-index: 1;
-  zoom: 1;
+  transform: scale(1);
 }
 
 .fr-thumbnail-wrapper {
@@ -1166,14 +1166,14 @@
 .fr-window-skin-fresco .fr-close-icon,
 .fr-window-skin-fresco .fr-thumbnails-side-button-icon,
 .fr-window-skin-fresco .fr-error-icon {
-  background: url(../img/fresco/sprite.svg);
+  background: url(./img/fresco/sprite.svg);
 }
 /* fallback png sprite */
 .fr-window-skin-fresco.fr-no-svg .fr-side-button-icon,
 .fr-window-skin-fresco.fr-no-svg .fr-close-icon,
 .fr-window-skin-fresco.fr-no-svg .fr-thumbnails-side-button-icon,
 .fr-window-skin-fresco .fr-error-icon {
-  background: url(../img/fresco/sprite.png);
+  background: url(./img/fresco/sprite.png);
 }
 
 .fr-window-skin-fresco .fr-error-icon {
