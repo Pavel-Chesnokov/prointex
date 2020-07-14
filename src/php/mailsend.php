@@ -28,7 +28,8 @@ $success_output = '';
 if(isValid()) {
  //   Build POST request to get the reCAPTCHA v3 score from Google
     $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = '6Leoa68ZAAAAAJbbTOFKUDB7x8HeV8AW33ATb3Ba'; // Insert your secret key here
+  //  $recaptcha_secret = '6Leoa68ZAAAAAJbbTOFKUDB7x8HeV8AW33ATb3Ba'; // Insert your secret key here
+    $recaptcha_secret = '6LfsKrAZAAAAAE24ay7eta2aW6XnP88z-lSqKJiv'; // Insert your secret key here
     $recaptcha_response = $_POST['recaptcha_response'];
 
     // Make and decode POST request
