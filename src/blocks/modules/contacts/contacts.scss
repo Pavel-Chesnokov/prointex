@@ -1,6 +1,10 @@
 .contacts {
     padding-top: 160px;
-    // max-height: 940px;
+    @media screen and (max-width: 991px)  {
+        padding-top: 80px;
+        // height: 940px;
+        }
+    // height: 940px;
     // margin-top: 100px;
     &__info {
         // margin-left: 100px;
@@ -12,10 +16,15 @@
         margin: auto;
         @media screen and (max-width: 991px)  {
         margin: 0;
+        // height: 940px;
         }
         margin-top: 13%;
     }
     &__map {
+        @media screen and (max-width: 991px)  {
+            height: 370px;
+            padding-bottom: 40px;
+            }
         margin-top: 18px;
         height: 670px;
         padding-bottom: 80px;
@@ -33,6 +42,10 @@
 #map {
     width: 100%;
     height: 100%;
+    @media screen and (max-width: 991px)  {
+        // width: 50%;
+        // height: 50%;
+        }
 }
 
 .tab input,
