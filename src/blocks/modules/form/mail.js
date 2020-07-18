@@ -2,19 +2,22 @@ $('#form').submit(function(event) {
     event.preventDefault(); // Prevent direct form submission
     $('#alert').text('Processing...').fadeIn(0); // Display "Processing" to let the user know that the form is being submitted
     grecaptcha.ready(function () {
-        console.log('i am redy ');
         grecaptcha.execute('6Leoa68ZAAAAAFhrhHXVIqwkRq9HMQ_acuTY9ZbG', { action: 'contact' }).then(function (token) {
-            var recaptchaResponse = document.getElementById('recaptchaResponse');
+            let recaptchaResponse = document.getElementById('recaptchaResponse');
             recaptchaResponse.value = token;
+            let form =  document.getElementById("form");
+            let formData = new FormData(form);
             $.ajax({
                 url: 'https://prointechnology.ru/wp-content/themes/prointex/mailsend.php',
                 type: 'post',
-                data: $('#form').serialize(),
+                data: formData,
                 dataType: 'json',
+                processData: false,
+                contentType: false,
                 success: function( _response ){
                     // The Ajax request is a success. _response is a JSON object
-                    var error = _response.error;
-                    var success = _response.success;
+                    let error = _response.error;
+                    let success = _response.success;
                     if(error != "") {
                         // In case of error, display it to user
                         $('#alert').html(error);
@@ -31,12 +34,12 @@ $('#form').submit(function(event) {
                 },
                 error: function(jqXhr, json, errorThrown){
                     // In case of Ajax error too, display the result
-                    var error = jqXhr.responseText;
+                    let error = jqXhr.responseText;
                     $('#alert').html(error);
                 }
             });
+            });
         });
-    });
 });
 
 
