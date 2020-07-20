@@ -1,29 +1,11 @@
-import "owl.carousel";
+import { blockStatement } from "babel-types";
+
 $(document).ready(function() {
-    var controller = new ScrollMagic.Controller();
-    $("#advantages").each(function() {
-  
-        var stagger = TweenMax.staggerFrom($(this).find(".advantages__item"), 1, {
-          y: 100,
-          autoAlpha: 0,
-          delay: 0,
-          ease: Power2.easeOut
-        },
-        0.3);
-      
-          var scene2 = new ScrollMagic.Scene({
-                  triggerElement: this,
-                  offset: 100,
-                  reverse: true,
-                  duration: 1200,
-                  triggerHook: 0.7
-              })
-              .setTween(stagger)
-              .addTo(controller)
-          // .addIndicators()
-              ;
-      });
-    $(".advantages__slider").owlCarousel({
+$(window).resize(function() {
+    checkWidth();
+})
+function stagesInit(){
+    $(".stages__slider").owlCarousel({
         loop: false,
         center: true,
         margin: 10,
@@ -43,5 +25,16 @@ $(document).ready(function() {
             }
         }
     });
-});
+}
 
+function checkWidth (){
+   if ($(window).width() > "992") {
+        $(".stages__slider").trigger('destroy.owl.carousel');
+        // $('.stages__slider').removeClass('team__slider owl-carousel owl-theme')
+        $('.stages__slider').attr('display: none');
+    }
+    else {
+        stagesInit();
+    }
+}
+});

@@ -14,7 +14,7 @@ $(document).ready(function() {
             // scrollOn
         ) {
             $("html, body").animate(
-                { scrollTop: $("#advantages").offset().top },
+                { scrollTop: $("#numbers").offset().top },
                 1000
             );
             window.counter1 = 1;
@@ -24,7 +24,7 @@ $(document).ready(function() {
         if (
             event.deltaY == 1 &&
             counter2 == 0 &&
-            scroll < $("#advantages").offset().top
+            scroll < $("#numbers").offset().top
             // scrollOn
         ) {
             $("html, body").animate(

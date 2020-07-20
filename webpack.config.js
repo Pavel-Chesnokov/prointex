@@ -3,7 +3,8 @@ const webpack = require("webpack");
 
 module.exports = {
     entry: {
-        main: "./src/js/index.js"
+        main: "./src/js/index.js",
+        mob: "./src/js/index.mob.js"
     },
 
     output: {
@@ -13,7 +14,6 @@ module.exports = {
     },
 
     externals: {
-        // TimelineMax: 'TimelineMax'
     },
 
     optimization: {
@@ -46,13 +46,6 @@ module.exports = {
 
     resolve: {
         alias: {
-            // "TweenLite": path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
-            // "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
-            // "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
-            // "TimelineMax": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
-            // "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap'),
-            // "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
-            // "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'),
             "%modules%": path.resolve(__dirname, "src/blocks/modules"),
             "%components%": path.resolve(__dirname, "src/blocks/components")
         }
@@ -64,11 +57,6 @@ module.exports = {
             "window.jQuery": "jquery",
             Fresco: "@staaky/fresco",
             ScrollMagic: "scrollmagic",
-            // TweenMax: "gsap/all"
-            // Power2: 'gsap/all',
-            // TimelineMax: 'gsap/all'
-            // setTween: 'gsap/all'
-
         })
     ]
 };

@@ -1,28 +1,5 @@
 import "owl.carousel";
 $(document).ready(function() {
-    var controller = new ScrollMagic.Controller();
-    $("#advantages").each(function() {
-  
-        var stagger = TweenMax.staggerFrom($(this).find(".advantages__item"), 1, {
-          y: 100,
-          autoAlpha: 0,
-          delay: 0,
-          ease: Power2.easeOut
-        },
-        0.3);
-      
-          var scene2 = new ScrollMagic.Scene({
-                  triggerElement: this,
-                  offset: 100,
-                  reverse: true,
-                  duration: 1200,
-                  triggerHook: 0.7
-              })
-              .setTween(stagger)
-              .addTo(controller)
-          // .addIndicators()
-              ;
-      });
     $(".advantages__slider").owlCarousel({
         loop: false,
         center: true,

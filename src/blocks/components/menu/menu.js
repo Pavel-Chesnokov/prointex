@@ -1,6 +1,6 @@
 
 $(function() {
-    var controller = new ScrollMagic.Controller();
+    // var controller = new ScrollMagic.Controller();
     $(document).mouseup(function(e) {
         // событие клика по веб-документу
         var div = $(".menu"); // тут указываем ID элемента
