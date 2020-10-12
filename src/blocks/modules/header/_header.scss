@@ -42,7 +42,7 @@
         }
     }
     &__text {
-        line-height: 50px !important;
+       // line-height: 50px !important;
         margin-left: 30px;
         @media screen and (max-width: 990px)  {
             font-size: rem(15);
@@ -80,7 +80,7 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        margin-left: 30%;
+        margin-left: 20%;
 
             @media screen and (max-width: 1400px)  {
                 margin-left: 5%;
@@ -120,6 +120,41 @@
             }
         }
     }
+    &__phone-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    &__email-wrap {
+        display: flex;
+        flex-direction: column;
+}
+    &__sub-menu {
+        background: $background-inversion;
+        position: fixed;
+        top: 80px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+            }
+    &__sub-menu li {
+        display: inline;
+
+    }
+
+    &__sub-menu li:not(:first-child) {
+        margin-left: 15px;
+    }
+
+    &__sub-menu a {
+        color: $text-inversion;
+        text-decoration: none;
+
+    }
+    &__sub-menu a:hover {
+        color: $accent;
+
+    }
+
     }
 
 .logo {

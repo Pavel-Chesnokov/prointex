@@ -31,7 +31,7 @@ $(function() {
 
     $(".menu__advantages").click(function() {
         $("html, body").animate(
-            { scrollTop: $("#advantages").offset().top },
+            { scrollTop: $("#advantages").offset().top},
             1000
         );
         window.scrollOn = false;

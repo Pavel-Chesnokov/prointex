@@ -28,7 +28,7 @@ $(document).ready(function(){
             $(".js-count-4").spincrement({
                 thousandSeparation: '.',
                 from: 0,
-                to: 25,
+                to: 42,
                 easing: 'linear',
                 duration: 4000,
             });

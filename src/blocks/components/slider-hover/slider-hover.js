@@ -6,7 +6,7 @@ $(document).ready(function() {
         center: true,
         nav: true,
         dots: false,
-        autoplay : true,
+        autoplay : false,
         autoplayTimeout : 7000,
         navText: [
             '<svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9102 2.91797L5.82812 12L14.9102 21.082L12.0859 23.918L0.167969 12L12.0859 0.0820312L14.9102 2.91797Z" fill="black"/></svg>',
