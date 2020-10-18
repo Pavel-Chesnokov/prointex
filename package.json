@@ -28,7 +28,7 @@
         "babel-loader": "^8.0.5",
         "bem-tools-core": "bem-tools/bem-tools-core",
         "bem-tools-create": "bem-tools/bem-tools-create",
-        "browser-sync": "^2.23.6",
+        "browser-sync": "^2.26.13",
         "del": "^4.1.1",
         "eslint": "~6.0.0",
         "gulp": "^4.0.2",
