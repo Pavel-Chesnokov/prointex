@@ -5,7 +5,7 @@ $(document).ready(function() {
     });
     $(document).on("scroll", function() {
         var w_top = $(window).scrollTop();
-        var w_height = $(window).height();
+        var w_height = ($(window).height());
         var scroll = w_top + w_height;
         var e_top = $(".footer").offset().top;
         if (scroll > e_top) {

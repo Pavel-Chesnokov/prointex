@@ -1,21 +1,52 @@
 .main {
-    margin-bottom: 400px;
-    padding-top: 249px;
-    @media screen and (max-width: 500px)  {
-        padding-top: 150px;
+    padding-top: 25%;
+    padding-bottom: 20%;
+    position: relative;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    // height: 100%;
+        @media screen and (max-width: 1199px)  {
+        padding-top: 12%;
+        padding-bottom: 12%;
     }
     @media screen and (max-height: 400px)  {
         padding-top: 70px;
     }
-    @media screen and (max-width: 1200px)  {
-        margin-bottom: 100px;
+    @media screen and (max-width: 1199px)  {
+        // margin-bottom: 100px;
     }
     @media screen and (max-width: 500px)  {
         margin-bottom: 0;
     }
     h1 {
-        @media screen and (max-width: 1200px)  {
+        @media screen and (max-width: 1199px)  {
             text-align: center;
+        }
+    }
+    &__title {
+        @media screen and (max-width: 1199px) {
+            padding: 0 15%;
+        }
+    }
+    &__desc {
+        @media screen and (max-width: 1199px) {
+            padding: 0 5%;
+        }
+    }
+    &__offset {
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
+    }
+    &__text {
+        order: 1;
+    }
+    &__content {
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+        @media screen and (max-width: 576px) {
+            padding-top: 5%;
         }
     }
     &__button-send {
@@ -23,34 +54,74 @@
         height: 74px;
         margin-top: 32px;
         // margin-left: 15px;
-        @media screen and (max-width: 1200px)  {
+        @media screen and (max-width: 1199px)  {
             position: relative;
-            left: 50%;
-            transform: translate(-50%, 0);
+            text-align: center;
+            // left: 50%;
+            // transform: translate(-50%, 0);
         }
         @media screen and (max-width: 990px)  {
             width: 290px;
         }
     }
+    &__background-draw {
+        z-index: -1000;
+        position: absolute;
+        background-origin: border-box;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: url(./img/main/background.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+
+    }
     &__background {
         position: absolute;
         bottom: 0;
         right: 0;
+        margin-right: -25px;
+        margin-bottom: -25px;
+        @media screen and (max-width: 1199px)  {
+            position: relative;
+            margin: 0;
+            text-align: center;
+        }
+        &-img {
+            @media screen and (max-width: 1199px)  {
+                width: 90%;
+            }
+            @media screen and (max-width: 767px)  {
+                width: 100%;
+            }
+            @media screen and (max-width: 575px)  {
+                width: 50%;
+            }
+        }
     }
+
     &__img-wrapper {
+        margin: auto;
+        order: 2;
         height: 488px;
         width:  100%;
-        @media screen and (max-width: 1200px)  {
-        display: none;
+        @media screen and (max-width: 1199px)  {
+        height: 100%;
+        margin: 0;
         }
+        @media screen and (max-width: 576px)  {
+            margin-top: 5%;
+            }
+
     }
     &__img {
         height: 100%;
         margin-left: 15px;
         width:  100%;
         background-color: $accent;
-        @media screen and (max-width: 1200px)  {
-            margin-left: 0;
+        @media screen and (max-width: 1199px)  {
+            margin: 0;
             }
     }
 }
@@ -61,17 +132,20 @@
         letter-spacing: 0.065em;
         line-height: 1.6;
         font-size: rem(48);
-        @media screen and (max-width: 992px) {
-            font-size: rem(48);
+        @media screen and (max-width: 1199px) {
+            font-size: rem(32);
         }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 992px) {
+            // font-size: rem(48);
+        }
+        @media screen and (max-width: 767px) {
             font-size: rem(22);
         }
     }
     &_line::after {
         content: url(./img/advantages/line.png);
         position: absolute;
-        bottom: 12px;
+        margin-top: -12px;
         @media screen and (max-width: 600px)  {
             display: none;
             // position: absolute;
@@ -108,12 +182,18 @@
             font-size: rem(14);
         }
     }
+
     &_logo {
         font-family: Kontora-Bold, sans-serif;
         font-size: rem(36);
         color: $text;
         text-transform: uppercase;
+        @media screen and (max-width: 1199px) {
+        font-size: rem(24);
+        margin-top: 8px;
+
     }
+}
     &_mini {
         font-size: rem(18);
     }
@@ -127,6 +207,12 @@
     &_half-bold {
         font-family: Kontora, sans-serif;
         // font-size: rem(24);
+    }
+    &_center{
+        text-align: center;
+    }
+    &_secondary {
+        color: $text-opacity;
     }
     &_fs-m {
         font-size: rem(24);
@@ -162,6 +248,11 @@
     font-size: rem(24);
     @media screen and (max-width: 992px)  {
         font-size: rem(18);
+    }
+    @media screen and (max-width: 767px)  {
+        width: 250px;
+        height: 60px;
+        margin-top: 5%;
     }
     background: $accent;
     border: none;
@@ -203,17 +294,54 @@
     right: 30px;
     bottom: 45px;
     z-index: 10000;
-    display: block;
+    display: none;
     width: 50px;
     height: 50px;
     background-color: $accent;
     &::before {
         content: url(./img/footer/arrowUp.png);
         display: block;
-        margin-left: 12px;
         margin-top: 12px;
     }
     &:hover {
     box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
     }
+}
+.scroll-down-icon {
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    // margin-top: 3%;
+    margin-left: -30px;
+    // background: $accent;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.2s ease-out;
+    @media screen and (max-width: 1199px) {
+        bottom: 5%;
+    }
+    @media screen and (max-width: 767px)  {
+        display: none;
+    }
+}
+.scroll-down-icon:hover {
+    // background: $background;
+    transition: all 0.2s ease-in;
+}
+i.fa-angle-double-down {
+    color: $background-inversion;
+    font-size: rem(62);
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+i.fa-angle-double-down:hover {
+    color: $accent;
+    transition: all 0.2s ease-in;
+    transform: translateY(20px);
+    cursor: pointer;
+
 }

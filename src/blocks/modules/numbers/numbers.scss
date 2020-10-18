@@ -5,7 +5,6 @@
     }
     color: $accent;
     height: 350px;
-    padding-top: 79px;
     &__item {
         margin-top: 35px;
         & > span {
@@ -21,7 +20,7 @@
     }
     &__background {
         position: absolute;
-        height: 350px;
+        height: 430px;
         left: 0;
         width: 100%;
         background-color: $background-inversion;
@@ -34,4 +33,10 @@
     &__more {
         display: inline !important;
     }
+}
+
+.test__test {
+    z-index: 100000;
+    font-size: 50px;
+    color: red;
 }

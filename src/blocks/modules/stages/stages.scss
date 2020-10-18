@@ -66,6 +66,17 @@
         }
     }
 
+    &__img-background {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        margin-top: -10%;
+        height: auto;
+        @media screen and (max-width: 990px)  {
+            display: none;
+            }
+    }
+
 
 }
 

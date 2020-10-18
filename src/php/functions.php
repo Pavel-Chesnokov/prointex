@@ -12,6 +12,7 @@ function theme_name_scripts() {
 	// wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null, true );
 	// wp_enqueue_script( 'jquery' );
 	if( ! wp_is_mobile() ) {
+		
 		wp_enqueue_script( 'TweenMax-name', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js', array(), 'null', true );
 		wp_enqueue_script( 'TimelineMax-name', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js', array(), 'null', true );
 		wp_enqueue_script( 'main-name', get_template_directory_uri() . '/js/main.js', array(), 'null', true );
@@ -39,5 +40,13 @@ function add_defer_attribute($tag, $handle) {
 
 
  remove_action( 'wp_head', 'wp_resource_hints', 2 ); //удалениие rel='dns-prefetch'
+
+ function font_awesome() {
+	if (!is_admin()) {
+	  wp_register_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+	  wp_enqueue_style('font-awesome');
+	}
+  }
+  add_action('wp_enqueue_scripts', 'font_awesome');
 
  ?>

@@ -14,7 +14,7 @@ $(document).ready(function() {
             // scrollOn
         ) {
             $("html, body").animate(
-                { scrollTop: $("#numbers").offset().top },
+                { scrollTop: ($("#service").offset().top - 130) },
                 1000
             );
             window.counter1 = 1;
@@ -24,7 +24,7 @@ $(document).ready(function() {
         if (
             event.deltaY == 1 &&
             counter2 == 0 &&
-            scroll < $("#numbers").offset().top
+            scroll < $("#service").offset().top
             // scrollOn
         ) {
             $("html, body").animate(

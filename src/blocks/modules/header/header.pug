@@ -5,32 +5,34 @@ header.header#header.row
                 span.header_text.text_logo.header__text-logo Проинтех
         .header__email
             .header__icon
-                a(href="mailto:prointex@bk.ru") 
+                a(href="mailto:info@prointex.ru") 
                     img.header__icon-email(src!="<?php bloginfo('template_url');?>/img/header/email.png", alt="почта")
             .header__email-wrap 
-                a.text_mini.header__text(href="mailto:prointex@bk.ru") info@prointex.ru
-                span.text_mini.header__text Ответим на ваши вопросы
+                a.text_mini.header__text(href="mailto:info@prointex.ru") info@prointex.ru
+                span.header__email-text.text_mini.header__text Ответим на Ваши вопросы
         .header__phone
             .header__icon
                 a(href="tel:+74992682650")
                     img.header__icon-phone(src!="<?php bloginfo('template_url');?>/img/header/phone.png", alt="телефон")
             .header__phone-wrap 
                 a.text_mini.header__text(href="tel:+74992682650") +7 499 268-26-50
-                a.text_mini.header__text(href="tel:+74992682650") +7 916 182-21-38
-            p.text_mini.header__text Ждем Ваших звонков <br> с 10:00 до 22:00 пн-вс
+                a.header__phone-city.text_mini.header__text(href="tel:+79161822138") +7 916 182-21-38
+            p.header__time.text_mini.header__text Ждем Ваших звонков <br> с 10:00 до 22:00 пн-вс
         .header__menu
             include ../../components/menu/menu.pug
         .header__sub-menu.col
             nav
                 ul.text_half-bold
+                    li.menu__service
+                        a(href='#service') Что мы производим?
                     li.menu__advantages
                         a(href='#advantages') Почему выбирают нас?
+                    li.menu__stages
+                        a(href='#stages') Этапы производства
                     li.menu__examples
                         a(href='#examples') Примеры работ
-                    li.menu__stages
-                        a(href='#stages') Как мы работаем?
                     li.menu__make
-                        a(href='#make') О Нас
+                        a(href='#make') Наше производство
                     li.menu__contacts
                         a(href='#contacts') Контакты
 

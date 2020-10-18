@@ -48,7 +48,7 @@
 }
 .tab {
     display: block;
-    border: 1px dashed $accent; /* Параметры рамки */
+    // border: 1px dashed $accent; /* Параметры рамки */
     color: #000;
     margin-bottom: 10px; /* Расстояние между пунктами */
 }
@@ -92,4 +92,5 @@
     height: 50px;
     padding: 0 15px;
     line-height: 50px;
+    margin-top: 7px;
 }

@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    z-index: 1030;
+    z-index: 1000000;
     top: 0;
     right: 0;
     left: 0;
@@ -10,6 +10,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     flex-wrap: nowrap;
+    background: $background;
     @media screen and (max-width: 990px)  {
         height: 40px;
         padding-top: 0;
@@ -19,18 +20,26 @@
         // background-color: $background-inversion;
         // color: $text-inversion;
         background: rgba($background, 1);
-        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+        // transition: all 0.2s ease-in;
     }
     &__logo {
         margin-left: 30px;
         @media screen and (max-width: 990px)  {
             height: 40px;
             width: 40px;
+            margin-top: -7px;
         }
     }
     &__nav {
         top: 50px;
         right: 50px;
+
+    }
+    &__time {
+        @media screen and (max-width: 1199px)  {
+            display: none;
+            }
     }
     &__text-logo {
         margin-left: 5%;
@@ -80,9 +89,9 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        margin-left: 20%;
+        margin-left: 23%;
 
-            @media screen and (max-width: 1400px)  {
+            @media screen and (max-width: 1450px)  {
                 margin-left: 5%;
             }
             @media screen and (max-width: 990px)  {
@@ -91,6 +100,16 @@
             }
 
         }
+    &__email-text {
+        @media screen and (max-width: 990px)  {
+            display: none;
+            }
+    }
+    &__phone-city {
+        @media screen and (max-width: 990px)  {
+            display: none;
+            }
+    }
     &__icon {
         width: 50px;
         height: 50px;
@@ -127,7 +146,12 @@
     &__email-wrap {
         display: flex;
         flex-direction: column;
-}
+        
+    }
+    &__email-wrap a{
+        width: 50%;
+        
+    }
     &__sub-menu {
         background: $background-inversion;
         position: fixed;
@@ -135,6 +159,9 @@
         text-align: center;
         padding-top: 15px;
         padding-bottom: 15px;
+        @media screen and (max-width: 1199px)  {
+            display: none;
+            }
             }
     &__sub-menu li {
         display: inline;
@@ -148,10 +175,12 @@
     &__sub-menu a {
         color: $text-inversion;
         text-decoration: none;
+        transition: all 0.1s ease-out;
 
     }
     &__sub-menu a:hover {
         color: $accent;
+        transition: all 0.3s ease-in;
 
     }
 
@@ -173,11 +202,24 @@
 }
 
 .header__phone a{
-    // text-decoration: none;
+    text-decoration: none;
     color: $background-inversion;
+    transition: all 0.1s ease-out;
+}
+
+.header__phone a:hover{
+    text-decoration: none;
+    color: $accent;
+    transition: all 0.2s ease-in;
 }
 
 .header__email a{
-    // text-decoration: none;
+    text-decoration: none;
     color: $background-inversion;
 }
+
+.header__email:hover a{
+    color: $accent;
+    transition: all 0.2s ease-in;
+}
+

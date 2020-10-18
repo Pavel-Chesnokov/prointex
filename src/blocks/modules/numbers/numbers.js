@@ -4,28 +4,28 @@ $(document).ready(function(){
         var w_height = $(window).height();
         var e_top = $(".numbers").offset().top;
         if (w_top >= e_top - w_height ){
-            $(".js-count-1").spincrement({
+            $("#js-count-1").spincrement({
                 thousandSeparation: '.',
                 from: 0,
                 to: 21,
                 easing: 'linear',
                 duration: 4000,
             });
-            $(".js-count-2").spincrement({
+            $("#js-count-2").spincrement({
                 thousandSeparation: '.',
                 from: 0,
                 to: 640,
                 easing: 'linear',
                 duration: 4000,
             });
-            $(".js-count-3").spincrement({
+            $("#js-count-3").spincrement({
                 thousandSeparation: '.',
                 from: 0,
                 to: 320,
                 easing: 'linear',
                 duration: 4000,
             });
-            $(".js-count-4").spincrement({
+            $("#js-count-4").spincrement({
                 thousandSeparation: '.',
                 from: 0,
                 to: 42,
