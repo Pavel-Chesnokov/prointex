@@ -4,7 +4,9 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: flex-end;
+    margin: auto;
+
     &__title {
         margin-bottom: 2vw;
     }
@@ -13,19 +15,41 @@
         // border: solid 1px $accent ;
         background-color: rgba($color: #000000, $alpha: 0.02);
         padding: 30px;
-        margin: 15px 15px;
+        // margin-bottom: 15px;
+        // margin-top: 15px;
+        // margin-left: 15px;
+        margin: 15px;
+        // margin-right: 15px;
+        @media screen and (max-width: 560px)  {
+            margin: 15px 0;
+    }
         transition: all 0.15s ease-out;
-        min-width: 470px;
+        flex-basis: 470px;
+        // min-width: 470px;
         display: flex;
         align-items: center;
-        @media screen and (max-width: 530px){
-            min-width: 200px;
-        }
+        justify-content: center;
+
     }
+    &__form-container {
+        padding: 0 30px 30px 30px;
+        @media screen and (max-width: 530px){
+            // max-width: 70%;
+            // margin: auto;
+    }
+}
     &__form:hover {
         transform: scale(1.03);
         transition: all 0.15s ease-in;
-        box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.07)
+        box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.07);
+        @media screen and (max-width: 990px)  {
+            transform: none;
+            box-shadow: none;
+        }
+    }
+    &__form-wrapper {
+        z-index: 3;
+        position: relative;
     }
     &__form-wrapper > img {
         display: inline-block;
@@ -41,28 +65,59 @@
     &__title {
         // margin-top: 30px;
         margin-top: 30px;
+        font-size: rem(24);
+        @media screen and (max-width: 1199px) {
+            font-size: rem(24);
+        }
+        @media screen and (max-width: 600px) {
+            font-size: rem(20);
+        }
         
     }
     &__form-text {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         text-align: left;
         position: absolute;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         padding: 10% 10%;
-        margin-left: -30px;
+        // margin-left: -30px;
         background-color: $accent;
         opacity: 0;
         transition: all 0.3s ease-out;
+        z-index: -1;
+        @media screen and (max-width: 1029x)  {
+    }
+        @media screen and (max-width: 560px)  {
+            align-items: flex-start;
+    }
         
     }
-    &__form-text:hover {
+    &__front-button {
+        z-index: 10;
+    }
+    &__form-text-visible{
         opacity: 1;
         transition: all 0.3s ease-in;
+        // transform: translateX(100%);
     }
     &__form-text  li {
         list-style-type: disc; 
     }
 }
+
+.service__form-wrapper-back {
+    z-index: -1;
+}
+
+.service__form-wrapper-front {
+    z-index: 3;
+}
+.button_active {
+    width: 250px;
+    background: rgba($color: $accent, $alpha: 0);
+    transition: all 0.3s ease-in;
+ }

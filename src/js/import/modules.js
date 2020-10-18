@@ -1,6 +1,6 @@
 import "%modules%/header/header";
 import "%modules%/main/main";
-// import "%modules%/service/service";
+import "%modules%/service/service";
 // import "%modules%/main/main_full";
 //import "%modules%/nav-dot/nav-dot";
 import "%modules%/molds/molds";

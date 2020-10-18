@@ -1,9 +1,11 @@
 .main {
     padding-top: 25%;
     padding-bottom: 20%;
-    position: relative;
+    // position: relative;
     flex-wrap: wrap-reverse;
     align-items: center;
+
+
     // height: 100%;
         @media screen and (max-width: 1199px)  {
         padding-top: 12%;
@@ -67,14 +69,15 @@
     &__background-draw {
         z-index: -1000;
         position: absolute;
-        background-origin: border-box;
+        // background-origin: border-box;
         height: 100vh;
         width: 100%;
-        left: 0;
+        right: 0;
         top: 0;
-        background: url(./img/main/background.jpg);
+        background: url(./img/main/main.jpg) no-repeat top right;
+        // background: url(./img/main/background.jpg);
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: left;
 
     }
     &__background {
@@ -181,6 +184,9 @@
         @media screen and (max-width: 600px) {
             font-size: rem(14);
         }
+        @media screen and (max-width: 400px) {
+            font-size: rem(9);
+        }
     }
 
     &_logo {
@@ -207,6 +213,9 @@
     &_half-bold {
         font-family: Kontora, sans-serif;
         // font-size: rem(24);
+        @media screen and (max-width: 600px) {
+            // font-size: rem(20);
+        }
     }
     &_center{
         text-align: center;
@@ -269,6 +278,21 @@
     &_shadow:hover {
         box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
     }
+}
+.button-send-mini {
+    width: 250px;
+    height: 60px;
+    padding: 0  15px;
+    font-size: rem(18);
+    @media screen and (max-width: 600px) {
+        font-size: rem(14);
+        width: 150px;
+        height: 50px;
+    }
+}
+
+button:active, button:focus {
+    outline: none;
 }
 
 .input {
