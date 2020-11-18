@@ -4,7 +4,7 @@ section.request#request.row
     button.button-send.button-send__modal.request__button-send.button-send_shadow Оставить заявку
 
 .popup-fade.popup-fade-button-send
-    form.modalDialog.form#form_modal(type="submit" method="post")
+    form.modalDialog.form__modal#form_modal(type="submit" method="post")
         .modal-guts.row
             a.close-modal.close(title="Закрыть")
                 .icon_close
@@ -20,7 +20,7 @@ section.request#request.row
                 span.text_main.form__error Это поле должно содержать 11-ти значный номер телефона
                 input.input.input__email.form__input#inputEmail4.form-control(name="email" placeholder="Email", type="email" required)
                 span.text_main.form__error Это поле должно содержать E-Mail в формате example@site.com
-                .form__input.form
+                .form__input
                     include ../../components/checkbox/checkbox.pug
             .form__row.col-md
                 textarea(name="message" type="text" placeholder="Комментарий*").input__comment.form__textarea.input.form__input.form__input_big.form-control

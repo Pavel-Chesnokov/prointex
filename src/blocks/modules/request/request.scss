@@ -1,4 +1,6 @@
 .request {
+    display: flex;
+    align-items: center;
     margin-top: 100px;
     max-height: 215px;
     justify-content: center;
@@ -14,9 +16,12 @@
         @media screen and (max-width: 900px){
             background-image: none;
         }
+        @media screen and (max-width: 729px)  {
+            height: 150px;
+        }
     }
     &__button-send {
-        margin-top: 72.5px;
+        margin-top: 0 !important;
         width: 370px;
         height: 70px;
         @media screen and (max-width: 400px){

@@ -2,14 +2,15 @@ section.main#main.row
     .main__background-draw
     .col-xl-7.col-sm-6.main__content
         h1.text_title.main__title.main__title <?php the_field('header');?>
-        p.main__desc.text_main.text_secondary Проектирование и производство долговечных пресс-формы любой сложности для Вашего бизнеса
+        .text_secondary-wrapper
+            p.main__desc.text_main.text_secondary Проектирование и производство долговечных пресс-формы любой сложности для Вашего бизнеса
         button.button-send__modal.main__button-send.button-send.button-send_shadow Оставить заявку
+        .scroll-down-icon
+            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            a.menu__main(href = '#main')
+                span.main__arrow-up
     .main__offset.col-xl-1
     .main__img-wrapper.col-xl-4.col-sm-6
         .main__img
             .main__background
-                 img.main__background-img(src!="<?php bloginfo('template_url');?>/img/main/main.png", alt="пресс-форма")
-    .scroll-down-icon
-        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-        a.menu__main(href = '#main')
-            span.main__arrow-up
+                 img.main__background-img(src!="<?php bloginfo('template_url');?>/img/main/main2.png", alt="пресс-форма")

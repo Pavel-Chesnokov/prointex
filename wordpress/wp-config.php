@@ -13,7 +13,7 @@
  * * Префикс таблиц базы данных
  * * ABSPATH
  *
- * @link https://codex.wordpress.org/Editing_wp-config.php
+ * @link https://ru.wordpress.org/support/article/editing-wp-config-php/
  *
  * @package WordPress
  */
@@ -26,7 +26,7 @@ define( 'DB_NAME', 'prointex' );
 define( 'DB_USER', 'root' );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'root' );
 
 /** Имя сервера MySQL */
 define( 'DB_HOST', 'localhost' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'nFo3DK=oq7[C7?sD}XifaCr?AL06=Ln<vuy~N0Kd5&A]+<L^T:8#]j$;]89Mt.=e' );
-define( 'SECURE_AUTH_KEY',  'n~K$|h{gKV=#mO>^:V+Bn:[a0q1((]YvK[na,m^:{i601_N^b6XNQ_3j_/UI!GK$' );
-define( 'LOGGED_IN_KEY',    '%VZHNYd&^MEh ]/B<>EFPwa(PkYW0w*Sa{,Vn!2na[}W<;{yhOfO{BnFL@6=-J`k' );
-define( 'NONCE_KEY',        'e]=plc&GD:GX}r5HTLtK)F8_gByGr{~.2R{vq8toeS59A*4>7`xB5:AJav=Rsuc=' );
-define( 'AUTH_SALT',        '2SDG-NDY=-(F?o?)5!D|lkkd:i!P~E2,v|b`F1w.DBZ&GpBYmKQ78|{@ ,=7F rL' );
-define( 'SECURE_AUTH_SALT', '9c4(o*&jxcX|=6PA[>gHgc55_/$=wLAs3j|Icj-KCXZ+<2sfT{U@ zXrN2S80)r1' );
-define( 'LOGGED_IN_SALT',   '2t{pi@U SjPMK4Rz^NR>myME[wa?@N>~tBd:9%U)Eg##IHf#7OgH6hX>*|.%$[Om' );
-define( 'NONCE_SALT',       '|(a0+^gIh]wwDq_;K&h6t:tBX<Vx;sO9t}^+FVF^&LM|!;T;=wyR?7dJg pQyj;X' );
+define( 'AUTH_KEY',         'c%hYAS8k/wIX|6WP~h)wx*qfI10Bt_2C7yskrsutzZol?Ka6y%pauGIzlS48%Eb9' );
+define( 'SECURE_AUTH_KEY',  'd^)t.QZuV9i.)8P/s*>z@.,w}&.A)<e,ntJS?X:jJ N;39|*V(+qnG8a;VKlNw7b' );
+define( 'LOGGED_IN_KEY',    'e655M2r9YA)su8yfV}4Q3e4k|0?1Yk;L+bTMJ]+GT.Z @-m::t*3z=W`eVU0~MlE' );
+define( 'NONCE_KEY',        '~e$}!zf|WAWk;me|9)&zieKTfx;-2^4>B1Fu:-O8U@BXjJM]WBoR=<<FRl~huIl!' );
+define( 'AUTH_SALT',        '!ZaHo1QM2Ppw!I5>B#Bl#x4VZB>O-q5;cj6?k7j66TQ]v]KBqr}~~_hbju193g+_' );
+define( 'SECURE_AUTH_SALT', 'gVNe*TWg$S*p?J0~;3xqmdx^;V{rfZDAANYwY,yvf+Dt>::0bEeWFKXbRmX>}bRM' );
+define( 'LOGGED_IN_SALT',   'XCtudIu{NlgOz0^S6Jf+ts9+r=oll!SM%A J-<BjCM9b72`$dgC!ZY,:L*]a4*1d' );
+define( 'NONCE_SALT',       'hMD]wHGao+v,1@JUh~~SziA cHAE5JpO<SbvVK>k|]coDgFOKQRyUW&X=AXAJ`-{' );
 
 /**#@-*/
 
@@ -72,9 +72,9 @@ $table_prefix = 'wp_';
  * Разработчикам плагинов и тем настоятельно рекомендуется использовать WP_DEBUG
  * в своём рабочем окружении.
  *
- * Информацию о других отладочных константах можно найти в Кодексе.
+ * Информацию о других отладочных константах можно найти в документации.
  *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
+ * @link https://ru.wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
 
@@ -82,8 +82,8 @@ define( 'WP_DEBUG', false );
 
 /** Абсолютный путь к директории WordPress. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+	define( 'ABSPATH', __DIR__ . '/' );
 }
 
 /** Инициализирует переменные WordPress и подключает файлы. */
-require_once( ABSPATH . 'wp-settings.php' );
+require_once ABSPATH . 'wp-settings.php';
