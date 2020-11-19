@@ -3,11 +3,13 @@ $(document).ready(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./wp-content/themes/prointex/img/examples/form1/IMG_7965.jpg",
-                "./wp-content/themes/prointex/img/examples/form1/IMG_7966.jpg",
-                "./wp-content/themes/prointex/img/examples/form1/IMG_8478.jpg",
-                "./wp-content/themes/prointex/img/examples/form1/IMG_8479.jpg",
-                "./wp-content/themes/prointex/img/examples/form1/IMG_8487.jpg", 
+                "./wp-content/themes/prointex/img/examples/form1/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form1/2.jpg",
+                "./wp-content/themes/prointex/img/examples/form1/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form1/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form1/5.jpg", 
+                "./wp-content/themes/prointex/img/examples/form1/6.jpg",
+                "./wp-content/themes/prointex/img/examples/form1/7.jpg", 
             ],
             { ui: "inside", loop: true},
         );
@@ -16,8 +18,11 @@ $(document).ready(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./wp-content/themes/prointex/img/examples/form2/IMG_8068.jpg",
-                "./wp-content/themes/prointex/img/examples/form2/IMG_8065.jpg",
+                "./wp-content/themes/prointex/img/examples/form2/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form2/2.jpg",
+                "./wp-content/themes/prointex/img/examples/form2/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form2/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form2/5.jpg", 
             ],
             { ui: "inside", loop: true }
         );
@@ -26,10 +31,13 @@ $(document).ready(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./wp-content/themes/prointex/img/examples/form3/IMG_6902.jpg",
-                "./wp-content/themes/prointex/img/examples/form3/IMG_6854.jpg",
-                "./wp-content/themes/prointex/img/examples/form3/IMG_6849.jpg",
-                "./wp-content/themes/prointex/img/examples/form3/IMG_6894.jpg",
+                "./wp-content/themes/prointex/img/examples/form3/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form3/2.jpg",
+                "./wp-content/themes/prointex/img/examples/form3/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form3/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form3/5.jpg",
+                "./wp-content/themes/prointex/img/examples/form3/6.jpg",
+                "./wp-content/themes/prointex/img/examples/form3/7.jpg",
             ],
             { ui: "inside", loop: true }
         );
@@ -38,11 +46,90 @@ $(document).ready(function() {
         event.preventDefault();
         Fresco.show(
             [
-                "./wp-content/themes/prointex/img/examples/form4/IMG_3822.jpg",
-                "./wp-content/themes/prointex/img/examples/form4/IMG_3807.jpg",
-                "./wp-content/themes/prointex/img/examples/form4/IMG_3826.jpg",
-                "./wp-content/themes/prointex/img/examples/form4/IMG_3827.jpg",
-                "./wp-content/themes/prointex/img/examples/form4/IMG_3829.jpg",
+                "./wp-content/themes/prointex/img/examples/form4/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form4/2.jpg",
+                "./wp-content/themes/prointex/img/examples/form4/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form4/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form4/5.jpg",
+                "./wp-content/themes/prointex/img/examples/form4/6.jpg",
+                "./wp-content/themes/prointex/img/examples/form4/7.jpg",
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $("#examples-5").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./wp-content/themes/prointex/img/examples/form5/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form5/2.jpg",
+                "./wp-content/themes/prointex/img/examples/form5/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form5/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form5/5.jpg",
+                "./wp-content/themes/prointex/img/examples/form5/6.jpg",
+                "./wp-content/themes/prointex/img/examples/form5/7.jpg",
+                "./wp-content/themes/prointex/img/examples/form5/8.jpg",
+                "./wp-content/themes/prointex/img/examples/form5/9.jpg",
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $("#examples-6").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./wp-content/themes/prointex/img/examples/form6/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form6/2.jpg",
+                "./wp-content/themes/prointex/img/examples/form6/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form6/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form6/5.jpg",
+                "./wp-content/themes/prointex/img/examples/form6/6.jpg",
+                "./wp-content/themes/prointex/img/examples/form6/7.jpg",
+                "./wp-content/themes/prointex/img/examples/form6/8.jpg",
+                "./wp-content/themes/prointex/img/examples/form6/9.jpg",
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $("#examples-7").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./wp-content/themes/prointex/img/examples/form7/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form7/2.jpg",
+                "./wp-content/themes/prointex/img/examples/form7/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form7/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form7/5.jpg",
+                "./wp-content/themes/prointex/img/examples/form7/6.jpg",
+                "./wp-content/themes/prointex/img/examples/form7/7.jpg",
+                "./wp-content/themes/prointex/img/examples/form7/8.jpg",
+                "./wp-content/themes/prointex/img/examples/form7/9.jpg",
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $("#examples-8").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./wp-content/themes/prointex/img/examples/form8/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/2.jpg",
+
+            ],
+            { ui: "inside", loop: true }
+        );
+    });
+    $("#examples-9").on("click", function(event) {
+        event.preventDefault();
+        Fresco.show(
+            [
+                "./wp-content/themes/prointex/img/examples/form9/1.jpg",
+                "./wp-content/themes/prointex/img/examples/form9/2.jpg",
+                "./wp-content/themes/prointex/img/examples/form9/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form9/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form9/5.jpg",
+                "./wp-content/themes/prointex/img/examples/form9/6.jpg",
+                "./wp-content/themes/prointex/img/examples/form9/7.jpg",
             ],
             { ui: "inside", loop: true }
         );
