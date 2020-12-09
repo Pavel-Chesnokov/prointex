@@ -1,0 +1,80 @@
+.gallery{
+    &__title {
+        margin-top: 60px;
+    }
+    &__img {
+        object-fit: cover;
+        height: 100%;
+    }
+    &__info {
+        position: relative;
+        height: 100%;
+        // width: 290px;
+        // height: 290px;
+    }
+    &__zoom {
+        position: absolute;
+        margin-left: 500px;
+        opacity: 0;
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
+.slider-gallery {
+    margin-top: 30px;
+}
+
+.slider-gallery > .owl-stage-outer,
+.owl-stage,
+.owl-item {
+    height: 100%;
+    width: 100%;
+}
+
+.slider-gallery > .owl-nav {
+    position: absolute;
+    bottom: calc(50% + 25px);
+    width: 100%;
+}
+
+.slider-gallery:hover .owl-prev {
+    transform: translateX(-20px);
+    opacity: 1;
+    transition-property: transform, opacity;
+    transition-duration: 0.5s, 1s;
+    transition-timing-function: ease;
+}
+.slider-gallery:hover .owl-next {
+    transform: translateX(20px);
+    opacity: 1;
+    transition-property: transform, opacity;
+    transition-duration: 0.5s, 1s;
+    transition-timing-function: ease;
+}
+
+
+.slider-gallery .owl-prev {
+    position: absolute;
+    left: 25px;
+    // margin-left: -33px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+.slider-gallery .owl-prev:hover {
+    opacity: 0.6;
+}
+.slider-gallery .owl-next:hover {
+    opacity: 0.6;
+}
+.slider-gallery .owl-next {
+    position: absolute;
+    right: 50px;
+    // margin-left: 635px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}

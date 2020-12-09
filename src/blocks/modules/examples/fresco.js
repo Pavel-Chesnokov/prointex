@@ -11,7 +11,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form1/6.jpg",
                 "./wp-content/themes/prointex/img/examples/form1/7.jpg", 
             ],
-            { ui: "inside", loop: true},
+            { ui: "outside", loop: true},
         );
     });
     $("#examples-2").on("click", function(event) {
@@ -24,7 +24,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form2/4.jpg",
                 "./wp-content/themes/prointex/img/examples/form2/5.jpg", 
             ],
-            { ui: "inside", loop: true }
+            { ui: "outside", loop: true }
         );
     });
     $("#examples-3").on("click", function(event) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form3/6.jpg",
                 "./wp-content/themes/prointex/img/examples/form3/7.jpg",
             ],
-            { ui: "inside", loop: true }
+            { ui: "outside", loop: true }
         );
     });
     $("#examples-4").on("click", function(event) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form4/6.jpg",
                 "./wp-content/themes/prointex/img/examples/form4/7.jpg",
             ],
-            { ui: "inside", loop: true }
+            { ui: "outside", loop: true }
         );
     });
     $("#examples-5").on("click", function(event) {
@@ -71,7 +71,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form5/8.jpg",
                 "./wp-content/themes/prointex/img/examples/form5/9.jpg",
             ],
-            { ui: "inside", loop: true }
+            { ui: "outside", loop: true }
         );
     });
     $("#examples-6").on("click", function(event) {
@@ -88,7 +88,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form6/8.jpg",
                 "./wp-content/themes/prointex/img/examples/form6/9.jpg",
             ],
-            { ui: "inside", loop: true }
+            { ui: "outside", loop: true }
         );
     });
     $("#examples-7").on("click", function(event) {
@@ -105,7 +105,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form7/8.jpg",
                 "./wp-content/themes/prointex/img/examples/form7/9.jpg",
             ],
-            { ui: "inside", loop: true }
+            { ui: "outside", loop: true }
         );
     });
     $("#examples-8").on("click", function(event) {
@@ -116,7 +116,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form8/2.jpg",
 
             ],
-            { ui: "inside", loop: true }
+            { ui: "outside", loop: true }
         );
     });
     $("#examples-9").on("click", function(event) {
@@ -131,7 +131,7 @@ $(document).ready(function() {
                 "./wp-content/themes/prointex/img/examples/form9/6.jpg",
                 "./wp-content/themes/prointex/img/examples/form9/7.jpg",
             ],
-            { ui: "inside", loop: true }
+            { ui: "outside", loop: true }
         );
     });
 });

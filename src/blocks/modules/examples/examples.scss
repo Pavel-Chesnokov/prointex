@@ -19,6 +19,7 @@
         background-clip: content-box;
         background-repeat: no-repeat;
         height: 270px;
+        width: 270px;
         @media screen and (max-width: 600px){
             // background-clip: padding-box;
             height: 130px;
@@ -130,4 +131,10 @@
 }
 #examples-9 {
     background-image: url(./img/examples/form9/mini.jpg);
+}
+
+
+.examples_smale:hover, .examples_big:hover {
+    transition: transform ease-in 0.2s;
+    transform: scale(1.02);
 }

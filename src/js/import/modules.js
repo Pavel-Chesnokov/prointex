@@ -11,6 +11,7 @@ import "%modules%/examples/examples";
 import "%modules%/examples/fresco";
 import "%modules%/advantages/advantages";
 import "%modules%/partners/partners";
+import "%modules%/gallery/gallery";
 // import "%modules%/molds/molds";
 // import "%modules%/team/team";
 // import "%modules%/client/client";
