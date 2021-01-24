@@ -1,0 +1,225 @@
+.header {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-wrap: nowrap;
+    background: $background;
+    @media screen and (max-width: 990px)  {
+        height: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &_move {
+        // background-color: $background-inversion;
+        // color: $text-inversion;
+        background: rgba($background, 1);
+        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+        // transition: all 0.2s ease-in;
+    }
+    &__logo {
+        margin-left: 30px;
+        @media screen and (max-width: 990px)  {
+            height: 40px;
+            width: 40px;
+            margin-top: -7px;
+        }
+    }
+    &__nav {
+        top: 50px;
+        right: 50px;
+
+    }
+    &__time {
+        @media screen and (max-width: 1199px)  {
+            display: none;
+            }
+    }
+    &__text-logo {
+        margin-left: 5%;
+        @media screen and (max-width: 990px)  {
+            font-size: rem(15);
+            margin-left: 35px;
+            display: inline;
+            line-height: 40px !important;
+        }
+    }
+    &__text {
+       // line-height: 50px !important;
+        margin-left: 30px;
+        @media screen and (max-width: 990px)  {
+            font-size: rem(15);
+            line-height: 40px !important;
+            margin-left: 15px;
+    }
+        @media screen and (max-width: 560px)  {
+            display: none;
+    }
+}
+    &__link:hover {
+        text-decoration: none;
+    }
+    &__phone {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-left: 5%;
+        @media screen and (max-width: 1400px)  {
+            margin-left: 3%;
+        }
+        @media screen and (max-width: 990px)  {
+            // margin-left: 7%;
+            margin-left: 20px;
+        }
+        // p {
+        //     @media screen and (max-width: 710px)  {
+        //         display: none;
+        //     }
+        @media screen and (max-width: 490px)  {
+            // display: none;
+        }
+    }
+    &__email {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-left: 23%;
+
+            @media screen and (max-width: 1450px)  {
+                margin-left: 5%;
+            }
+            @media screen and (max-width: 990px)  {
+                // display: none;
+                margin-left: 100px;
+            }
+
+        }
+    &__email-text {
+        @media screen and (max-width: 990px)  {
+            display: none;
+            }
+    }
+    &__phone-city {
+        @media screen and (max-width: 990px)  {
+            display: none;
+            }
+    }
+    &__icon {
+        width: 50px;
+        height: 50px;
+        background: $accent;
+        border-radius: 50%;
+        @media screen and (max-width: 990px)  {
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+        }
+        &-phone {
+            padding-left: 13px;
+            padding-top: 13px;
+            @media screen and (max-width: 990px)  {
+                transform: scale(0.7);
+                padding-left: 3px;
+                padding-top: 3px;
+            }
+        }
+        &-email {
+            padding-left: 11px;
+            padding-top: 15px;
+            @media screen and (max-width: 990px)  {
+                transform: scale(0.7);
+                padding-left: 1px;
+                padding-top: 1px;
+            }
+        }
+    }
+    &__phone-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    &__email-wrap {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__email-wrap a{
+        width: 50%;
+        
+    }
+    &__sub-menu {
+        background: $background-inversion;
+        position: fixed;
+        top: 80px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @media screen and (max-width: 1199px)  {
+            display: none;
+            }
+            }
+    &__sub-menu li {
+        display: inline;
+
+    }
+
+    &__sub-menu li:not(:first-child) {
+        margin-left: 15px;
+    }
+
+    &__sub-menu a {
+        color: $text-inversion;
+        text-decoration: none;
+        transition: all 0.1s ease-out;
+
+    }
+    &__sub-menu a:hover {
+        color: $accent;
+        transition: all 0.3s ease-in;
+
+    }
+
+    }
+
+.logo {
+    display: flex;
+    &__img {
+        width: 50px;
+        height: 50px;
+        @media screen and (max-width: 990px)  {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            left: 15px;
+        }
+    }
+}
+
+.header__phone a{
+    text-decoration: none;
+    color: $background-inversion;
+    transition: all 0.1s ease-out;
+}
+
+.header__phone a:hover{
+    text-decoration: none;
+    color: $accent;
+    transition: all 0.2s ease-in;
+}
+
+.header__email a{
+    text-decoration: none;
+    color: $background-inversion;
+}
+
+.header__email:hover a{
+    color: $accent;
+    transition: all 0.2s ease-in;
+}
+

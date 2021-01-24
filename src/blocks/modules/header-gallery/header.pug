@@ -1,0 +1,27 @@
+header.header#header.row
+        a.header__link.menu__main(href="#main")
+            .logo.header__logo
+                img.logo__img(src!="<?php bloginfo('template_url');?>/img/header/logo.png", alt="логотип")
+                span.header_text.text_logo.header__text-logo Проинтех
+        .header__email
+            .header__icon
+                a(href="mailto:info@prointex.ru") 
+                    img.header__icon-email(src!="<?php bloginfo('template_url');?>/img/header/email.png", alt="почта")
+            .header__email-wrap 
+                a.text_mini.header__text(href="mailto:info@prointex.ru") info@prointex.ru
+                span.header__email-text.text_mini.header__text Ответим на Ваши вопросы
+        .header__phone
+            .header__icon
+                a(href="tel:+74992682650")
+                    img.header__icon-phone(src!="<?php bloginfo('template_url');?>/img/header/phone.png", alt="телефон")
+            .header__phone-wrap 
+                a.text_mini.header__text(href="tel:+74992682650") +7 499 268-26-50
+                a.header__phone-city.text_mini.header__text(href="tel:+79161822138") +7 916 182-21-38
+            p.header__time.text_mini.header__text Ждем Ваших звонков <br> с 10:00 до 22:00 пн-вс
+        .header__menu
+            include ../../components/menu/menu.pug
+        .header__sub-menu.col
+            nav
+                ul.text_half-bold
+                    li.menu__service
+                        a(href!="<?php echo home_url(); ?>") Вернуться на главную

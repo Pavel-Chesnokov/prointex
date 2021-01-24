@@ -1,5 +1,5 @@
 .examples {
-    padding-top: 100px;
+    padding-top: 150px;
     @media screen and (max-width: 1200px){
         max-width: 570px;
         // height: 570px;
@@ -54,13 +54,10 @@
 
     &__see-all {
         background: $accent;
-        color: $background-inversion;
         background-clip: content-box;
         &:hover {
-            color: $background-inversion;
-            opacity: 0.9;
             transform: scale(1.02);
-            transition: all ease-in 0.2s;
+            transition: transform ease-in 0.2s;
         }
     }
     &__see-all-title {
@@ -135,9 +132,15 @@
 #examples-9 {
     background-image: url(./img/examples/form9/mini.jpg);
 }
-// #examples-10 {
-//     background-image: url(./img/examples/form10/mini.jpg);
-// }
+#examples-10 {
+    background-image: url(./img/examples/form10/mini.jpg);
+}
+#examples-11 {
+    background-image: url(./img/examples/form11/mini.jpg);
+}
+#examples-12 {
+    background-image: url(./img/examples/form12/mini.jpg);
+}
 
 
 .examples_smale:hover, .examples_big:hover {

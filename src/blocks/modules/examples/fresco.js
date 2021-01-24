@@ -114,7 +114,15 @@ $(document).ready(function() {
             [
                 "./wp-content/themes/prointex/img/examples/form8/1.jpg",
                 "./wp-content/themes/prointex/img/examples/form8/2.jpg",
-
+                "./wp-content/themes/prointex/img/examples/form8/3.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/4.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/5.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/6.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/7.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/8.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/9.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/10.jpg",
+                "./wp-content/themes/prointex/img/examples/form8/11.jpg",
             ],
             { ui: "outside", loop: true }
         );
@@ -134,4 +142,21 @@ $(document).ready(function() {
             { ui: "outside", loop: true }
         );
     });
+    // $("#examples-10").on("click", function(event) {
+    //     event.preventDefault();
+    //     Fresco.show(
+    //         [
+    //             "./wp-content/themes/prointex/img/examples/form10/1.jpg",
+    //             "./wp-content/themes/prointex/img/examples/form10/2.jpg",
+    //             "./wp-content/themes/prointex/img/examples/form10/3.jpg",
+    //             "./wp-content/themes/prointex/img/examples/form10/4.jpg",
+    //             "./wp-content/themes/prointex/img/examples/form10/5.jpg",
+    //             "./wp-content/themes/prointex/img/examples/form10/6.jpg",
+    //             "./wp-content/themes/prointex/img/examples/form10/7.jpg",
+    //             "./wp-content/themes/prointex/img/examples/form10/8.jpg",
+    //             "./wp-content/themes/prointex/img/examples/form10/9.jpg",
+    //         ],
+    //         { ui: "outside", loop: true }
+    //     );
+    // });
 });

@@ -74,7 +74,7 @@
         width: 100%;
         right: 0;
         top: 0;
-        background: url(./img/main/background2.jpg) no-repeat top right;
+        background: url(./img/main/background3.jpg) no-repeat top center;
         width: 100%;
         // background: url(./img/main/background.jpg);
         background-repeat: no-repeat;
@@ -347,7 +347,7 @@ button:active, button:focus {
     bottom: -35%;
     margin-top: 3%;
     margin-left: -30px;
-    // background: $accent;
+    background: $accent;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -373,9 +373,9 @@ i.fa-angle-double-down {
 }
 
 i.fa-angle-double-down:hover {
-    color: $accent;
+    // color: $accent;
     transition: all 0.2s ease-in;
-    transform: translateY(20px);
+    transform: translateY(10px);
     cursor: pointer;
 
 }
@@ -385,4 +385,6 @@ i.fa-angle-double-down:hover {
     background: #ffffff;
     padding: 0 2%;
     margin-left: -2%;
+    opacity: 0.8;
+
 }

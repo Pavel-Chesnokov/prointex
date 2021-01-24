@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Галерея работ ООО Проинтех";
+
+block content
+		include ../../blocks/components/load/load.pug
+		.container-1200px
+			include ../../blocks/modules/header-gallery/header.pug
+			include ../../blocks/modules/examples-all/examples-all.pug
+			include ../../blocks/modules/footer/footer.pug
+block scripts
+	<?php wp_footer(); ?>
